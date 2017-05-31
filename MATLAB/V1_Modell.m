@@ -47,6 +47,8 @@ T = 1/2 * m1 * (dx1^2 + dy1^2) + 1/2 * J1 * dphi1^2 +...
 
 U = g * (m1 * y1 + m2 * y2);
 
+%Generalisierte Kräfte
+
 Qphi1= M - MR1;
 Qphi2 = -MR2;
 
