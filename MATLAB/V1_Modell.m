@@ -49,7 +49,7 @@ U = g * (m1 * y1 + m2 * y2);
 
 %Generalisierte Kräfte
 
-Qphi1= M - MR1;
+Qphi1 = M - MR1;
 Qphi2 = -MR2;
 
 L = T-U;
@@ -84,4 +84,14 @@ dL_dphi2_t = diff(L_dphi2_t,t);
 %Variablen mit t
 Var_t = {'phi1(t)', 'dphi1(t)', 'diff(phi1(t),t)', 'diff(dphi1(t),t)',...
         'phi2(t)', 'dphi2(t)', 'diff(phi2(t),t)', 'diff(dphi2(t),t)'};
-%Variablen ohne
+
+%Variablen ohne t 
+Var_ot = {phi1, dphi1, dphi1, ddphi1, phi2, dphi2, dphi2, ddphi2};
+
+dL_dphi1_t = subs(dL_dphi1_t, Var_t, Var_ot);
+dL_dphi2_t = subs(dL_dphi2_t, Var_t, Var_ot);
+
+%% Berchnung der LAGRANGEschen Gleichungen
+
+Sol = solve([dL_dphi1_t - L_phi1 == Qphi1, dL_dphi2_t - L_phi2 == Qphi2],...
+            [ddphi1,ddphi2]);
