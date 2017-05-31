@@ -52,6 +52,8 @@ U = g * (m1 * y1 + m2 * y2);
 Qphi1= M - MR1;
 Qphi2 = -MR2;
 
+%Lagrangegleichung
+
 L = T-U;
 
 %% Herleitung der Ableitung nach generalisierter Koordinate
