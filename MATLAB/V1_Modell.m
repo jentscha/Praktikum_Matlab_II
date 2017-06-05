@@ -93,6 +93,15 @@ Var_ot = {phi1, dphi1, dphi1, ddphi1, phi2, dphi2, dphi2, ddphi2};
 dL_dphi1_t = subs(dL_dphi1_t, Var_t, Var_ot);
 dL_dphi2_t = subs(dL_dphi2_t, Var_t, Var_ot);
 
+%% Werte einsetzen
+l_1 = subs(l_1, 0.2);
+l_2 = subs(l_2, 0.2);
+g = subs(g, 9.81);
+m1 = subs(m1, 0.3);
+m2 = subs(m2, 0.3);
+Rp1 = subs(Rp1, 1e-2);
+Rp2 = subs(Rp1, 1e-3);
+
 %% Berchnung der LAGRANGEschen Gleichungen
 
 Sol = solve([dL_dphi1_t - L_phi1 == Qphi1, dL_dphi2_t - L_phi2 == Qphi2],...
