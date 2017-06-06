@@ -12,14 +12,14 @@ syms phi1 dphi1 ddphi1 phi2 dphi2 ddphi2 real;
 % Momente
 syms M MR1 MR2 real;
 
-% %% Werte einsetzen
-% l_1 = subs(l_1, 0.2);
-% l_2 = subs(l_2, 0.2);
-% g = subs(g, 9.81);
-% m1 = subs(m1, 0.3);
-% m2 = subs(m2, 0.3);
-% Rp1 = subs(Rp1, 1e-2);
-% Rp2 = subs(Rp1, 1e-3);
+%% Werte einsetzen
+l_1 = subs(l_1, 0.2);
+l_2 = subs(l_2, 0.2);
+g = subs(g, 9.81);
+m1 = subs(m1, 0.3);
+m2 = subs(m2, 0.3);
+Rp1 = subs(Rp1, 1e-2);
+Rp2 = subs(Rp1, 1e-3);
 
 %% Zu ersetzende Größen
 
@@ -55,9 +55,9 @@ dy2 = dy1 + l_2 / 2 * dphi2 * sin(phi2);
 T = 1/2 * m1 * (dx1^2 + dy1^2) + 1/2 * J1 * dphi1^2 +...
     1/2 * m2 * (dx2^2 + dy2^2) + 1/2 * J2 * dphi2^2;
 
-%U = g * (m1 * y1 + m2 * y2);
-U = -m1 * g * l_1 / 2 * cos(phi1) -...
-     m2 * g * (l_1 * cos(phi1) + l_2 / 2  * cos(phi1 + phi2));
+U = g * (m1 * y1 + m2 * y2);
+% U = -m1 * g * l_1 / 2 * cos(phi1) -...
+%      m2 * g * (l_1 * cos(phi1) + l_2 / 2  * cos(phi1 + phi2));
 
 %Generalisierte Kräfte
 
@@ -106,7 +106,7 @@ dL_dphi1_t = subs(dL_dphi1_t, Var_t, Var_ot);
 dL_dphi2_t = subs(dL_dphi2_t, Var_t, Var_ot);
 
 
-%% Berchnung der LAGRANGEschen Gleichungen
+%% Berechnung der LAGRANGEschen Gleichungen
 
 Sol = solve([dL_dphi1_t - L_phi1 == Qphi1, dL_dphi2_t - L_phi2 == Qphi2],...
             [ddphi1, ddphi2]);
