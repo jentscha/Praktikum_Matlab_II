@@ -11,9 +11,9 @@
 % Hier Daten für studentische Arbeit eingeben
 % =================================================================================
 \newcommand{\SADATyp}{Praktikumsbericht}
-\newcommand{\SADATitel}{Versuch I}
+\newcommand{\SADATitel}{Versuch I, Modellbildung und Simulation eines Doppelpendel-Systems}
 \newcommand{\SADAStadt}{Darmstadt}
-\newcommand{\SADAAutor}{Ali Kerem, Andreas Jentsch}
+\newcommand{\SADAAutor}{Andreas Jentsch, Ali Kerem Sacakli}
 \newcommand{\SADABetreuer}{}
 \newcommand{\SADABetreuerII}{}
 \newcommand{\SADABetreuerIII}{}
@@ -59,6 +59,30 @@
 	\usepackage{exscale}	% Korrektur math-Zeichen
 	\usepackage{eurosym}
 \fi
+%Paket listings für das Einbinden von Quelltext
+\usepackage{listings}
+%Stil Matlab_colored definieren
+\lstdefinestyle{Matlab_colored}
+{
+	language = Matlab,
+	tabsize = 4,
+	framesep = 3mm,
+	frame = tb,
+	classoffset = 0,
+	basicstyle = \ttfamily,
+	keywordstyle = \bfseries\color[rgb]{0,0,1},
+	commentstyle = \itshape\color[rgb]{0.133,0.545,0.133},
+	stringstyle = \color[rgb]{0.672,0.126,0.941},
+	extendedchars = true,
+	breaklines = true,
+	prebreak = \textrightarrow,
+	postbreak = \textleftarrow,
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber = 5	
+}
+
+
 \input{common/includes.tex}				% verwendete Pakete einbinden
 \input{common/setup.tex}					% LaTeX-Einstellungen
 \input{common/commonmacros.tex}		% oft verwendete Befehle
@@ -71,6 +95,7 @@
 \begin{document}
 %\input{common/preface.tex} % Titelseite, Aufgabenstellung, Erklärung, Abstract, Inhaltsverzeichnis, etc.
 \maketitle
+
 
 
 
@@ -115,5 +140,80 @@
 \bibliographystyle{gerunsrt}	% Verweise nummeriert in eckigen Klammern, nach Erscheinung sortiert
 
 % =================================================================================
+
+%Warum geht title nicht?
+\addsec{Vorbereitung}
+(Text, Bild des Modells)
+
+Code:
+
+\lstinputlisting[style=Matlab_colored,caption={Code des Doppelpendel-Modells}, label={Code_Modell}]{Codes/V1_Modell.m}
+
+
+\newpage
+
+\addsec{Implementierung des Modells mit verschiedenen Modellierungsmöglichkeiten}
+
+Das im vorherigen Kapitel dargestellte Modell wird mit folgenden drei Modellierungsmöglichkeiten implementiert:
+\begin{itemize}
+	\item Fcn-Blocks,
+	\item MATLAB-Function-Blocks 
+	\item einer M-File S-Function
+\end{itemize}
+
+In diesem Abschnitt wird für jeweils jede Implementierung das Simulink-Schaltbild mit dem zugehörigen Code zur Simulation vorgestellt.
+
+
+\paragraph{Fcn-Blocks}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.6]{Bilder/Fcn_Block_Simulink.JPG}
+	\caption{Implementierung mit Fcn-Blöcken}
+	\label{fig:fcn}
+\end{figure}
+
+Dabei lautet die Funktion von \textbf{Fcn}: \newline
+$-(6*(4*Rp1*u(2)*l2 - 4*u(1)*l2 + 6*Rp2*u(2)*l1*cos(u(3) - u(4)) - 6*Rp2*u(5)*l1*cos(u(3) - u(4)) + (3*g*l1*l2*m2*sin(u(3) - 2*u(4)))/2 + (3*u(2)^2*l1^2*l2*m2*sin(2*u(3) - 2*u(4)))/2 + 2*u(5)^2*l1*l2^2*m2*sin(u(3) - u(4)) + 2*g*l1*l2*m1*sin(u(3)) + (5*g*l1*l2*m2*sin(u(3)))/2))/(l1^2*l2*(8*m1 + 15*m2 - 9*m2*cos(2*u(3) - 2*u(4))))$ \newline \\
+%Fcn2 Block
+und für den \textbf{Fcn1} Block lautet die Funktion:\newline
+$(6*(4*Rp2*u(2)*l1*m1 - 6*u(1)*l2*m2*cos(u(3) -u(4)) + 12*Rp2*u(2)*l1*m2 - 4*Rp2*u(5)*l1*m1 - 12*Rp2*u(5)*l1*m2 + 6*u(2)^2*l1^2*l2*m2^2*sin(u(3) - u(4)) - 3*g*l1*l2*m2^2*sin(u(4)) + (3*u(5)^2*l1*l2^2*m2^2*sin(2*u(3) - 2*u(4)))/2 + 3*g*l1*l2*m2^2*sin(2*u(3) - u(4)) + 6*Rp1*u(2)*l2*m2*cos(u(3) - u(4)) + 2*u(2)^2*l1^2*l2*m1*m2*sin(u(3) - u(4)) - (g*l1*l2*m1*m2*sin(u(4)))/2 + (3*g*l1*l2*m1*m2*sin(2*u(3) - u(4)))/2))/(l1*l2^2*m2*(8*m1 + 15*m2 - 9*m2*cos(2*u(3) - 2*u(4))))$
+
+\newpage
+
+\paragraph{Matlab-Function-Block}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.50]{Bilder/Matlab_Function_Block_Simulink.JPG}
+	\caption{Implementierung mit einem Matlab-Function-Block}
+	\label{fig:matlabfcn}
+\end{figure}
+
+Der Code des Matlab-Fcn-Blocks ist wie folgt:
+
+\lstinputlisting[style=Matlab_colored,caption={Code für das Matlab-Function-Block}, label={Code_Matlab_Function}]{Codes/Matlab_Function.m}
+
+
+\newpage
+\paragraph{Level 2 M-File-S-Function}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.50]{Bilder/S_Function_Block_Simulink.JPG}
+	\caption{Implementierung mit einem Matlab-Function-Block}
+	\label{fig:Sfcn}
+\end{figure}
+
+Die Implementierung des Codes für die S-Function ist wie folgt:
+
+\lstinputlisting[style=Matlab_colored,caption={Code für das Matlab-Function-Block}, label={Code_Matlab_Function}]{Codes/sFunModell.m}
+
+
+
+
+
+
 
 \end{document}
