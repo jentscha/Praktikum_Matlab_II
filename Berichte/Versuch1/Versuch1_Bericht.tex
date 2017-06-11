@@ -144,17 +144,17 @@
 % =================================================================================
 
 %Warum geht title/section nicht?
-\addsec{Vorbereitung}
-(Text, Bild des Modells)
+\section{Doppelpendel-System}
+Im Praktikum Matlab/Simulink II werden weiterführende Konzepte der Regelungstechnik basierend auf einem Doppelpendel-System erarbeitet. In diesem Versuch geht es um die Modellierung des Doppelpendelsystems durch verschiedene Modellierungsmöglichkeiten.
 
-Code:
+Der erarbeite Code für das Doppelpendel-System sieht wie folgt aus:
 
 \lstinputlisting[style=Matlab_colored,caption={Code des Doppelpendel-Modells}, label={Code_Modell}]{Codes/V1_Modell.m}
 
 
 \newpage
 
-\addsec{Implementierung des Modells mit verschiedenen Modellierungsmöglichkeiten}
+\section{Implementierung des Modells durch verschiedene Modellierungsmöglichkeiten}
 
 Das im vorherigen Kapitel dargestellte Modell wird mit folgenden drei Modellierungsmöglichkeiten implementiert:
 \begin{itemize}
@@ -166,7 +166,7 @@ Das im vorherigen Kapitel dargestellte Modell wird mit folgenden drei Modellieru
 In diesem Abschnitt wird für jeweils jede Implementierung das Simulink-Schaltbild mit dem zugehörigen Code zur Simulation vorgestellt.
 
 
-\paragraph{Fcn-Blocks}
+\subsection{Fcn-Blocks}
 
 \begin{figure}[htbp]
 	\centering
@@ -183,7 +183,7 @@ $(6*(4*Rp2*u(2)*l1*m1 - 6*u(1)*l2*m2*cos(u(3) -u(4)) + 12*Rp2*u(2)*l1*m2 - 4*Rp2
 
 \newpage
 
-\paragraph{Matlab-Function-Block}
+\subsection{Matlab-Function-Block}
 
 \begin{figure}
 	\centering
@@ -198,7 +198,7 @@ Der Code des Matlab-Fcn-Blocks ist wie folgt:
 
 
 \newpage
-\paragraph{Level 2 M-File-S-Function}
+\subsection{Level 2 M-File-S-Function}
 
 
 \begin{figure}
@@ -215,7 +215,7 @@ Die Implementierung des Codes für die S-Function ist wie folgt:
 \newpage
 
 
-\paragraph{Vergleich der Modellierungsmöglichkeiten}
+\subsection{Vergleich der Modellierungsmöglichkeiten}
 
 Die in den vorangegangen Abschnitten vorgestellten Modelle werden mit einem Anregungssignal \[ M(t)=0.1sin(t)\]  und der Anfangsbedingung $(\phi_1(t=0)=\phi_2(t=0)=0rad)$ simuliert. Dabei werden die Winkel $\phi_1$ und $\phi_2$ in Abhängigkeit vom Anregungssignal zum einen für eine Simulationsdauer von 10s und 2s dargestellt.
 
@@ -234,9 +234,11 @@ Die in den vorangegangen Abschnitten vorgestellten Modelle werden mit einem Anre
 	\label{fig:Ergebnis_T2}
 \end{figure}
 
-Alle drei behandelten Modellierungsmöglichkeiten sind für die nichtlineare Modellierung geeignet. Bei gleicher Simulationseinstellung sind daher identische Ergebnisse zu erwarten. Wie die Abbildungen zeigen erfüllen die Ergebnisse diese Erwartung.
+Alle drei behandelten Modellierungsmöglichkeiten sind für die nichtlineare Modellierung geeignet. Bei gleicher Simulationseinstellung sind daher identische Ergebnisse zu erwarten. Wie die Abbildungen zeigen, erfüllen die Ergebnisse diese Erwartung.
 
-Der Verlauf der Winkel in Abhängigkeit des Anregungssignals ist plausibel. Für den Winkel $phi_1$ ist ein ähnlicher Verlauf wie das Anregungsmoment, nur mit einer kleiner Verzögerung durch die Trägheitsmomente, zu erwarten, da das Anregungsmoment direkt auf die Drehachse in $phi_1$ wirkt und somit einen ähnlichen Verlauf erzwingt. Der Winkel $phi_2$ ist dagegen frei gelagert und ist nur durch ein Reibmoment  
+Der Verlauf der Winkel in Abhängigkeit des Anregungssignals ist plausibel. Für den Winkel $phi_1$ ist ein ähnlicher Verlauf wie das Anregungsmoment, nur mit einer kleiner Verzögerung durch die Trägheitsmomente, zu erwarten, da das Anregungsmoment direkt auf die Drehachse in $phi_1$ wirkt und somit einen ähnlichen Verlauf erzwingt. Der Winkel $phi_2$ ist dagegen frei gelagert und ist nur durch ein Reibmoment begrenzt. Folglich ist anstatt eines zur Anregung synchronen Verlaufs ein frei schwingendes Verhalten zu erwarten. Das heißt, dass der zweite Pendel auch in entgegengesetzter Richtung schwingen kann. Dies ist in der Darstellung der Ergebnisse für eine Simulationsdauer von 2s besonders am Anfang zu erkennen. Durch die Trägheit schwingt der zweite Pendel anfänglich in die negative $phi_2$-Richtung. 
+
+%Die Dämpfung, die durch die Reibmomente hervorgerufen wird, ist aus den Grafen nicht ersichtlich.
 
 
 \end{document}

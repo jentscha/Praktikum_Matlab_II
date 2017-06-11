@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  11 JUN 2017 18:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  11 JUN 2017 19:19
 entering extended mode
 **Versuch1_Bericht.tex
 
@@ -1449,7 +1449,7 @@ LaTeX Font Info:    Try loading font information for TS1+5ch on input line 161.
 
 ("C:\Program Files\tuddesign\tex\latex\tex-tudfonts\softmake\charter\ts15ch.fd"
 File: ts15ch.fd 2008/06/23 Fontinst v1.927 font definitions for TS1/5ch.
-) <Bilder/Fcn_Block_Simulink.JPG, id=144, 737.00343pt x 423.83344pt>
+) <Bilder/Fcn_Block_Simulink.JPG, id=145, 737.00343pt x 423.83344pt>
 File: Bilder/Fcn_Block_Simulink.JPG Graphic file (type jpg)
 
 <use Bilder/Fcn_Block_Simulink.JPG>
@@ -1462,7 +1462,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--183
 
 [4 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_I
 I/Berichte/Versuch1/Bilder/Fcn_Block_Simulink.JPG>] [5]
-<Bilder/Matlab_Function_Block_Simulink.JPG, id=162, 1005.7575pt x 404.26031pt>
+<Bilder/Matlab_Function_Block_Simulink.JPG, id=164, 1005.7575pt x 404.26031pt>
 File: Bilder/Matlab_Function_Block_Simulink.JPG Graphic file (type jpg)
 
 <use Bilder/Matlab_Function_Block_Simulink.JPG>
@@ -1479,7 +1479,7 @@ Overfull \hbox (47.6334pt too wide) in paragraph at lines 190--191
 Berichte\Versuch1\Codes/Matlab_Function.m" [6 <C:/Users/Ali Kerem Sacakli/Deskt
 op/TU Darmstadt/Matlab 2/Praktikum_Matlab_II/Berichte/Versuch1/Bilder/Matlab_Fu
 nction_Block_Simulink.JPG>]) [7]
-<Bilder/S_Function_Block_Simulink.JPG, id=200, 867.24pt x 266.49562pt>
+<Bilder/S_Function_Block_Simulink.JPG, id=202, 867.24pt x 266.49562pt>
 File: Bilder/S_Function_Block_Simulink.JPG Graphic file (type jpg)
 
 <use Bilder/S_Function_Block_Simulink.JPG>
@@ -1561,7 +1561,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
 
-<Bilder/V1_Modell_output_T10-eps-converted-to.pdf, id=355, 372.39125pt x 312.16
+<Bilder/V1_Modell_output_T10-eps-converted-to.pdf, id=357, 372.39125pt x 312.16
 624pt>
 File: Bilder/V1_Modell_output_T10-eps-converted-to.pdf Graphic file (type pdf)
  <use Bilder/V1_Modell_output_T10-eps-converted-to.pdf>
@@ -1580,38 +1580,38 @@ eps-converted-to.pdf Bilder/V1_Modell_output_T2.eps>
 (epstopdf)             \includegraphics on input line 232.
 Package epstopdf Info: Output file is already uptodate.
 
-<Bilder/V1_Modell_output_T2-eps-converted-to.pdf, id=356, 370.38374pt x 312.166
+<Bilder/V1_Modell_output_T2-eps-converted-to.pdf, id=358, 370.38374pt x 312.166
 24pt>
 File: Bilder/V1_Modell_output_T2-eps-converted-to.pdf Graphic file (type pdf)
  <use Bilder/V1_Modell_output_T2-eps-converted-to.pdf>
 Package pdftex.def Info: Bilder/V1_Modell_output_T2-eps-converted-to.pdf used o
 n input line 232.
 (pdftex.def)             Requested size: 444.45825pt x 374.59761pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
  [13 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab
-_II/Berichte/Versuch1/Bilder/V1_Modell_output_T10-eps-converted-to.pdf>] [14 <C
-:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_II/Ber
-ichte/Versuch1/Bilder/V1_Modell_output_T2-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
+_II/Berichte/Versuch1/Bilder/V1_Modell_output_T10-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
+ [14 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab
+_II/Berichte/Versuch1/Bilder/V1_Modell_output_T2-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
 
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
 Berichte\Versuch1\Versuch1_Bericht.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 242.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 244.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 17592 strings out of 493921
- 272811 string characters out of 3147247
- 578039 words of memory out of 3000000
- 20156 multiletter control sequences out of 15000+200000
- 89731 words of font info for 84 fonts, out of 3000000 for 9000
+ 17604 strings out of 493921
+ 272955 string characters out of 3147247
+ 577874 words of memory out of 3000000
+ 20165 multiletter control sequences out of 15000+200000
+ 104264 words of font info for 86 fonts, out of 3000000 for 9000
  847 hyphenation exceptions out of 8191
- 70i,13n,108p,668b,2633s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,13n,108p,841b,2634s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}{C:/Progra
 m Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/tuddesign/
 fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files/tuddesign/fonts/type1
@@ -1631,9 +1631,9 @@ ata/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/Ali Kerem
 ers/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/tcx
 btt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/publ
 ic/txfonts/tcxtt.pfb>
-Output written on Versuch1_Bericht.pdf (16 pages, 337993 bytes).
+Output written on Versuch1_Bericht.pdf (16 pages, 340847 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 282 named destinations out of 1000 (max. 500000)
- 84 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 507 PDF objects out of 1000 (max. 8388607)
+ 284 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

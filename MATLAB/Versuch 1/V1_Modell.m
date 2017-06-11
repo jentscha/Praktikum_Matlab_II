@@ -17,7 +17,7 @@ syms M real;
 MR1 = Rp1 * dphi1;
 MR2 = Rp2 * (dphi2 - dphi1);
 
-% Trägheintsmomente
+% Trägheitsmomente
 J1 = 1 / 12 * m1 * l1^2;
 J2 = 1 / 12 * m2 * l2^2;
 
@@ -90,7 +90,7 @@ dL_dphi1_t = subs(dL_dphi1_t, Var_t, Var_ot);
 dL_dphi2_t = subs(dL_dphi2_t, Var_t, Var_ot);
 
 
-%% Berchnung der LAGRANGEschen Gleichungen
+%% Berechnung der LAGRANGEschen Gleichungen
 
 Sol = solve([dL_dphi1_t - L_phi1 == Qphi1, dL_dphi2_t - L_phi2 == Qphi2],...
             [ddphi1, ddphi2]);
