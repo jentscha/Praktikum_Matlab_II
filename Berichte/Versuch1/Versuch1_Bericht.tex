@@ -59,6 +59,8 @@
 	\usepackage{exscale}	% Korrektur math-Zeichen
 	\usepackage{eurosym}
 \fi
+%eps-plot von Matlab in pdf umwandeln, um diese einbinden zu können
+\usepackage{epstopdf}
 %Paket listings für das Einbinden von Quelltext
 \usepackage{listings}
 %Stil Matlab_colored definieren
@@ -141,7 +143,7 @@
 
 % =================================================================================
 
-%Warum geht title nicht?
+%Warum geht title/section nicht?
 \addsec{Vorbereitung}
 (Text, Bild des Modells)
 
@@ -210,10 +212,31 @@ Die Implementierung des Codes für die S-Function ist wie folgt:
 
 \lstinputlisting[style=Matlab_colored,caption={Code für das Matlab-Function-Block}, label={Code_Matlab_Function}]{Codes/sFunModell.m}
 
+\newpage
 
 
+\paragraph{Vergleich der Modellierungsmöglichkeiten}
+
+Die in den vorangegangen Abschnitten vorgestellten Modelle werden mit einem Anregungssignal \[ M(t)=0.1sin(t)\]  und der Anfangsbedingung $(\phi_1(t=0)=\phi_2(t=0)=0rad)$ simuliert. Dabei werden die Winkel $\phi_1$ und $\phi_2$ in Abhängigkeit vom Anregungssignal zum einen für eine Simulationsdauer von 10s und 2s dargestellt.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=1.2]{Bilder/V1_Modell_output_T10.eps}
+	\caption{Vergleich der Modellierungsmöglichkeiten bei einer Simulationsdauer von 10s}
+	\label{fig:Ergebnis_T10}
+\end{figure}
 
 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=1.2]{Bilder/V1_Modell_output_T2.eps}
+	\caption{Vergleich der Modellierungsmöglichkeiten bei einer Simulationsdauer von 2s}
+	\label{fig:Ergebnis_T2}
+\end{figure}
+
+Alle drei behandelten Modellierungsmöglichkeiten sind für die nichtlineare Modellierung geeignet. Bei gleicher Simulationseinstellung sind daher identische Ergebnisse zu erwarten. Wie die Abbildungen zeigen erfüllen die Ergebnisse diese Erwartung.
+
+Der Verlauf der Winkel in Abhängigkeit des Anregungssignals ist plausibel. Für den Winkel $phi_1$ ist ein ähnlicher Verlauf wie das Anregungsmoment, nur mit einer kleiner Verzögerung durch die Trägheitsmomente, zu erwarten, da das Anregungsmoment direkt auf die Drehachse in $phi_1$ wirkt und somit einen ähnlichen Verlauf erzwingt. Der Winkel $phi_2$ ist dagegen frei gelagert und ist nur durch ein Reibmoment  
 
 
 \end{document}
