@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.9)  12 JUN 2017 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.9)  13 JUN 2017 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1410,93 +1410,37 @@ File: Bilder/Fcn_Block_Simulink.JPG Graphic file (type jpg)
 
 <use Bilder/Fcn_Block_Simulink.JPG>
 Package pdftex.def Info: Bilder/Fcn_Block_Simulink.JPG used on input line 176.
-(pdftex.def)             Requested size: 442.20547pt x 254.302pt.
+(pdftex.def)             Requested size: 455.24411pt x 261.79745pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 181--186
 
  []
 
-[4 <./Bilder/Fcn_Block_Simulink.JPG>] [5]
-<Bilder/Matlab_Function_Block_Simulink.JPG, id=165, 1005.7575pt x 404.26031pt>
+[4 <./Bilder/Fcn_Block_Simulink.JPG>]
+<Bilder/Matlab_Function_Block_Simulink.JPG, id=160, 1005.7575pt x 404.26031pt>
 File: Bilder/Matlab_Function_Block_Simulink.JPG Graphic file (type jpg)
 
 <use Bilder/Matlab_Function_Block_Simulink.JPG>
 Package pdftex.def Info: Bilder/Matlab_Function_Block_Simulink.JPG used on inpu
 t line 193.
-(pdftex.def)             Requested size: 502.87752pt x 202.12965pt.
-
-Overfull \hbox (47.6334pt too wide) in paragraph at lines 193--194
- [][] 
- []
-
-(./Codes/Matlab_function.m [6 <./Bilder/Matlab_Function_Block_Simulink.JPG>])
-[7] <Bilder/S_Function_Block_Simulink.JPG, id=203, 867.24pt x 266.49562pt>
+(pdftex.def)             Requested size: 455.24411pt x 182.9826pt.
+ (./Codes/Matlab_function.m
+[5 <./Bilder/Matlab_Function_Block_Simulink.JPG>]) [6]
+<Bilder/S_Function_Block_Simulink.JPG, id=199, 867.24pt x 266.49562pt>
 File: Bilder/S_Function_Block_Simulink.JPG Graphic file (type jpg)
 
 <use Bilder/S_Function_Block_Simulink.JPG>
 Package pdftex.def Info: Bilder/S_Function_Block_Simulink.JPG used on input lin
 e 209.
-(pdftex.def)             Requested size: 433.61894pt x 133.24748pt.
- (./Codes/sFunModell.m
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 8--9
-[]\TS1/txtt/m/sl/11 ^^X[][][]^^Y 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 10--11
-[]\TS1/txtt/m/sl/11 ^^X[][][]^^Y 
- []
-
-[8 <./Bilder/S_Function_Block_Simulink.JPG>]
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 60--61
-[]\TS1/txtt/m/sl/11 ^^X[][][]^^Y 
- []
-
-
+(pdftex.def)             Requested size: 455.24411pt x 139.89195pt.
+ (./Codes/sFunModell.m [7 <./Bilder/S_Function_Block_Simulink.JPG>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 62--63
-[]\TS1/txtt/m/sl/11 ^^X[][][]^^Y 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 70--71
-[]\TS1/txtt/m/sl/11 ^^X[][][]^^Y 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 72--73
-[]\TS1/txtt/m/sl/11 ^^X[][][]^^Y 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 84--85
-[]\TS1/txtt/m/sl/11 ^^X[][][]^^Y 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 86--87
-[]\TS1/txtt/m/sl/11 ^^X[][][]^^Y 
- []
-
-
+ [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 125--126
-[]\TS1/txtt/m/sl/11 ^^X[][][]^^Y 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 127--128
-[]\TS1/txtt/m/sl/11 ^^X[][][]^^Y 
- []
-
-) [12]
+ [9])
+[10]
 Package epstopdf Info: Source file: <Bilder/V1_Modell_output_T10.eps>
 (epstopdf)                    date: 2017-06-12 12:21:24
 (epstopdf)                    size: 171409 bytes
@@ -1509,7 +1453,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
 
-<Bilder/V1_Modell_output_T10-eps-converted-to.pdf, id=360, 502.87875pt x 390.45
+<Bilder/V1_Modell_output_T10-eps-converted-to.pdf, id=350, 502.87875pt x 390.45
 876pt>
 File: Bilder/V1_Modell_output_T10-eps-converted-to.pdf Graphic file (type pdf)
  <use Bilder/V1_Modell_output_T10-eps-converted-to.pdf>
@@ -1528,16 +1472,16 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 234.
 Package epstopdf Info: Output file is already uptodate.
 
-<Bilder/V1_Modell_output_T2-eps-converted-to.pdf, id=361, 500.87125pt x 390.458
+<Bilder/V1_Modell_output_T2-eps-converted-to.pdf, id=351, 500.87125pt x 390.458
 76pt>
 File: Bilder/V1_Modell_output_T2-eps-converted-to.pdf Graphic file (type pdf)
  <use Bilder/V1_Modell_output_T2-eps-converted-to.pdf>
 Package pdftex.def Info: Bilder/V1_Modell_output_T2-eps-converted-to.pdf used o
 n input line 234.
 (pdftex.def)             Requested size: 455.24411pt x 354.90692pt.
- [13 <./Bilder/V1_Modell_output_T10-eps-converted-to.pdf>]
+ [11 <./Bilder/V1_Modell_output_T10-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
- [14 <./Bilder/V1_Modell_output_T2-eps-converted-to.pdf>]
+ [12 <./Bilder/V1_Modell_output_T2-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
  (./Versuch1_Bericht.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
@@ -1549,13 +1493,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
  ) 
 Here is how much of TeX's memory you used:
- 17825 strings out of 493029
- 272037 string characters out of 6136235
- 592358 words of memory out of 5000000
+ 17820 strings out of 493029
+ 271997 string characters out of 6136235
+ 574249 words of memory out of 5000000
  20621 multiletter control sequences out of 15000+600000
- 108384 words of font info for 88 fonts, out of 8000000 for 9000
+ 105789 words of font info for 85 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 70i,13n,108p,857b,2650s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,13n,108p,1094b,2650s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}{/usr/share/t
 exlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/sof
 tmake/charter/5chb8a.pfb></usr/share/texmf/fonts/type1/softmake/charter/5chr8a.
@@ -1566,15 +1510,14 @@ ts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /mathdesign/mdbch/md-chr7t.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/mathdesign/mdbch/md-chr7y.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/mathdesign/mdbch/md-chri7m.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
-s/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/txfonts/tcxbtt.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on Versuch1_Bericht.pdf (16 pages, 297490 bytes).
+blic/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfon
+ts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxbtt.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
+Output written on Versuch1_Bericht.pdf (14 pages, 293997 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 474 compressed objects within 5 object streams
- 283 named destinations out of 1000 (max. 500000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 464 compressed objects within 5 object streams
+ 281 named destinations out of 1000 (max. 500000)
  108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

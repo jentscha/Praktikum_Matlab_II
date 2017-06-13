@@ -81,7 +81,7 @@
 	postbreak = \textleftarrow,
 	numbers = left,
 	numberstyle = \tiny,
-	stepnumber = 5	
+	stepnumber = 5
 }
 
 
@@ -147,7 +147,7 @@
 \setcounter{chapter}{1}
 
 %Warum geht title/section nicht?
-\section{Doppelpendel-System}
+\section{Modellbildung}
 Im Praktikum Matlab/Simulink II werden weiterführende Konzepte der Regelungstechnik basierend auf einem Doppelpendel-System erarbeitet. In diesem Versuch geht es um die Modellierung des Doppelpendelsystems durch verschiedene Modellierungsmöglichkeiten.
 
 Der erarbeite Code für die symbolische Lösung der Bewegungsgleichungen für das Doppelpendel-System sieht wie folgt aus:
@@ -157,7 +157,7 @@ Der erarbeite Code für die symbolische Lösung der Bewegungsgleichungen für das D
 
 \newpage
 
-\section{Implementierung des Modells durch verschiedene Modellierungsmöglichkeiten}
+\section{Simulation}
 
 Das im vorherigen Kapitel dargestellte Modell wird mit folgenden drei Modellierungsmöglichkeiten implementiert:
 \begin{itemize}
@@ -173,7 +173,7 @@ Im folgenden Abschnitt wird für jede Implementierung das Simulink-Schaltbild mit
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.6]{Bilder/Fcn_Block_Simulink.JPG}
+	\includegraphics[width = \textwidth]{Bilder/Fcn_Block_Simulink.JPG}
 	\caption{Implementierung mit Fcn-Blöcken}
 	\label{fig:fcn}
 \end{figure}
@@ -184,13 +184,13 @@ $-(6*(4*Rp1*u(2)*l2 - 4*u(1)*l2 + 6*Rp2*u(2)*l1*cos(u(3) - u(4)) - 6*Rp2*u(5)*l1
 und für den \textbf{Fcn1} Block lautet die Funktion:\newline
 $(6*(4*Rp2*u(2)*l1*m1 - 6*u(1)*l2*m2*cos(u(3) -u(4)) + 12*Rp2*u(2)*l1*m2 - 4*Rp2*u(5)*l1*m1 - 12*Rp2*u(5)*l1*m2 + 6*u(2)^2*l1^2*l2*m2^2*sin(u(3) - u(4)) - 3*g*l1*l2*m2^2*sin(u(4)) + (3*u(5)^2*l1*l2^2*m2^2*sin(2*u(3) - 2*u(4)))/2 + 3*g*l1*l2*m2^2*sin(2*u(3) - u(4)) + 6*Rp1*u(2)*l2*m2*cos(u(3) - u(4)) + 2*u(2)^2*l1^2*l2*m1*m2*sin(u(3) - u(4)) - (g*l1*l2*m1*m2*sin(u(4)))/2 + (3*g*l1*l2*m1*m2*sin(2*u(3) - u(4)))/2))/(l1*l2^2*m2*(8*m1 + 15*m2 - 9*m2*cos(2*u(3) - 2*u(4))))$
 
-\newpage
+%\newpage
 
 \subsection{Matlab-Function-Block}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.50]{Bilder/Matlab_Function_Block_Simulink.JPG}
+	\includegraphics[width = \textwidth]{Bilder/Matlab_Function_Block_Simulink.JPG}
 	\caption{Implementierung mit einem Matlab-Function-Block}
 	\label{fig:matlabfcn}
 \end{figure}
@@ -206,7 +206,7 @@ Der Code des Matlab-Fcn-Blocks ist wie folgt:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.50]{Bilder/S_Function_Block_Simulink.JPG}
+	\includegraphics[width = \textwidth]{Bilder/S_Function_Block_Simulink.JPG}
 	\caption{Implementierung mit einem Matlab-Function-Block}
 	\label{fig:Sfcn}
 \end{figure}
@@ -218,7 +218,7 @@ Die Implementierung des Codes für die S-Function ist wie folgt:
 \newpage
 
 
-\subsection{Vergleich der Modellierungsmöglichkeiten}
+\section{Vergleich der Modellierungsmöglichkeiten}
 
 Die in den vorangegangen Abschnitten vorgestellten Modelle werden mit einem Anregungssignal \[ M(t)=0.1\,sin(t)\]  und der Anfangsbedingung $(\varphi_1(t=0)=\varphi_2(t=0)=0\,\textrm{rad})$ simuliert. Dabei werden die Winkel $\varphi_1$ und $\varphi_2$ in Abhängigkeit vom Anregungssignal zum einen für eine Simulationsdauer von 10s und 2s dargestellt.
 
@@ -238,7 +238,7 @@ Die in den vorangegangen Abschnitten vorgestellten Modelle werden mit einem Anre
 
 Alle drei behandelten Modellierungsmöglichkeiten sind für die nichtlineare Modellierung geeignet. Bei gleicher Simulationseinstellung sind daher identische Ergebnisse zu erwarten. Wie die Abbildungen zeigen, erfüllen die Ergebnisse diese Erwartung.
 
-Der Verlauf der Winkel in Abhängigkeit des Anregungssignals ist plausibel. Für den Winkel $\varphi_1$ ist ein ähnlicher Verlauf wie das Anregungsmoment, nur mit einer kleiner Verzögerung durch die Trägheitsmomente, zu erwarten, da das Anregungsmoment direkt auf die Drehachse in $\varphi_1$ wirkt und somit einen ähnlichen Verlauf erzwingt. Der Winkel $\varphi_2$ ist dagegen frei gelagert und ist nur durch ein Reibmoment begrenzt. Folglich ist anstatt eines zur Anregung synchronen Verlaufs ein frei schwingendes Verhalten zu erwarten. Das heißt, dass der zweite Pendel auch in entgegengesetzter Richtung schwingen kann. Dies ist in der Darstellung der Ergebnisse für eine Simulationsdauer von 2s besonders am Anfang zu erkennen. Durch die Trägheit schwingt der zweite Pendel anfänglich in die negative $\varphi_2$-Richtung. 
+Der Verlauf der Winkel in Abhängigkeit des Anregungssignals ist plausibel. Für den Winkel $\varphi_1$ ist ein ähnlicher Verlauf wie das Anregungsmoment, nur mit einer kleiner Verzögerung durch die Trägheitsmomente, zu erwarten, da das Anregungsmoment direkt auf die Drehachse in $\varphi_1$ wirkt und somit einen ähnlichen Verlauf erzwingt. Der Winkel $\varphi_2$ ist dagegen frei gelagert und ist nur durch ein Reibmoment begrenzt. Folglich ist anstatt eines zur Anregung synchronen Verlaufs ein frei schwingendes Verhalten zu erwarten. Das heißt, dass der zweite Pendel auch in entgegengesetzter Richtung schwingen kann. Dies ist in der Darstellung der Ergebnisse für eine Simulationsdauer von 2s besonders am Anfang zu erkennen. Durch die Trägheit schwingt der zweite Pendel anfänglich in die negative $\varphi_2$-Richtung. Des weiteren sind beide Winkelverläufe nicht perfekt sinusförmig, sondern leicht wellig. Dies ist darauf zurückzuführen, dass das freie schwingen des zweiten Pendels Kräfte auf das erste Pendel aufprägt und damit den sinusverlauf stört. 
 
 %Die Dämpfung, die durch die Reibmomente hervorgerufen wird, ist aus den Grafen nicht ersichtlich.
 
