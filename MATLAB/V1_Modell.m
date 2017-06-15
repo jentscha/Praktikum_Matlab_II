@@ -2,7 +2,7 @@ clear all
 clc
 %% Variablen
 % Parameter
-syms m1 l_1 J1 m2 l_2 J2 Rp1 Rp2 g t positive;
+syms m1 l1 J1 m2 l2 J2 Rp1 Rp2 g t positive;
 
 % Koordinaten
 % syms x1 dx1 ddx1 y1 dy1 ddy1 phi1 dphi1 ddphi1...
@@ -13,8 +13,8 @@ syms phi1 dphi1 ddphi1 phi2 dphi2 ddphi2 real;
 syms M MR1 MR2 real;
 
 %% Werte einsetzen
-l_1 = subs(l_1, 0.2);
-l_2 = subs(l_2, 0.2);
+l1 = subs(l1, 0.2);
+l2 = subs(l2, 0.2);
 g = subs(g, 9.81);
 m1 = subs(m1, 0.3);
 m2 = subs(m2, 0.3);
@@ -28,26 +28,26 @@ MR1 = Rp1 * dphi1;
 MR2 = Rp2 * (dphi2 - dphi1);
 
 % Trägheintsmomente
-J1 = 1 / 12 * m1 * l_1^2;
-J2 = 1 / 12 * m2 * l_2^2;
+J1 = 1 / 12 * m1 * l1^2;
+J2 = 1 / 12 * m2 * l2^2;
 
 % Pendelkoordinaten
-x1 = l_1 / 2 * sin(phi1);
-dx1 = l_1 / 2 * dphi1 * cos(phi1);
-%ddx1 = l_1 / 2 * (ddphi1 * cos(phi1) - dphi1^2 * sin(phi1));
+x1 = l1 / 2 * sin(phi1);
+dx1 = l1 / 2 * dphi1 * cos(phi1);
+%ddx1 = l1 / 2 * (ddphi1 * cos(phi1) - dphi1^2 * sin(phi1));
 
-y1 = -l_1 / 2 * cos(phi1);
-dy1 = l_1 / 2 * dphi1 * sin(phi1);
-%ddy1 = l_1 / 2 * (ddphi1 * sin(phi1) + dphi1^2 * cos(phi1));
+y1 = -l1 / 2 * cos(phi1);
+dy1 = l1 / 2 * dphi1 * sin(phi1);
+%ddy1 = l1 / 2 * (ddphi1 * sin(phi1) + dphi1^2 * cos(phi1));
 
-x2 =  x1 + l_2 / 2 * sin(phi2);
-dx2 = dx1 + l_2 / 2 * dphi2 * cos(phi2);
-%ddx2 = ddx1 + l_2 / 2 * ((ddphi1 + ddphi2) * cos(phi1 + phi2) -...
+x2 =  x1 + l2 / 2 * sin(phi2);
+dx2 = dx1 + l2 / 2 * dphi2 * cos(phi2);
+%ddx2 = ddx1 + l2 / 2 * ((ddphi1 + ddphi2) * cos(phi1 + phi2) -...
 %                                    (dphi1 + dphi2)^2 * sin(phi1 + phi2));
 
-y2 = y1 - l_2 / 2 * cos(phi2);
-dy2 = dy1 + l_2 / 2 * dphi2 * sin(phi2);
-%ddy2 = 2* ddy1 + l_2 / 2 * ((ddphi1 + ddphi2) * sin(phi1 + phi2) +...
+y2 = y1 - l2 / 2 * cos(phi2);
+dy2 = dy1 + l2 / 2 * dphi2 * sin(phi2);
+%ddy2 = 2* ddy1 + l2 / 2 * ((ddphi1 + ddphi2) * sin(phi1 + phi2) +...
 %                                    (dphi1 + dphi2)^2 * cos(phi1 + phi2));
                                 
 %% Mechanik
@@ -56,8 +56,8 @@ T = 1/2 * m1 * (dx1^2 + dy1^2) + 1/2 * J1 * dphi1^2 +...
     1/2 * m2 * (dx2^2 + dy2^2) + 1/2 * J2 * dphi2^2;
 
 U = g * (m1 * y1 + m2 * y2);
-% U = -m1 * g * l_1 / 2 * cos(phi1) -...
-%      m2 * g * (l_1 * cos(phi1) + l_2 / 2  * cos(phi1 + phi2));
+% U = -m1 * g * l1 / 2 * cos(phi1) -...
+%      m2 * g * (l1 * cos(phi1) + l2 / 2  * cos(phi1 + phi2));
 
 %Generalisierte Kräfte
 
