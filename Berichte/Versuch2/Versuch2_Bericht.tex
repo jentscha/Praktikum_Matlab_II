@@ -135,8 +135,22 @@ die folgenden Systemmatrizen:
 \textbf{B}_{\textrm{AP}_1} &= \begin{bmatrix} 0& 0 & 0 & 0 \end{bmatrix}\\
 \end{align*}
 \section{Vergleich der Linearisierten Modelle}
+Die Eigenwerte der Zustandsraummodelle um die drei Arbeitspunkte lauten wie folgt:
+\begin{align*}
+	\mathbf{\lambda}_1 &= \\ 
+\end{align*}
 
 \section{Normalformen des Zustandsraummodelles}
-
+\lstinputlisting[style=Matlab_colored,caption={Code der Diagonalisierungsfunktion}, label={Code_diagonalForm}]{Codes/diagonalForm.m}
 \section{Untersuchung von Steuerbarkeit und Beobachtbarkeit}
+\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Kalman}, label={Code_diagonalForm}]{Codes/checkCtrbKalman.m}
+\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Kalman}, label={Code_diagonalForm}]{Codes/checkObsvKalman.m}
+
+Vergleich mit ctrb und obsv
+
+\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Gilbert}, label={Code_diagonalForm}]{Codes/checkCtrbGilbert.m}
+\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Gilbert}, label={Code_diagonalForm}]{Codes/checkObsvGilbert.m}
+
+\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Hautus}, label={Code_diagonalForm}]{Codes/checkCtrbKalman.m}
+\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Hautus}, label={Code_diagonalForm}]{Codes/checkObsvKalman.m}
 \end{document}
