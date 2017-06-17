@@ -1,0 +1,14 @@
+function [ isCtrb_Gilbert ] = checkCtrbGilbert( A, B )
+%CHECKCTRBGILBERT Summary of this function goes here
+%   Detailed explanation goes here
+[T, 
+
+isCtrb = all(any(Bd,2));
+
+if isCtrb
+    disp('System ist steuerbar nach Gilbert');
+else
+    disp('System ist NICHT steuerbar nach Gilbert');
+end
+end
+
