@@ -11,5 +11,6 @@ if (rank(A)==n)
 else
     disp('Matrix A hat nicht vollen Rang')
 end
+
 end
 
