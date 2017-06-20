@@ -26,6 +26,7 @@ sys2_canon = canon(sys2);
 sys1 = ss(A1, B1, C1, D1);
 sys1_canon = canon(sys1);
 
+<<<<<<< HEAD
 %% Kalman AP1, AP2, AP3
 checkCtrbKalman(A1,B1)
 ctrb(A1,B1)
@@ -61,6 +62,11 @@ checkCtrbHautus(A2D,B2D);
 checkObsvHautus(A2D,B2D);
 checkCtrbHautus(A3D,B3D);
 checkObsvHautus(A3D,B3D);
+=======
+%% 
+checkCtrbKalman(A1,B1);
+ctrb(A1,B1);
+>>>>>>> 38b7d0387000b3368fdeffdc189b3b80731375e2
 
 
 

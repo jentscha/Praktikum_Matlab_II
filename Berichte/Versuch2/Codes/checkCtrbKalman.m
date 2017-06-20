@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function checkCtrbKalman(A,B)
  
 %Berechnung der Anzahl der Zustände
@@ -16,8 +17,20 @@ disp(S_s_Kalman)
 %Überprüfung der Steuerbarkeit nach KALMAN
 if (rank(S_s_Kalman)==n)
     disp('steuerbar');
+=======
+function [ S_s_Kalman] = checkCtrbKalman( A, B )
+
+n = length(A);
+
+if (rank(A)==n)
+    
+>>>>>>> 38b7d0387000b3368fdeffdc189b3b80731375e2
 else
     disp('nicht steuerbar');
+end
+S_s_Kalman = B;
+for count = 1:n-1
+    S_s_Kalman = [S_s_Kalman, A^count *B ];
 end
 end
 
