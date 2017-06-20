@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  12 JUN 2017 12:32
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.9)  13 JUN 2017 10:48
->>>>>>> 8092183157bb621af65bb11050f6eb73dbc623f4
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  20 JUN 2017 02:08
 entering extended mode
-**Versuch1_Bericht.tex
+**Versuch2_Bericht.tex
 
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch1\Versuch1_Bericht.tex"
+Berichte\Versuch2\Versuch2_Bericht.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -687,7 +683,7 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch1\common/includes.tex"
+Berichte\Versuch2\common/includes.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.sty"
 Package: t1enc 1994/06/01 Standard LaTeX package
 )
@@ -1114,11 +1110,11 @@ File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
 \BKM@id=\count158
 ))
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch1\common/setup.tex"
+Berichte\Versuch2\common/setup.tex"
 \longtablewidth=\skip118
 )
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch1\common/commonmacros.tex"
+Berichte\Versuch2\common/commonmacros.tex"
 \c@theorem=\count159
 \c@definition=\count160
 \c@examplenumber=\count161
@@ -1128,9 +1124,27 @@ ang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ))
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch1\Versuch1_Bericht.aux"
+Berichte\Versuch2\Versuch2_Bericht.aux"
 
-LaTeX Warning: Label `Code_Matlab_Function' multiply defined.
+LaTeX Warning: Label `Code_Linearisierung' multiply defined.
+
+
+LaTeX Warning: Label `Code_diagonalForm' multiply defined.
+
+
+LaTeX Warning: Label `Code_diagonalForm' multiply defined.
+
+
+LaTeX Warning: Label `Code_diagonalForm' multiply defined.
+
+
+LaTeX Warning: Label `Code_diagonalForm' multiply defined.
+
+
+LaTeX Warning: Label `Code_diagonalForm' multiply defined.
+
+
+LaTeX Warning: Label `Code_diagonalForm' multiply defined.
 
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
@@ -1409,15 +1423,10 @@ Non-PDF special ignored!
 Non-PDF special ignored!{C:/Users/Ali Kerem Sacakli/AppData/Local/MiKTeX/2.9/pd
 ftex/config/pdftex.map} <C:/Program Files/tuddesign/tex/latex/tuddesign/logo/tu
 d_logo.pdf> <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum
-_Matlab_II/Berichte/Versuch1/common/rtm_mit_schrift.pdf>] [0
+_Matlab_II/Berichte/Versuch2/common/rtm_mit_schrift.pdf>] [0
 
 ]
-Overfull \hbox (4.75331pt too wide) in paragraph at lines 153--154
-[]\T1/5ch/m/n/11 Der er-ar-beite Code für die sym-bol-is-che Lö-sung der Be-we-
-gungs-gle-ichun-gen für das Doppelpendel-
- []
-
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 155.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 119.
 
 
 ("C:\Users\Ali Kerem Sacakli\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\t1txt
@@ -1425,7 +1434,7 @@ t.fd"
 File: t1txtt.fd 2000/12/15 v3.1
 )
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch1\Codes/V1_Modell.m"
+Berichte\Versuch2\Codes/nonlinear_model.m"
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <11> not available
 (Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1.
 LaTeX Font Info:    Try loading font information for TS1+txtt on input line 1.
@@ -1436,301 +1445,496 @@ File: ts1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `TS1/txtt/b/n' in size <11> not available
 (Font)              Font shape `TS1/txtt/bx/n' tried instead on input line 1.
+) [1
+
+]
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/linearisierung.m")
+LaTeX Font Info:    Try loading font information for TS1+5ch on input line 139.
+
+
+("C:\Program Files\tuddesign\tex\latex\tex-tudfonts\softmake\charter\ts15ch.fd"
+File: ts15ch.fd 2008/06/23 Fontinst v1.927 font definitions for TS1/5ch.
+) [2]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 143.
+
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 11.04007pt on input line 143.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 7.68005pt on input line 143.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 6.62404pt on input line 143.
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 150.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 157.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 162.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 175.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 182.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 189.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 194.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 208.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 215.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 222.
+
+
+Underfull \vbox (badness 8189) has occurred while \output is active []
+
+ [3]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 227.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 249.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--252
+
+ []
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 255.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 261.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--264
+
+ []
+
+[4]
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/diagonalForm.m")
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 277.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 284.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 291.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 296.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 305.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 312.
+
+[5]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 319.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 324.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 338.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 345.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 352.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 357.
+
+
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkCtrbKalman.m"
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <11> not available
 (Font)              Font shape `T1/txtt/m/sl' tried instead on input line 3.
 LaTeX Font Info:    Font shape `TS1/txtt/m/it' in size <11> not available
 (Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 3.
- [1
-
-]
+ [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2])
-[3]
-Overfull \hbox (13.6522pt too wide) in paragraph at lines 162--163
-\T1/5ch/m/n/11 Das im vorheri-gen Kapi-tel dargestellte Mod-ell wird mit fol-ge
-n-den drei Mod-el-lierungsmöglichkeiten
- []
-
-LaTeX Font Info:    Try loading font information for TS1+5ch on input line 164.
-
-("C:\Program Files\tuddesign\tex\latex\tex-tudfonts\softmake\charter\ts15ch.fd"
-File: ts15ch.fd 2008/06/23 Fontinst v1.927 font definitions for TS1/5ch.
-) <Bilder/Fcn_Block_Simulink.JPG, id=144, 737.00343pt x 423.83344pt>
-File: Bilder/Fcn_Block_Simulink.JPG Graphic file (type jpg)
-
-<use Bilder/Fcn_Block_Simulink.JPG>
-Package pdftex.def Info: Bilder/Fcn_Block_Simulink.JPG used on input line 176.
-(pdftex.def)             Requested size: 455.24411pt x 261.79745pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--186
-
- []
-
-<<<<<<< HEAD
-[4 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_I
-I/Berichte/Versuch1/Bilder/Fcn_Block_Simulink.JPG>] [5]
-<Bilder/Matlab_Function_Block_Simulink.JPG, id=163, 1005.7575pt x 404.26031pt>
-=======
-[4 <./Bilder/Fcn_Block_Simulink.JPG>]
-<Bilder/Matlab_Function_Block_Simulink.JPG, id=160, 1005.7575pt x 404.26031pt>
->>>>>>> 8092183157bb621af65bb11050f6eb73dbc623f4
-File: Bilder/Matlab_Function_Block_Simulink.JPG Graphic file (type jpg)
-
-<use Bilder/Matlab_Function_Block_Simulink.JPG>
-Package pdftex.def Info: Bilder/Matlab_Function_Block_Simulink.JPG used on inpu
-t line 193.
-<<<<<<< HEAD
-(pdftex.def)             Requested size: 502.87752pt x 202.12965pt.
-
-Overfull \hbox (47.6334pt too wide) in paragraph at lines 193--194
- [][] 
- []
-
-
+ [7])
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch1\Codes/Matlab_function.m" [6 <C:/Users/Ali Kerem Sacakli/Deskt
-op/TU Darmstadt/Matlab 2/Praktikum_Matlab_II/Berichte/Versuch1/Bilder/Matlab_Fu
-nction_Block_Simulink.JPG>]) [7]
-<Bilder/S_Function_Block_Simulink.JPG, id=201, 867.24pt x 266.49562pt>
-=======
-(pdftex.def)             Requested size: 455.24411pt x 182.9826pt.
- (./Codes/Matlab_function.m
-[5 <./Bilder/Matlab_Function_Block_Simulink.JPG>]) [6]
-<Bilder/S_Function_Block_Simulink.JPG, id=199, 867.24pt x 266.49562pt>
->>>>>>> 8092183157bb621af65bb11050f6eb73dbc623f4
-File: Bilder/S_Function_Block_Simulink.JPG Graphic file (type jpg)
-
-<use Bilder/S_Function_Block_Simulink.JPG>
-Package pdftex.def Info: Bilder/S_Function_Block_Simulink.JPG used on input lin
-e 209.
-<<<<<<< HEAD
-(pdftex.def)             Requested size: 433.61894pt x 133.24748pt.
-
+Berichte\Versuch2\Codes/checkObsvKalman.m")
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch1\Codes/sFunModell.m"
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 8--9
-[]\TS1/txtt/m/sl/11 [][][] 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 10--11
-[]\TS1/txtt/m/sl/11 [][][] 
- []
-
-[8 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_I
-I/Berichte/Versuch1/Bilder/S_Function_Block_Simulink.JPG>]
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 60--61
-[]\TS1/txtt/m/sl/11 [][][] 
- []
-
-
+Berichte\Versuch2\Codes/KalmanErgebnisse.m" [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 62--63
-[]\TS1/txtt/m/sl/11 [][][] 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 70--71
-[]\TS1/txtt/m/sl/11 [][][] 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 72--73
-[]\TS1/txtt/m/sl/11 [][][] 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 84--85
-[]\TS1/txtt/m/sl/11 [][][] 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 86--87
-[]\TS1/txtt/m/sl/11 [][][] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
+ [10])
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkCtrbGilbert.m") [11]
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkObsvGilbert.m")
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkCtrbKalman.m" [12])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 125--126
-[]\TS1/txtt/m/sl/11 [][][] 
- []
-
-
-Overfull \hbox (67.76877pt too wide) in paragraph at lines 127--128
-[]\TS1/txtt/m/sl/11 [][][] 
- []
-
-) [12]
-Package epstopdf Info: Source file: <Bilder/V1_Modell_output_T10.eps>
-(epstopdf)                    date: 2017-06-11 17:28:53
-(epstopdf)                    size: 185801 bytes
-(epstopdf)             Output file: <Bilder/V1_Modell_output_T10-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2017-06-11 17:29:41
-(epstopdf)                    size: 26455 bytes
-(epstopdf)             Command: <epstopdf --outfile=Bilder/V1_Modell_output_T10
--eps-converted-to.pdf Bilder/V1_Modell_output_T10.eps>
-(epstopdf)             \includegraphics on input line 227.
-Package epstopdf Info: Output file is already uptodate.
-
-<Bilder/V1_Modell_output_T10-eps-converted-to.pdf, id=356, 372.39125pt x 312.16
-624pt>
-=======
-(pdftex.def)             Requested size: 455.24411pt x 139.89195pt.
- (./Codes/sFunModell.m [7 <./Bilder/S_Function_Block_Simulink.JPG>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9])
-[10]
-Package epstopdf Info: Source file: <Bilder/V1_Modell_output_T10.eps>
-(epstopdf)                    date: 2017-06-12 12:21:24
-(epstopdf)                    size: 171409 bytes
-(epstopdf)             Output file: <Bilder/V1_Modell_output_T10-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2017-06-12 12:28:05
-(epstopdf)                    size: 28089 bytes
-(epstopdf)             Command: <repstopdf --outfile=Bilder/V1_Modell_output_T1
-0-eps-converted-to.pdf Bilder/V1_Modell_output_T10.eps>
-(epstopdf)             \includegraphics on input line 227.
-Package epstopdf Info: Output file is already uptodate.
-
-<Bilder/V1_Modell_output_T10-eps-converted-to.pdf, id=350, 502.87875pt x 390.45
-876pt>
->>>>>>> 8092183157bb621af65bb11050f6eb73dbc623f4
-File: Bilder/V1_Modell_output_T10-eps-converted-to.pdf Graphic file (type pdf)
- <use Bilder/V1_Modell_output_T10-eps-converted-to.pdf>
-Package pdftex.def Info: Bilder/V1_Modell_output_T10-eps-converted-to.pdf used 
-on input line 227.
-(pdftex.def)             Requested size: 455.24411pt x 353.47107pt.
-Package epstopdf Info: Source file: <Bilder/V1_Modell_output_T2.eps>
-<<<<<<< HEAD
-(epstopdf)                    date: 2017-06-11 17:23:50
-(epstopdf)                    size: 59807 bytes
-(epstopdf)             Output file: <Bilder/V1_Modell_output_T2-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2017-06-11 17:26:02
-(epstopdf)                    size: 8570 bytes
-(epstopdf)             Command: <epstopdf --outfile=Bilder/V1_Modell_output_T2-
-eps-converted-to.pdf Bilder/V1_Modell_output_T2.eps>
-(epstopdf)             \includegraphics on input line 234.
-Package epstopdf Info: Output file is already uptodate.
-
-<Bilder/V1_Modell_output_T2-eps-converted-to.pdf, id=357, 370.38374pt x 312.166
-24pt>
-=======
-(epstopdf)                    date: 2017-06-12 12:20:39
-(epstopdf)                    size: 137025 bytes
-(epstopdf)             Output file: <Bilder/V1_Modell_output_T2-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2017-06-12 12:28:06
-(epstopdf)                    size: 14376 bytes
-(epstopdf)             Command: <repstopdf --outfile=Bilder/V1_Modell_output_T2
--eps-converted-to.pdf Bilder/V1_Modell_output_T2.eps>
-(epstopdf)             \includegraphics on input line 234.
-Package epstopdf Info: Output file is already uptodate.
-
-<Bilder/V1_Modell_output_T2-eps-converted-to.pdf, id=351, 500.87125pt x 390.458
-76pt>
->>>>>>> 8092183157bb621af65bb11050f6eb73dbc623f4
-File: Bilder/V1_Modell_output_T2-eps-converted-to.pdf Graphic file (type pdf)
- <use Bilder/V1_Modell_output_T2-eps-converted-to.pdf>
-Package pdftex.def Info: Bilder/V1_Modell_output_T2-eps-converted-to.pdf used o
-n input line 234.
-<<<<<<< HEAD
-(pdftex.def)             Requested size: 444.45825pt x 374.59761pt.
- [13 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab
-_II/Berichte/Versuch1/Bilder/V1_Modell_output_T10-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
- [14 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab
-_II/Berichte/Versuch1/Bilder/V1_Modell_output_T2-eps-converted-to.pdf>]
-=======
-(pdftex.def)             Requested size: 455.24411pt x 354.90692pt.
- [11 <./Bilder/V1_Modell_output_T10-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
- [12 <./Bilder/V1_Modell_output_T2-eps-converted-to.pdf>]
->>>>>>> 8092183157bb621af65bb11050f6eb73dbc623f4
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+ [13]
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkObsvKalman.m")
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
 
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch1\Versuch1_Bericht.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 246.
+Berichte\Versuch2\Versuch2_Bericht.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 384.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 384.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 17605 strings out of 493921
- 273482 string characters out of 3147247
- 578863 words of memory out of 3000000
- 20167 multiletter control sequences out of 15000+200000
- 108384 words of font info for 88 fonts, out of 3000000 for 9000
+ 17684 strings out of 493921
+ 275717 string characters out of 3147247
+ 506744 words of memory out of 3000000
+ 20130 multiletter control sequences out of 15000+200000
+ 109515 words of font info for 101 fonts, out of 3000000 for 9000
  847 hyphenation exceptions out of 8191
- 70i,13n,108p,857b,2634s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,13n,108p,364b,2063s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}{C:/Progra
 m Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/tuddesign/
 fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files/tuddesign/fonts/type1
 /softmake/charter/5chr8a.pfb><C:/Program Files/tuddesign/fonts/type1/softmake/f
 rontpage/5fpm8a.pfb><C:/Program Files/tuddesign/fonts/type1/softmake/frontpage/
 5fpr8a.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/b
-itstrea/charter/bchr8a.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2
-.9/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Users/Ali Kerem Sacakli/AppData
-/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7t.pfb><C:/Users/Ali Ker
-em Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb
-><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/
-mdbch/md-chri7m.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/font
-s/type1/public/txfonts/rtcxr.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/Mi
-KTeX/2.9/fonts/type1/public/txfonts/t1xbtt.pfb><C:/Users/Ali Kerem Sacakli/AppD
-ata/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/Ali Kerem
- Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Us
-ers/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/tcx
-btt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/publ
-ic/txfonts/tcxtt.pfb>
-Output written on Versuch1_Bericht.pdf (16 pages, 340233 bytes).
+itstrea/charter/bchb8a.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2
+.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/Ali Kerem Sacakli/AppData/
+Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Users/Ali Kerem
+ Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7t.pfb><
+C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/md
+bch/md-chr7v.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/t
+ype1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/
+MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Ali Kerem Sacak
+li/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/Al
+i Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xbtt.pf
+b><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txf
+onts/t1xtt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/typ
+e1/public/txfonts/t1xtt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/
+2.9/fonts/type1/public/txfonts/tcxtt.pfb>
+Output written on Versuch2_Bericht.pdf (16 pages, 221963 bytes).
 PDF statistics:
- 503 PDF objects out of 1000 (max. 8388607)
- 283 named destinations out of 1000 (max. 500000)
-=======
- 17820 strings out of 493029
- 271997 string characters out of 6136235
- 574249 words of memory out of 5000000
- 20621 multiletter control sequences out of 15000+600000
- 105789 words of font info for 85 fonts, out of 8000000 for 9000
- 1147 hyphenation exceptions out of 8191
- 70i,13n,108p,1094b,2650s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}{/usr/share/t
-exlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/sof
-tmake/charter/5chb8a.pfb></usr/share/texmf/fonts/type1/softmake/charter/5chr8a.
-pfb></usr/share/texmf/fonts/type1/softmake/frontpage/5fpm8a.pfb></usr/share/tex
-mf/fonts/type1/softmake/frontpage/5fpr8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/bitstrea/charter/bchri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/mathdesign/mdbch/md-chr7t.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/mathdesign/mdbch/md-chr7y.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/mathdesign/mdbch/md-chri7m.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfon
-ts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxbtt.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on Versuch1_Bericht.pdf (14 pages, 293997 bytes).
-PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 464 compressed objects within 5 object streams
- 281 named destinations out of 1000 (max. 500000)
->>>>>>> 8092183157bb621af65bb11050f6eb73dbc623f4
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 604 PDF objects out of 1000 (max. 8388607)
+ 378 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 
