@@ -131,26 +131,73 @@ ergibt für die allgmeine Zustandsraumdarstellung:
 \end{align*}
 die folgenden Systemmatrizen:
 \begin{align*}
-\textbf{A}_{\textrm{AP}_1} &= \begin{bmatrix} 0& 0 & 0& 0 \end{bmatrix}&
-\textbf{B}_{\textrm{AP}_1} &= \begin{bmatrix} 0& 0 & 0 & 0 \end{bmatrix}\\
+\textbf{A}_{\textrm{AP}1} &= \begin{bmatrix} 0& 1 & 0& 0\\ -126,1286& 0 & 63,0643 & 0\\ 0&0&0&1\\189,1929&0&168,1714&0 \end{bmatrix}&
+\textbf{B}_{\textrm{AP}1} &= \begin{bmatrix} 0\\142,8571\\0\\-214,2857\end{bmatrix}\\
+\textbf{C}_{\textrm{AP}1} &= \begin{bmatrix} 1&0&0&0\\0&0&1&0\end{bmatrix}&
+\textbf{D}_{\textrm{AP}1} &= \begin{bmatrix} 0\\0\end{bmatrix}\\
+\\
+\textbf{A}_{\textrm{AP}2} &= \begin{bmatrix} 0& 1 & 0& 0\\ 126,1286& 0 & -63,0643 & 0\\ 0&0&0&1\\-189,1929&0&168,1714&0 \end{bmatrix}&
+\textbf{B}_{\textrm{AP}2} &= \begin{bmatrix} 0\\142,8571\\0\\-214,2857\end{bmatrix}\\
+\textbf{C}_{\textrm{AP}2} &= \begin{bmatrix} 1&0&0&0\\0&0&1&0\end{bmatrix}&
+\textbf{D}_{\textrm{AP}2} &= \begin{bmatrix} 0\\0\end{bmatrix}\\
+\\
+\textbf{A}_{\textrm{AP}3} &= \begin{bmatrix} 0& 1 & 0& 0\\ 0& 0 & 0 & 0\\ 0&0&0&1\\0&0&73,5750&0 \end{bmatrix}&
+\textbf{B}_{\textrm{AP}3} &= \begin{bmatrix} 0\\62,5\\0\\0\end{bmatrix}\\
+\textbf{C}_{\textrm{AP}3} &= \begin{bmatrix} 1&0&0&0\\0&0&1&0\end{bmatrix}&
+\textbf{D}_{\textrm{AP}3} &= \begin{bmatrix} 0\\0\end{bmatrix}
 \end{align*}
 \section{Vergleich der Linearisierten Modelle}
 Die Eigenwerte der Zustandsraummodelle um die drei Arbeitspunkte lauten wie folgt:
 \begin{align*}
-	\mathbf{\lambda}_1 &= \\ 
+	\mathbf{\lambda}_1 &= \begin{bmatrix}16,0744i\\-16,0744i\\5,9929i\\-5,9929i\end{bmatrix}\\
+	\mathbf{\lambda}_2 &= \begin{bmatrix}-16,0744\\16,0744\\-5,9929\\5,9929\end{bmatrix}\\
+	\mathbf{\lambda}_3 &= \begin{bmatrix}8,5776\\-8,5776\\0\\0\end{bmatrix}
 \end{align*}
+
+System 1 ist ungedämpft schwingungsfähig und grenzstabil. System 2 ist instabil. System 3 ist instabil.
 
 \section{Normalformen des Zustandsraummodelles}
 \lstinputlisting[style=Matlab_colored,caption={Code der Diagonalisierungsfunktion}, label={Code_diagonalForm}]{Codes/diagonalForm.m}
+
+Die Transformation des um AP2 linearisierten Systems in die Diagonalform mit der Funktion in \autoref{Code_diagonalForm} ergibt folgende Systemmatritzen:
+\begin{align*}
+\textbf{A}_{\textrm{D}} &= \begin{bmatrix} -16,0744& 0 & 0& 0\\ 0& 16,0744 & 0 & 0\\ 0&0&-5,9929&0\\0&0&&5,9929\end{bmatrix}&
+\textbf{B}_{\textrm{D}} &= \begin{bmatrix} 138,1293\\138,1293\\-21,3960\\21,3960\end{bmatrix}\\
+\textbf{C}_{\textrm{D}} &= \begin{bmatrix} -0,0267&0,0267&0,0943&0,0943\\0,0560&-0,0560&0,1349&0,1349\end{bmatrix}&
+\mathbf{D}_{\mathrm{D}} &= \begin{bmatrix} 0\\0\end{bmatrix}
+\end{align*}
+
+Die Transormation des selben Systems mit der MATLAB Funktion \lstinline[style=Matlab_colored]|canon| ergibt folgende Systemmmatritzen:
+\begin{align*}
+\textbf{A}_{\textrm{D}} &= \begin{bmatrix} -16,0744& 0 & 0& 0\\ 0& -5,9929 & 0 & 0\\ 0&0&16,0744&0\\0&0&&5,9929\end{bmatrix}&
+\textbf{B}_{\textrm{D}} &= \begin{bmatrix} 2,5354\\-0,7024\\2,5354\\0,7024\end{bmatrix}\\
+\textbf{C}_{\textrm{D}} &= \begin{bmatrix} -1,4559&2,8726&1,4559&2,8726\\3,0534&4,1093&-3,0534&4,1093\end{bmatrix}&
+\mathbf{D}_{\mathrm{D}} &= \begin{bmatrix} 0\\0\end{bmatrix}
+\end{align*}
+
+Die beiden Transformierten Systeme unterscheiden sich in der Sortierung der Eigenwerte in der $\mathbf{A}$ matrix, sowie in den Werten der $\mathbf{B}$ und $\mathbf{C}$ Matritzen. Dies ist durch eine unterschiedliche Sortierung der 
+
+Die Transformation des um AP1 linearisierten Systems mit der MATLAB Funktion \lstinline[style=Matlab_colored]|canon| ergibt folgende Systemmmatritzen:
+\begin{align*}
+\textbf{A}_{\textrm{D}} &= \begin{bmatrix} 0& 16,0744 & 0& 0\\ -16,0744& 0 & 0 & 0\\ 0&0&&5,9929\\0&0&-5,9929&0\end{bmatrix}&
+\textbf{B}_{\textrm{D}} &= \begin{bmatrix} 5,3736\\0\\0\\-2,1428\end{bmatrix}\\
+\textbf{C}_{\textrm{D}} &= \begin{bmatrix} 0&-1,3739&-1,8832&0\\0&2,8813&-2,6939&0\end{bmatrix}&
+\mathbf{D}_{\mathrm{D}} &= \begin{bmatrix} 0\\0\end{bmatrix}
+\end{align*}
+
 \section{Untersuchung von Steuerbarkeit und Beobachtbarkeit}
-\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Kalman}, label={Code_diagonalForm}]{Codes/checkCtrbKalman.m}
-\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Kalman}, label={Code_diagonalForm}]{Codes/checkObsvKalman.m}
+\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Kalman}, label={Code_ctrbKalman}]{Codes/checkCtrbKalman.m}
+\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Kalman}, label={Code_obsvKalman}]{Codes/checkObsvKalman.m}
 
-Vergleich mit ctrb und obsv
+Die MATLAB Funktionen \lstinline[style=Matlab_colored]|ctrb| und \lstinline[style=Matlab_colored]|obsv| ergeben die selben Steuerbar- beziehungsweise Beobachtbarkeitsmatritzen
+\begin{align*}
+\mathbf{S}_\mathrm{S\,AP1} &= 10000 \cdot \begin{bmatrix}0&0,0143&0&-3,1532\\0,0143&0&-3,1532&0\\0&-0,0214&0&6,3064\\-0,0214&0&6,3064&0\end{bmatrix}\\
+\mathbf{S}_\mathrm{B\,AP1} &= \begin{bmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\\-126,1286&0&63,0643&0\\189,1929&0&-168,1714&0\\0&-126,1286&0&63,0643\\0&189,1929&0&-168,1714\end{bmatrix}
+\end{align*}
+wie die selbst geschriebenen Funktionen \lstinline[style=Matlab_colored]|checkCtrbKalman| in \autoref{Code_ctrbKalman} und \lstinline[style=Matlab_colored]|checkObsvKalman| in \autoref{Code_obsvKalman}. Dies gilt für alle Arbeitspunkte
+\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Gilbert}, label={Code_ctrbGilbert}]{Codes/checkCtrbGilbert.m}
+\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Gilbert}, label={Code_obsvGilbert}]{Codes/checkObsvGilbert.m}
 
-\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Gilbert}, label={Code_diagonalForm}]{Codes/checkCtrbGilbert.m}
-\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Gilbert}, label={Code_diagonalForm}]{Codes/checkObsvGilbert.m}
-
-\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Hautus}, label={Code_diagonalForm}]{Codes/checkCtrbKalman.m}
-\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Hautus}, label={Code_diagonalForm}]{Codes/checkObsvKalman.m}
+\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Hautus}, label={Code_ctrbHautus}]{Codes/checkCtrbHautus.m}
+\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Hautus}, label={Code_obsvHautus}]{Codes/checkObsvHautus.m}
 \end{document}

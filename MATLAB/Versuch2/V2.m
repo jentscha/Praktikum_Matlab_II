@@ -24,6 +24,7 @@ sys2_canon = canon(sys2);
 sys1 = ss(A1, B1, C1, D1);
 sys1_canon = canon(sys1);
 
+%% 
 checkCtrbKalman(A1,B1);
 ctrb(A1,B1);
 
