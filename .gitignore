@@ -1,2 +1,6 @@
 /MATLAB/finish.m
 /MATLAB/pathModifiers.mat
+
+.aux
+.log
+.synctex.gz
