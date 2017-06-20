@@ -237,6 +237,7 @@ die folgenden Systemmatrizen:
 
 \paragraph{Was bedeutet es physikalisch, wenn $M_{AP}$ ungleich null ist?}
  (TEXT)
+ Das bedeutet dass der jeweilige Arbeitspunkt keine Ruhelage ist und somit der Doppelpendel von der Gravitation beschleunigt wird. Daraus kann man schlussfolgern, dass $M_{AP}$ ungleich null ist, um den Doppelpendel beim jeweiligen Arbeitspunkt zu halten.(?!)
 
 
 \section{Vergleich der linearisierten Modelle}
@@ -264,6 +265,15 @@ Die Eigenwerte der Zustandsraummodelle um die drei Arbeitspunkte lauten wie folg
 	
 	\paragraph{Welche Unterschiede zwischen den Eigenwerte der Zustandsraummodelle liegen vor und worauf sind diese zurückzuführen? Können Sie sich vorstellen, was sich ändern würde, wenn die Reibung berücksichtigt wäre?}
 	(TEXT)
+	lam1: ungedämpfte Eigenwerte auf Imaginärachse--> System grenzstabil, Dauerschwingungen, schwingungsfähiges Systemwegen komplexen Werten. Grund: Reibung vernachlässigt, was eigtl unrealistisch ist. Mit Reibung: zwei komplexkonjugierte Eigenwerte mit Realteil --> gedämpfte Schwingung
+	
+	lam2:pos. Eigenwerte --> instabiles System. Mit Reibung: schnellere Konvergenz?
+	
+	lam3: ein pos. Eigenwert mach System instabil. Zurückzuführen auf zweiten Pendel(!?). Zwei Eigenwerte bei 0 (Ursache?) Mit Reibung: schnellere Konvergenz, ...(!?)
+	
+	
+	
+	
 
 \section{Normalformen des Zustandsraummodelles}
 Es soll eine Funktion \verb| [AD,BD,CD,DD]=diagonalForm(A,B,C,D)| implementiert werden, die ein gegebenes System in Diagonalform transformiert.
@@ -330,6 +340,10 @@ Die Diagonalisierung mittels der Funktion \verb|canon| führt zu folgendem Ergebn
 
 \paragraph{Welche Unterschiede sind zu erkennen? Wie lassen sie sich erklären?}
 (TEXT)
+Der minimale Unterschied zwischen dem Ergebnissen der Funktion \verb|diagonalForm| und \verb|canon| ist wohl auf eine andere Implikation der Besitmmung der Transformationsmatrix in der Funktion canon zurückzuführen. Die Transformationsmatrix T kann auf unterschiedliche Art und Weise implementiert werden, sodass minimale Unterschiede normal sind.
+
+Die Ergebnis der Funktion \verb|diagonalForm| hat vernachlässigbar kleine Werte ergeben, die hier zwecks Übersichtlichkeit/ Einfachheit vernachlässigt worden sind. Diese kleinen Werte sind auf Ungenauigkeiten durch die numerische Berechnung zurückzuführen.
+
 
 Als nächstes soll das System im ersten Arbeitspunkt auf Modalform transformiert werden. Das in Modalform transormierte System im ersten Arbeitspunkt sieht wie folgt aus:
 
@@ -371,11 +385,20 @@ Die Überprüfungsverfahren nach Kalman:
 \lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Kalman}, label={Code_diagonalForm}]{Codes/checkCtrbKalman.m}
 \lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Kalman}, label={Code_diagonalForm}]{Codes/checkObsvKalman.m}
 
-Vergleich mit ctrb und obsv
+Im folgenden Listing sind die Vergleiche zwischen den Ergebnissen der selbsterstellten Funktionen mit den Ergebnissen der Funktionen ctrb und obsv:
+
+\lstinputlisting[style=Matlab_colored,caption={Vergleich zwischen den Ergebnisse der Kalman-Verfahere und den Überprüfungen mit ctrb und obsv}, label={Code_KalmanErgebnisse}]{Codes/KalmanErgebnisse.m}
+
 
 \lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Gilbert}, label={Code_diagonalForm}]{Codes/checkCtrbGilbert.m}
 \lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Gilbert}, label={Code_diagonalForm}]{Codes/checkObsvGilbert.m}
 
 \lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Hautus}, label={Code_diagonalForm}]{Codes/checkCtrbKalman.m}
 \lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Hautus}, label={Code_diagonalForm}]{Codes/checkObsvKalman.m}
+
+\paragraph{Welche Aussagen lasse sich über das System machen? Worauf ist das zurückzuführen? Können Sie sich vorstellen, wie sich die Steuerbarkeit und Beobachtbarkeit ändern würden, wenn die Reibung berücksichtigt wird?}
+(TEXT)
+Alle Überprüfungsverfahren führen zum selben Ergebnis--> Alle Methoden funktionieren. AP1 und AP2 steuer- und beobachtbar. AP3 beobachtbar, jedoch nicht steuerbar.
+Mit Reibung: schnellere Konvergenz--> schnellere Regelung. Sonst kein Effekt auf Steuer-/Beobachtbarkeit. (!Evtl.: Reibung--> Änderung der Eigenwerte --> Änderung des Systems--> Rangabfall in den Steuer-/Beobachtbarkeitsmatrizen)
+System im dritten Arbeitspunkt nicht steuerbar, da mit erstem Pendel es nicht möglich ist den zweiten Pendel auf pi zu bringen.
 \end{document}
