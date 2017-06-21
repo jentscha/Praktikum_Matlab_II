@@ -102,8 +102,39 @@
 \setcounter{chapter}{3}
 
 %Warum geht title/section nicht?
-\section{LQ-Regelung}
+\section{LQ-Regelung Funktion}
+Es soll eine Funktion erstellt werden die über die Eingaben von \verb|A, B, Q, R| die Reglermatrix \verb|K| und die Pole des geschlossenen Kreises zurückgibt.
 
+\lstinputlisting[style=Matlab_colored,caption={Funktion für den LQR-Entwurf}, label={berechneLQR}]{Codes/berechneLQR.m}
+
+\newpage
+
+\section{Simulink-Implementierung der Regelung }
+Es ist ein Datensatz des Doppelpendels und eine S-Function, die das nichtlineare Modell beschreibt, vorgegeben. Darauf aufbauend soll eine Regelung in Simulink implementiert werden.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width = \textwidth]{Bilder/LQR_Simulink.JPG}
+	\caption{Implementierung mit Fcn-Blöcken}
+	\label{fig:fcn}
+\end{figure}
+\newpage
+
+\section{Funktion runPendel}
+
+Die Funktion  \verb|runPendel| soll über die Eingabe der Pendeldaten, der Reglermatrix und der Anfangswerte des Systems den Verlauf der Zustandsgrößen mit dem dazugehörigen Zeitvektor zurückgeben.
+
+\lstinputlisting[style=Matlab_colored,caption={Funktion runPendel}, label={runPendel}]{Codes/runPendel.m}
+
+\newpage
+
+\section{Animation des Pendels}
+
+Für die Animation des Pendels soll eine Funktion \verb|animierePendel| implementiert und anschließend mit Simulationsergebnissen getestet werden.
+
+Der Code der Funktion sieht wie folgt aus:
+
+\lstinputlisting[style=Matlab_colored,caption={Funktion animierePendel}, label={animierePendel}]{Codes/animierePendel.m}
 
 
 
