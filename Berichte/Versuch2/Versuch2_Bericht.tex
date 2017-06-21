@@ -103,7 +103,7 @@
 
 %Warum geht title/section nicht?
 \section{Linearisierung}
-Im folgenden Abschnitt wird die Funktion zur Linearisierung des Doppelpendel-Systems um einen Arbeitspunkt, sowie ihre Rückgabewerte an bestimmten Arbeitspunkten dokumentiert. Die Implementierung der Funktion ist in \autoref{Code_Linearisierung} aufgeführt.
+Im folgenden Abschnitt wird die Funktion zur Linearisierung des Doppelpendel-Systems um einen Arbeitspunkt, sowie ihre Rückgabewerte an bestimmten Arbeitspunkten dokumentiert. Unter Vorgabe der Funktionen \verb|f, h| und des Arbeitspunktes \verb|AP| sollen die Matrizen der linearisierten Gleichungen in Zustandsraumdarstellung ausgegeben werden. Die Implementierung der Funktion ist in \autoref{Code_Linearisierung} aufgeführt.
 
 Bevor das System linearisiert wird sind zwei Fragen zu klären:
 \begin{enumerate}
@@ -113,12 +113,9 @@ Bevor das System linearisiert wird sind zwei Fragen zu klären:
 Die Antworten lauten wie folgt:
 \begin{enumerate}
 	\item Es ist nur sinnvoll das System in Arbeitspunkten zu linearisieren, in denen es sowohl vollständig beobachtbar, als auch steuerbar ist.
-	\item Bei der Größe $M_{\textrm{AP}}$ handelt es sich um den statischen Wert der Stellgröße $M$ im Arbeitspunkt. Ist diese ungleich null muss der Motor das Moment $M_{\textrm{}}$ 
+	\item Bei der Größe $M_{\textrm{AP}}$ handelt es sich um den statischen Wert der Stellgröße $M$ im Arbeitspunkt. Ist diese ungleich null muss der Motor das Moment $M_{\textrm{}}$ aufbringe, um die Schwerkraft auszugleichen.
 \end{enumerate}
 
-In dieser Aufgabe soll eine Funktion \verb|[A,B,C,D]=linearisierung(f,h,AP)| implementiert werden. Unter Vorgabe der Funktionen \verb|f, h| und des Arbeitspunktes \verb|AP| sollen die Matrizen der linearisierten Gleichungen in Zustandsraumdarstellung ausgegeben werden.
-
-\lstinputlisting[style=Matlab_colored,caption={Das vorgegebene nichtlineare Modell}, label={Code_Linearisierung}]{Codes/nonlinear_model.m}
 \lstinputlisting[style=Matlab_colored,caption={Code der Linearisierungsfunktion}, label={Code_Linearisierung}]{Codes/linearisierung.m}
 
 Die Linearisierung um die Arbeitspunkte
@@ -127,166 +124,25 @@ Die Linearisierung um die Arbeitspunkte
 	\textbf{x}_{\textrm{AP}_2} &= \begin{bmatrix} \pi & 0 & \pi & 0\end{bmatrix}\\
 	\textbf{x}_{\textrm{AP}_3} &= \begin{bmatrix} \pi/2 & 0 & \pi & 0 \end{bmatrix}
 \end{align*}
-ergibt für die allgemeine Zustandsraumdarstellung:
+ergibt für die allgmeine Zustandsraumdarstellung:
 \begin{align*}
 	\textbf{\.{x}} &= \textbf{Ax + Bu}\\
 	\textbf{y} &= \textbf{Cx + Du}
 \end{align*}
 die folgenden Systemmatrizen:
-<<<<<<< HEAD
-
-
-\begin{itemize}
-	\item $\vec{x}_{AP1}$=$\begin{pmatrix}
-	0&0&0&0
-	\end{pmatrix}$
-	\begin{itemize}
-		\item $\bf{A_{AP1}}= \begin{pmatrix}
-		0&1&0&0\\
-		-126,1286&0&63,0643&0\\
-		0&0&0&1\\
-		189,1929&0&-168,1714&0
-		\end{pmatrix}$
-		
-		\item $\bf{B_{AP1}}= \begin{pmatrix}
-		0\\
-		142,8571\\
-		0\\
-		-214,2857
-		\end{pmatrix}$
-		
-		\item $\bf{C_{AP1}}= \begin{pmatrix}
-		1&0&0&0\\
-		0&0&1&0
-		\end{pmatrix}$
-		
-		\item $\bf{D_{AP1}}= \begin{pmatrix}
-		0\\
-		0
-		\end{pmatrix}$
-		
-	\end{itemize}
-	
-	
-	\item $\vec{x}_{AP2}$=$\begin{pmatrix}
-	\pi&0&\pi&0
-	\end{pmatrix}$
-	
-	\begin{itemize}
-		\item $\bf{A_{AP2}}= \begin{pmatrix}
-		0&1&0&0\\
-		126.1286&0&-63,0643&0\\
-		0&0&0&1\\
-		-189,1929&0&168,1714&0
-		\end{pmatrix}$
-		
-		\item $\bf{B_{AP2}}= \begin{pmatrix}
-		0\\
-		142,8571\\
-		0\\
-		-214,2857
-		\end{pmatrix}$
-		
-		\item $\bf{C_{AP2}}= \begin{pmatrix}
-		1&0&0&0\\
-		0&0&1&0
-		\end{pmatrix}$
-		
-		\item $\bf{D_{AP2}}= \begin{pmatrix}
-		0\\
-		0
-		\end{pmatrix}$
-		
-	\end{itemize}
-	
-	
-	
-	\item $\vec{x}_{AP3}$=$\begin{pmatrix}
-	\pi/2&0&\pi&0
-	\end{pmatrix}$
-	
-	\begin{itemize}
-		\item $\bf{A_{AP3}}= \begin{pmatrix}
-		0&1&0&0\\
-		0&0&0&0\\
-		0&0&0&1\\
-		0&0&73,575&0
-		\end{pmatrix}$
-		
-		\item $\bf{B_{AP3}}= \begin{pmatrix}
-		0\\
-		62,5\\
-		0\\
-		0
-		\end{pmatrix}$
-		
-		\item $\bf{C_{AP3}}= \begin{pmatrix}
-		1&0&0&0\\
-		0&0&1&0
-		\end{pmatrix}$
-		
-		\item $\bf{D_{AP3}}= \begin{pmatrix}
-		0\\
-		0
-		\end{pmatrix}$
-		
-	\end{itemize}
-	
-	
-\end{itemize}
-
-
-\paragraph{Was bedeutet es physikalisch, wenn $M_{AP}$ ungleich null ist?}
- (TEXT)
- Das bedeutet dass der jeweilige Arbeitspunkt keine Ruhelage ist und somit der Doppelpendel von der Gravitation beschleunigt wird. Daraus kann man schlussfolgern, dass $M_{AP}$ ungleich null ist, um den Doppelpendel beim jeweiligen Arbeitspunkt zu halten.(?!)
-
-
-\section{Vergleich der linearisierten Modelle}
-Die Eigenwerte der Zustandsraummodelle um die drei Arbeitspunkte lauten wie folgt:
-
-	%align hatte hier einen Fehler verursacht
-	$\vec{x}_{AP1}$=$\begin{pmatrix}
-	0&0&0&0 \end{pmatrix}$:
-	 \newline
-	$\bf{\lambda_1}=\begin{pmatrix}
-	16,0744i\\-16,0744i\\5,9929i\\-5,9929i
-	\end{pmatrix}$ \newline
-	
-	$\vec{x}_{AP2}$=$\begin{pmatrix}
-	\pi&0&\pi&0 \end{pmatrix}$: \newline
-	$\bf{\lambda_2}=\begin{pmatrix}
-	-16,0744\\16,0744\\5,9929\\-5,9929
-	\end{pmatrix}$
-	
-	
-	$\vec{x}_{AP_3}$=$\begin{pmatrix}\pi/2&0&\pi&0 \end{pmatrix}$: \newline
-	$\bf{\lambda_3}=\begin{pmatrix}
-	-8,5776\\8,5776\\0\\0
-	\end{pmatrix}$	\\
-	
-	\paragraph{Welche Unterschiede zwischen den Eigenwerte der Zustandsraummodelle liegen vor und worauf sind diese zurückzuführen? Können Sie sich vorstellen, was sich ändern würde, wenn die Reibung berücksichtigt wäre?}
-	(TEXT)
-	lam1: ungedämpfte Eigenwerte auf Imaginärachse--> System grenzstabil, Dauerschwingungen, schwingungsfähiges Systemwegen komplexen Werten. Grund: Reibung vernachlässigt, was eigtl unrealistisch ist. Mit Reibung: zwei komplexkonjugierte Eigenwerte mit Realteil --> gedämpfte Schwingung
-	
-	lam2:pos. Eigenwerte --> instabiles System. Mit Reibung: schnellere Konvergenz?
-	
-	lam3: ein pos. Eigenwert mach System instabil. Zurückzuführen auf zweiten Pendel(!?). Zwei Eigenwerte bei 0 (Ursache?) Mit Reibung: schnellere Konvergenz, ...(!?)
-	
-	
-	
-	
-=======
 \begin{align*}
 \textbf{A}_{\textrm{AP}1} &= \begin{bmatrix} 0& 1 & 0& 0\\ -126,1286& 0 & 63,0643 & 0\\ 0&0&0&1\\189,1929&0&168,1714&0 \end{bmatrix}&
 \textbf{B}_{\textrm{AP}1} &= \begin{bmatrix} 0\\142,8571\\0\\-214,2857\end{bmatrix}\\
 \textbf{C}_{\textrm{AP}1} &= \begin{bmatrix} 1&0&0&0\\0&0&1&0\end{bmatrix}&
 \textbf{D}_{\textrm{AP}1} &= \begin{bmatrix} 0\\0\end{bmatrix}\\
-\\
+\end{align*}
+\begin{align*}
 \textbf{A}_{\textrm{AP}2} &= \begin{bmatrix} 0& 1 & 0& 0\\ 126,1286& 0 & -63,0643 & 0\\ 0&0&0&1\\-189,1929&0&168,1714&0 \end{bmatrix}&
 \textbf{B}_{\textrm{AP}2} &= \begin{bmatrix} 0\\142,8571\\0\\-214,2857\end{bmatrix}\\
 \textbf{C}_{\textrm{AP}2} &= \begin{bmatrix} 1&0&0&0\\0&0&1&0\end{bmatrix}&
 \textbf{D}_{\textrm{AP}2} &= \begin{bmatrix} 0\\0\end{bmatrix}\\
-\\
+\end{align*}
+\begin{align*}
 \textbf{A}_{\textrm{AP}3} &= \begin{bmatrix} 0& 1 & 0& 0\\ 0& 0 & 0 & 0\\ 0&0&0&1\\0&0&73,5750&0 \end{bmatrix}&
 \textbf{B}_{\textrm{AP}3} &= \begin{bmatrix} 0\\62,5\\0\\0\end{bmatrix}\\
 \textbf{C}_{\textrm{AP}3} &= \begin{bmatrix} 1&0&0&0\\0&0&1&0\end{bmatrix}&
@@ -299,128 +155,27 @@ Die Eigenwerte der Zustandsraummodelle um die drei Arbeitspunkte lauten wie folg
 	\mathbf{\lambda}_2 &= \begin{bmatrix}-16,0744\\16,0744\\-5,9929\\5,9929\end{bmatrix}\\
 	\mathbf{\lambda}_3 &= \begin{bmatrix}8,5776\\-8,5776\\0\\0\end{bmatrix}
 \end{align*}
->>>>>>> 38b7d0387000b3368fdeffdc189b3b80731375e2
 
-System 1 ist ungedämpft schwingungsfähig und grenzstabil. System 2 ist instabil. System 3 ist instabil.
+Eine Betrachtung der Eigenwerte ergibt:
+\paragraph{System in Arbeitspunkt 1}
+Das System ist ungedämpft, schwingungsfähig und grenzstabil, da es nur komplexe Eigenwerte auf der imaginären Achse aufweist. Wird die Reibung berücksichtigt erlangen die Eigenwerte einen negativen Realteil und sind somit sowohl gedämpft, als auch stabil.
+\paragraph{System in Arbeitspunkt 2}
+Das System ist aufgrund zweier Pole rechts der Imaginären Achse instabil.
+\paragraph{System in Arbeitspunkt 3}
+Das System ist aufgrund des Pols rechts der Imaginären Achse Instabil.
+
+%lam1: ungedämpfte Eigenwerte auf Imaginärachse--> System grenzstabil, Dauerschwingungen, schwingungsfähiges Systemwegen komplexen Werten. Grund: Reibung vernachlässigt, was eigtl unrealistisch ist. Mit Reibung: zwei komplexkonjugierte Eigenwerte mit Realteil --> gedämpfte Schwingung
+%
+%lam2:pos. Eigenwerte --> instabiles System. Mit Reibung: schnellere Konvergenz?
+%
+%lam3: ein pos. Eigenwert mach System instabil. Zurückzuführen auf zweiten Pendel(!?). Zwei Eigenwerte bei 0 (Ursache?) Mit Reibung: schnellere Konvergenz, ...(!?)
 
 \section{Normalformen des Zustandsraummodelles}
-Es soll eine Funktion \verb| [AD,BD,CD,DD]=diagonalForm(A,B,C,D)| implementiert werden, die ein gegebenes System in Diagonalform transformiert.
+Es soll eine Funktion \verb|diagonalForm| implementiert werden, die ein gegebenes System in Diagonalform transformiert, der entsprechende code ist in \autoref{Code_diagonalForm} aufgeführt.
+
 \lstinputlisting[style=Matlab_colored,caption={Code der Diagonalisierungsfunktion}, label={Code_diagonalForm}]{Codes/diagonalForm.m}
-<<<<<<< HEAD
 
-Zusätzlich soll das System im zweiten Arbeitspunkt anhand dieser Funktion und mit der Funktion \verb|canon| auf Diagonalform transformiert werden.
-
-Die Ergebnisse der Funktion \verb|diagonalForm| sind hier wie folgt:
-
-\begin{itemize}
-	\item $\bf{A2D}= \begin{pmatrix}
-	-16,0744&0&0&0\\
-	0&16,0744&0&0\\
-	0&0&-5,9929&0\\
-	0&0&0&5,9929
-	\end{pmatrix}$
-	
-	\item $\bf{B_{AP3}}= \begin{pmatrix}
-	138,1293\\
-	138,1293\\
-	-21,3960\\
-	21,3960
-	\end{pmatrix}$
-	
-	\item $\bf{C_{AP3}}= \begin{pmatrix}
-	-0,0267&0,0267&0,0943&0,0943\\
-	0,0560&-0,0560&0,1349&0,1349
-	\end{pmatrix}$
-	
-	\item $\bf{D_{AP3}}= \begin{pmatrix}
-	0\\
-	0
-	\end{pmatrix}$
-\end{itemize}	
-	
-Die Diagonalisierung mittels der Funktion \verb|canon| führt zu folgendem Ergebnis:
-
-\begin{itemize}	
-	\item $\bf{A2D}= \begin{pmatrix}
-	-16,07&0&0&0\\
-	0&-5,993&0&0\\
-	0&0&16,07&0\\
-	0&0&0&5,993
-	\end{pmatrix}$
-	
-	\item $\bf{B2D}= \begin{pmatrix}
-	2,535\\
-	-0,7024\\
-	2,535\\
-	0,7024
-	\end{pmatrix}$
-	
-	\item $\bf{C2D}= \begin{pmatrix}
-	-1,456&2,873&1,456&2,873\\
-	3,053&4,109&-3,053&4,109
-	\end{pmatrix}$
-	
-	\item $\bf{D2D}= \begin{pmatrix}
-	0\\
-	0
-	\end{pmatrix}$	
-	
-\end{itemize}
-
-\paragraph{Welche Unterschiede sind zu erkennen? Wie lassen sie sich erklären?}
-(TEXT)
-Der minimale Unterschied zwischen dem Ergebnissen der Funktion \verb|diagonalForm| und \verb|canon| ist wohl auf eine andere Implikation der Besitmmung der Transformationsmatrix in der Funktion canon zurückzuführen. Die Transformationsmatrix T kann auf unterschiedliche Art und Weise implementiert werden, sodass minimale Unterschiede normal sind.
-
-Die Ergebnis der Funktion \verb|diagonalForm| hat vernachlässigbar kleine Werte ergeben, die hier zwecks Übersichtlichkeit/ Einfachheit vernachlässigt worden sind. Diese kleinen Werte sind auf Ungenauigkeiten durch die numerische Berechnung zurückzuführen.
-
-
-Als nächstes soll das System im ersten Arbeitspunkt auf Modalform transformiert werden. Das in Modalform transormierte System im ersten Arbeitspunkt sieht wie folgt aus:
-
-%gaanz kleine Zahlen gebe ich im Folgenden als Null an
-\begin{itemize}	
-	\item $\bf{A2D}= \begin{pmatrix}
-	0&16,07&0&0\\
-	-16,07&0&0&0\\
-	0&0&0&5,993\\
-	0&0&-5,993&0
-	\end{pmatrix}$
-	
-	\item $\bf{B2D}= \begin{pmatrix}
-	5,374\\
-	0\\
-	0\\
-	-2,143
-	\end{pmatrix}$
-	
-	\item $\bf{C2D}= \begin{pmatrix}
-	0&-1,374&-1,883&0\\
-	0&2,881&-2,694&0
-	\end{pmatrix}$
-	
-	\item $\bf{D2D}= \begin{pmatrix}
-	0\\
-	0
-	\end{pmatrix}$	
-	
-\end{itemize}
-
-
-
-
-\section{Untersuchung von Steuerbarkeit und Beobachtbarkeit}
-Hier sollen die im Skript vorgestellten Überprüfungsverfahren unter Verwendung der im Rahmen des Versuchs erstellten Funktionen implementiert werden. Die Funktionen für die Überprüfungsverfahren sollen möglichst allgemein verwendbar sein.
-
-Die Überprüfungsverfahren nach Kalman:
-\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Kalman}, label={Code_diagonalForm}]{Codes/checkCtrbKalman.m}
-\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Kalman}, label={Code_diagonalForm}]{Codes/checkObsvKalman.m}
-
-Im folgenden Listing sind die Vergleiche zwischen den Ergebnissen der selbsterstellten Funktionen mit den Ergebnissen der Funktionen ctrb und obsv:
-
-\lstinputlisting[style=Matlab_colored,caption={Vergleich zwischen den Ergebnisse der Kalman-Verfahere und den Überprüfungen mit ctrb und obsv}, label={Code_KalmanErgebnisse}]{Codes/KalmanErgebnisse.m}
-
-=======
-
-Die Transformation des um AP2 linearisierten Systems in die Diagonalform mit der Funktion in \autoref{Code_diagonalForm} ergibt folgende Systemmatritzen:
+Die Transformation des um AP2 linearisierten Systems in die Diagonalform mittels der Funktion \verb|diagonalForm| ergibt folgende Systemmatritzen:
 \begin{align*}
 \textbf{A}_{\textrm{D}} &= \begin{bmatrix} -16,0744& 0 & 0& 0\\ 0& 16,0744 & 0 & 0\\ 0&0&-5,9929&0\\0&0&&5,9929\end{bmatrix}&
 \textbf{B}_{\textrm{D}} &= \begin{bmatrix} 138,1293\\138,1293\\-21,3960\\21,3960\end{bmatrix}\\
@@ -428,7 +183,7 @@ Die Transformation des um AP2 linearisierten Systems in die Diagonalform mit der
 \mathbf{D}_{\mathrm{D}} &= \begin{bmatrix} 0\\0\end{bmatrix}
 \end{align*}
 
-Die Transormation des selben Systems mit der MATLAB Funktion \lstinline[style=Matlab_colored]|canon| ergibt folgende Systemmmatritzen:
+Die Transormation des selben Systems mit der MATLAB Funktion \verb|canon| ergibt folgende Systemmmatritzen:
 \begin{align*}
 \textbf{A}_{\textrm{D}} &= \begin{bmatrix} -16,0744& 0 & 0& 0\\ 0& -5,9929 & 0 & 0\\ 0&0&16,0744&0\\0&0&&5,9929\end{bmatrix}&
 \textbf{B}_{\textrm{D}} &= \begin{bmatrix} 2,5354\\-0,7024\\2,5354\\0,7024\end{bmatrix}\\
@@ -436,10 +191,10 @@ Die Transormation des selben Systems mit der MATLAB Funktion \lstinline[style=Ma
 \mathbf{D}_{\mathrm{D}} &= \begin{bmatrix} 0\\0\end{bmatrix}
 \end{align*}
 
-Die beiden Transformierten Systeme unterscheiden sich in der Sortierung der Eigenwerte in der $\mathbf{A}$ matrix, sowie in den Werten der $\mathbf{B}$ und $\mathbf{C}$ Matritzen. Dies ist durch eine unterschiedliche Sortierung der 
->>>>>>> 38b7d0387000b3368fdeffdc189b3b80731375e2
+Die beiden Transformierten Systeme unterscheiden sich in der Sortierung der Eigenwerte in der $\mathbf{A}$ matrix, sowie in den Werten der $\mathbf{B}$ und $\mathbf{C}$ Matritzen. Dies ist durch eine unterschiedliche Sortierung der Eigenvektoren in der Transformationsmatrix $\mathbf{T}$ die zur Ähnlichkeitstransformation der Systemmatritzen genutzt wird zurückzuführen.
 
-Die Transformation des um AP1 linearisierten Systems mit der MATLAB Funktion \lstinline[style=Matlab_colored]|canon| ergibt folgende Systemmmatritzen:
+
+Die Transformation des um AP1 linearisierten Systems mit der MATLAB Funktion \verb|canon| ergibt folgende Systemmmatritzen in Modalform:
 \begin{align*}
 \textbf{A}_{\textrm{D}} &= \begin{bmatrix} 0& 16,0744 & 0& 0\\ -16,0744& 0 & 0 & 0\\ 0&0&&5,9929\\0&0&-5,9929&0\end{bmatrix}&
 \textbf{B}_{\textrm{D}} &= \begin{bmatrix} 5,3736\\0\\0\\-2,1428\end{bmatrix}\\
@@ -448,29 +203,36 @@ Die Transformation des um AP1 linearisierten Systems mit der MATLAB Funktion \ls
 \end{align*}
 
 \section{Untersuchung von Steuerbarkeit und Beobachtbarkeit}
+Hier sollen die im Skript vorgestellten Überprüfungsverfahren unter Verwendung der im Rahmen des Versuchs erstellten Funktionen implementiert werden. Die Funktionen für die Überprüfungsverfahren sollen möglichst allgemein verwendbar sein. Die Überprüfungsverfahren sind in \autoref{Code_ctrbKalman} bis \ref{Code_obsvHautus} aufgeführt
 \lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Kalman}, label={Code_ctrbKalman}]{Codes/checkCtrbKalman.m}
 \lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Kalman}, label={Code_obsvKalman}]{Codes/checkObsvKalman.m}
 
-Die MATLAB Funktionen \lstinline[style=Matlab_colored]|ctrb| und \lstinline[style=Matlab_colored]|obsv| ergeben die selben Steuerbar- beziehungsweise Beobachtbarkeitsmatritzen
+Die MATLAB Funktionen \verb|ctrb| und \verb|obsv| ergeben die selben Steuerbar- beziehungsweise Beobachtbarkeitsmatritzen
 \begin{align*}
 \mathbf{S}_\mathrm{S\,AP1} &= 10000 \cdot \begin{bmatrix}0&0,0143&0&-3,1532\\0,0143&0&-3,1532&0\\0&-0,0214&0&6,3064\\-0,0214&0&6,3064&0\end{bmatrix}\\
 \mathbf{S}_\mathrm{B\,AP1} &= \begin{bmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\\-126,1286&0&63,0643&0\\189,1929&0&-168,1714&0\\0&-126,1286&0&63,0643\\0&189,1929&0&-168,1714\end{bmatrix}
 \end{align*}
-wie die selbst geschriebenen Funktionen \lstinline[style=Matlab_colored]|checkCtrbKalman| in \autoref{Code_ctrbKalman} und \lstinline[style=Matlab_colored]|checkObsvKalman| in \autoref{Code_obsvKalman}. Dies gilt für alle Arbeitspunkte
+wie die selbst geschriebenen Funktionen \verb|checkCtrbKalman| in \autoref{Code_ctrbKalman} und \verb|checkObsvKalman| in \autoref{Code_obsvKalman}. Dies gilt für alle Arbeitspunkte
 \lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Gilbert}, label={Code_ctrbGilbert}]{Codes/checkCtrbGilbert.m}
 \lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Gilbert}, label={Code_obsvGilbert}]{Codes/checkObsvGilbert.m}
 
-<<<<<<< HEAD
-\lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Hautus}, label={Code_diagonalForm}]{Codes/checkCtrbKalman.m}
-\lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Hautus}, label={Code_diagonalForm}]{Codes/checkObsvKalman.m}
-
-\paragraph{Welche Aussagen lasse sich über das System machen? Worauf ist das zurückzuführen? Können Sie sich vorstellen, wie sich die Steuerbarkeit und Beobachtbarkeit ändern würden, wenn die Reibung berücksichtigt wird?}
-(TEXT)
-Alle Überprüfungsverfahren führen zum selben Ergebnis--> Alle Methoden funktionieren. AP1 und AP2 steuer- und beobachtbar. AP3 beobachtbar, jedoch nicht steuerbar.
-Mit Reibung: schnellere Konvergenz--> schnellere Regelung. Sonst kein Effekt auf Steuer-/Beobachtbarkeit. (!Evtl.: Reibung--> Änderung der Eigenwerte --> Änderung des Systems--> Rangabfall in den Steuer-/Beobachtbarkeitsmatrizen)
-System im dritten Arbeitspunkt nicht steuerbar, da mit erstem Pendel es nicht möglich ist den zweiten Pendel auf pi zu bringen.
-=======
 \lstinputlisting[style=Matlab_colored,caption={Code der Steuerbarkeitsfunktion nach Hautus}, label={Code_ctrbHautus}]{Codes/checkCtrbHautus.m}
 \lstinputlisting[style=Matlab_colored,caption={Code der Beobachtbarbarkeitsfunktion nach Hautus}, label={Code_obsvHautus}]{Codes/checkObsvHautus.m}
->>>>>>> 38b7d0387000b3368fdeffdc189b3b80731375e2
+
+Nach Anwendung aller kriterien lassen sich folgende Aussagen über die Systeme in den drei Arbeitspunkten machen:
+
+\paragraph{System in Arbeitspunkt 1}
+Das System ist vollständig steuer- und beobachtbar nach allen kriterien. Berücksichtigung der Reichbung ändert hieran nichts.
+\paragraph{System in Arbeitspunkt 2}
+Das System ist vollständig steuer- und beobachtbar nach allen kriterien. Berücksichtigung der Reichbung ändert hieran nichts.
+\paragraph{System in Arbeitspunkt 3}
+Das System ist nicht diagonalisierbar, daher sind Gilberts Kriterien nicht anwendbar. Das System ist sowohl nach Kalman, als auch nach Hautus vollständig beobachtbar. Es ist weder nach Kalman, noch nach Hautus steuerbar.  
+
+
+%\paragraph{Welche Aussagen lasse sich über das System machen? Worauf ist das zurückzuführen? Können Sie sich vorstellen, wie sich die Steuerbarkeit und Beobachtbarkeit ändern würden, wenn die Reibung berücksichtigt wird?}
+%(TEXT)
+%Alle Überprüfungsverfahren führen zum selben Ergebnis--> Alle Methoden funktionieren. AP1 und AP2 steuer- und beobachtbar. AP3 beobachtbar, jedoch nicht steuerbar.
+%Mit Reibung: schnellere Konvergenz--> schnellere Regelung. Sonst kein Effekt auf Steuer-/Beobachtbarkeit. (!Evtl.: Reibung--> Änderung der Eigenwerte --> Änderung des Systems--> Rangabfall in den Steuer-/Beobachtbarkeitsmatrizen)
+%System im dritten Arbeitspunkt nicht steuerbar, da mit erstem Pendel es nicht möglich ist den zweiten Pendel auf pi zu bringen.
+
 \end{document}

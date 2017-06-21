@@ -1,3 +1,4 @@
+function checkCtrbKalman(A,B)
 function [ S_s_Kalman] = checkCtrbKalman( A, B )
 
 n = length(A);
@@ -5,8 +6,6 @@ n = length(A);
 if (rank(A)==n)
     
 else
-    
-    disp('Matrix A hat nicht vollen Rang')
 end
 
 S_s_Kalman = B;
