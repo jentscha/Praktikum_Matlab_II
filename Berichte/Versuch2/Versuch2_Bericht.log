@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  20 JUN 2017 02:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  20 JUN 2017 11:25
 entering extended mode
 **Versuch2_Bericht.tex
 
@@ -1450,7 +1450,7 @@ LaTeX Font Info:    Font shape `TS1/txtt/b/n' in size <11> not available
 ]
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
 Berichte\Versuch2\Codes/linearisierung.m")
-LaTeX Font Info:    Try loading font information for TS1+5ch on input line 139.
+LaTeX Font Info:    Try loading font information for TS1+5ch on input line 140.
 
 
 ("C:\Program Files\tuddesign\tex\latex\tex-tudfonts\softmake\charter\ts15ch.fd"
@@ -1468,14 +1468,14 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 143.
+(scrreprt)              by `\mathbf ' on input line 144.
 
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 11.04007pt on input line 143.
+(Font)              scaled to size 11.04007pt on input line 144.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 7.68005pt on input line 143.
+(Font)              scaled to size 7.68005pt on input line 144.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 6.62404pt on input line 143.
+(Font)              scaled to size 6.62404pt on input line 144.
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              You should note, that in 1994 font command `\bf' has
@@ -1488,21 +1488,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 150.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 157.
+(scrreprt)              by `\mathbf ' on input line 151.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1516,7 +1502,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 162.
+(scrreprt)              by `\mathbf ' on input line 158.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1530,7 +1516,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 175.
+(scrreprt)              by `\mathbf ' on input line 163.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1544,7 +1530,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 182.
+(scrreprt)              by `\mathbf ' on input line 176.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1558,7 +1544,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 189.
+(scrreprt)              by `\mathbf ' on input line 183.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1572,7 +1558,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 194.
+(scrreprt)              by `\mathbf ' on input line 190.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1586,7 +1572,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 208.
+(scrreprt)              by `\mathbf ' on input line 195.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1600,7 +1586,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 215.
+(scrreprt)              by `\mathbf ' on input line 209.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1614,7 +1600,21 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 222.
+(scrreprt)              by `\mathbf ' on input line 216.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 223.
 
 
 Underfull \vbox (badness 8189) has occurred while \output is active []
@@ -1632,7 +1632,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 227.
+(scrreprt)              by `\mathbf ' on input line 228.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1646,10 +1646,10 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 249.
+(scrreprt)              by `\mathbf ' on input line 251.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--252
+Underfull \hbox (badness 10000) in paragraph at lines 248--254
 
  []
 
@@ -1665,7 +1665,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 255.
+(scrreprt)              by `\mathbf ' on input line 257.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1679,16 +1679,22 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 261.
+(scrreprt)              by `\mathbf ' on input line 263.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--264
+Underfull \hbox (badness 10000) in paragraph at lines 262--266
 
  []
 
-[4]
+
+Underfull \vbox (badness 2478) has occurred while \output is active []
+
+ [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch2\Codes/diagonalForm.m")
+Berichte\Versuch2\Codes/diagonalForm.m" [6])
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              You should note, that in 1994 font command `\bf' has
@@ -1701,21 +1707,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 277.
-
-
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 284.
+(scrreprt)              by `\mathbf ' on input line 316.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1729,7 +1721,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 291.
+(scrreprt)              by `\mathbf ' on input line 323.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1743,7 +1735,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 296.
+(scrreprt)              by `\mathbf ' on input line 330.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1757,7 +1749,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 305.
+(scrreprt)              by `\mathbf ' on input line 335.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1771,22 +1763,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 312.
-
-[5]
-
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 319.
+(scrreprt)              by `\mathbf ' on input line 344.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1800,7 +1777,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 324.
+(scrreprt)              by `\mathbf ' on input line 351.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1814,7 +1791,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 338.
+(scrreprt)              by `\mathbf ' on input line 358.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1828,7 +1805,25 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 345.
+(scrreprt)              by `\mathbf ' on input line 363.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 381.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1842,7 +1837,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 352.
+(scrreprt)              by `\mathbf ' on input line 388.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -1856,62 +1851,102 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\mathbf ' on input line 357.
+(scrreprt)              by `\mathbf ' on input line 395.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\mathbf ' on input line 400.
 
 
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
 Berichte\Versuch2\Codes/checkCtrbKalman.m"
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <11> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 3.
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 4.
 LaTeX Font Info:    Font shape `TS1/txtt/m/it' in size <11> not available
-(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 3.
- [6]
+(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 4.
+ [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7])
+ [9])
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch2\Codes/checkObsvKalman.m")
+Berichte\Versuch2\Codes/checkObsvKalman.m") [10]
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch2\Codes/KalmanErgebnisse.m" [8]
+Berichte\Versuch2\Codes/KalmanErgebnisse.m" [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10])
-("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch2\Codes/checkCtrbGilbert.m") [11]
-("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch2\Codes/checkObsvGilbert.m")
-("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
-Berichte\Versuch2\Codes/checkCtrbKalman.m" [12])
+ [12])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkCtrbKalman.m" [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15])
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
 Berichte\Versuch2\Codes/checkObsvKalman.m")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+
+LaTeX Warning: Reference `Code_ctrbKalman' on page 17 undefined on input line 4
+59.
+
+
+LaTeX Warning: Reference `Code_obsvKalman' on page 17 undefined on input line 4
+59.
+
+
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkCtrbGilbert.m")
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkObsvGilbert.m" [17])
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkCtrbKalman.m" [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19])
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkObsvKalman.m")
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkCtrbHautus.m" [20])
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch2\Codes/checkObsvHautus.m")
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
+ [21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
 
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
 Berichte\Versuch2\Versuch2_Bericht.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 384.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 476.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 476.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 384.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
  ) 
 Here is how much of TeX's memory you used:
- 17684 strings out of 493921
- 275717 string characters out of 3147247
- 506744 words of memory out of 3000000
- 20130 multiletter control sequences out of 15000+200000
- 109515 words of font info for 101 fonts, out of 3000000 for 9000
+ 17870 strings out of 493921
+ 279570 string characters out of 3147247
+ 507283 words of memory out of 3000000
+ 20155 multiletter control sequences out of 15000+200000
+ 109765 words of font info for 102 fonts, out of 3000000 for 9000
  847 hyphenation exceptions out of 8191
- 70i,13n,108p,364b,2063s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,13n,108p,385b,2065s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}{C:/Progra
 m Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/tuddesign/
 fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files/tuddesign/fonts/type1
@@ -1932,9 +1967,9 @@ b><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txf
 onts/t1xtt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/typ
 e1/public/txfonts/t1xtt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/
 2.9/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on Versuch2_Bericht.pdf (16 pages, 221963 bytes).
+Output written on Versuch2_Bericht.pdf (23 pages, 266900 bytes).
 PDF statistics:
- 604 PDF objects out of 1000 (max. 8388607)
- 378 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 813 PDF objects out of 1000 (max. 8388607)
+ 528 named destinations out of 1000 (max. 500000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
