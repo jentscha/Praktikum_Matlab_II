@@ -1,15 +1,14 @@
+%% Initialisierung
+%Werte für die Konstanten in den DGLs laden
 stPendel = ladePendel;
-
 
 modelPars(1).x0 = [-pi/3 0 0 0]';
 modelPars(2).x0 = [-pi/3 0 pi 0]';
 
-% modelPars.AP1 = [0;0;0;0];
-% modelPars.AP2 = [pi;0;pi;0];
-% modelPars.AP3 = [pi/2;0;pi;0];
 modelPars(1).AP = [pi/3 0 0 0]';
 modelPars(2).AP = [pi/3 0 pi 0]';
 
+% Vorgegebene Gewichtungsmatrizen die getestet werden sollen
 optPars(1).Q = diag([10 1 1 1]);
 optPars(1).R = 1;
 optPars(2).Q = diag([1 1 10 1]);
@@ -20,6 +19,7 @@ optPars(3).R = 10;
 ii = 2;
 jj = 1;
 
+%% Simulation/Animation
 for ii = 1:2        
     %modelPars wählen
     AP = modelPars(ii).AP;
@@ -31,19 +31,20 @@ for ii = 1:2
         % Reglerentwurfsmatrizen
         Q = optPars(jj).Q;
         R = optPars(jj).R;
-
-        [f, h] = nonlinear_model;
-
-        [A,B,C,D, M_AP] = linearisierung(f, h, AP);
-
-        K = berechneLQR(A,B,Q,R);
-
-        [vT, mX, u] = runPendel(stPendel, AP, K, x0, M_AP);
         
+        %Laden des nichtlinearen Modells
+        [f, h] = nonlinear_model;
+        %Linearisierung des Modells und Übergabe der Systemmatrizen
+        [A,B,C,D, M_AP] = linearisierung(f, h, AP);
+        %Berechnung von K über LQR
+        K = berechneLQR(A,B,Q,R);
+        %Simulation des Modells
+        [vT, mX, u] = runPendel(stPendel, AP, K, x0, M_AP);
+        %Animation des Pendels ohne avi-Video (Viertes Argument)
         animierePendel(vT,mX,stPendel,[]);
         
 
-        
+        %Erstellung der Plots
         hFig = figure('Name',['model = ', num2str(ii),'; opt = ',num2str(jj)],'NumberTitle','off');
         set(hFig, 'Position', [0, 0, 1400, 1000]);
         
