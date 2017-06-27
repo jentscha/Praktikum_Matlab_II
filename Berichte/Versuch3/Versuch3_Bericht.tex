@@ -139,9 +139,16 @@ Für die Animation des Pendels soll eine Funktion \verb|animierePendel| implement
 Der Code der Funktion sieht wie folgt aus:
 
 \lstinputlisting[style=Matlab_colored,caption={Funktion animierePendel}, label={animierePendel}]{Codes/animierePendel.m}
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.8 \textwidth]{Bilder/screenshot_animation.PNG}
+	\caption{Bild der Animation}
+	\label{fig:animation}
+\end{figure}
+
 
 \newpage
-\todo{Screenshot der Animation einfügen}
+
 
 
 \section{Simulation verschiedener LQ Regler}
@@ -209,7 +216,6 @@ Das qualitative Verhalten bezüglich Ausregelzeit und Betragsmaxima ist am Arbeit
 \newpage
 
 \section{Numerische Probleme}
-Werden zu große Werte für die Gewichtungsmatrizen gewählt, verlassen die Zustände des linearen Modells das Einzugsgebiet. Das nichtlineare Modell wird somit instabil. Die Simulationswerte divergieren ins Unendliche.
+Werden zu große Werte für die Gewichtungsmatrizen gewählt, verlassen die Zustände des linearen Modells das Einzugsgebiet. Das nichtlineare Modell wird somit instabil. Die Simulationswerte divergieren ins Unendliche. Anders ausgedrückt wird das System durch die starke Gewichtung eines Parameters zu steif, sodass der Konvergenzbereich des angewandten Runge-Kutte-Verfahrens zu klein ausfällt. Das Gear-Verfahren, das einen größeren Konvergenzbereich aufweist, könnte hierbei Abhilfe schaffen.
 
-\todo[inline]{evtl. ergänzen: Stichwort "Steife Systeme", "Konvergenzbereich der Simulationsverfahren" --> Runge-Kutta ungeeignet}
 \end{document}
