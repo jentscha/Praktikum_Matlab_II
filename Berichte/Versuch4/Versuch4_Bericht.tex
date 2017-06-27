@@ -1,0 +1,136 @@
+% =================================================================================
+% Hier auswählen, ob TUD-Design oder nicht
+% =================================================================================
+\newif\ifTUDdesign
+\TUDdesigntrue					% TUD-Design
+%\TUDdesignfalse				% Für Rechner ohne installierte TUDdesign-Pakete
+% =================================================================================
+
+
+% =================================================================================
+% Hier Daten für studentische Arbeit eingeben
+% =================================================================================
+\newcommand{\SADATyp}{Praktikumsbericht}
+\newcommand{\SADATitel}{Versuch IV: Beobachterentwurf - Benutzeroberflächen}
+\newcommand{\SADAStadt}{Darmstadt}
+\newcommand{\SADAAutor}{Andreas Jentsch, Ali Kerem Sacakli}
+\newcommand{\SADABetreuer}{}
+\newcommand{\SADABetreuerII}{}
+\newcommand{\SADABetreuerIII}{}
+\newcommand{\SADABegin}{}
+\newcommand{\SADAAbgabe}{Praktikum Matlab/Simulink II \newline 27. Juni 2017}
+\newcommand{\SADASeminar}{}
+% =================================================================================
+
+
+% =================================================================================
+% Auswahl des IAT-Fachgebiets (rtm / rtp)
+% =================================================================================
+\newif\ifrtm
+\rtmtrue	% rtm
+%\rtmfalse	% rtp
+% =================================================================================
+
+
+% =================================================================================
+% Erklärung, dass die Arbeit ohne Hilfe Dritter etc. erstellt wurde
+% =================================================================================
+\def\SADAVarianteErklaerung{ETIT}		% FB 18, Elektrotechnik
+%\def\SADAVarianteErklaerung{MBDA}		% FB 16, Maschinenbau, Diplomarbeit
+%\def\SADAVarianteErklaerung{MBSA}		% FB 16, Maschinenbau, Studienarbeit
+% =================================================================================
+
+
+% =================================================================================
+% Ausnahmen von der automatischen Silbentrennung
+% =================================================================================
+\hyphenation{Aktu-ali-sie-rung Screen-shots Pa-rallel-ro-bo-ter Zu-stands-raum-mo-del-le nach-voll-zieh-bar Pro-jekt-se-mi-nar}
+% =================================================================================
+
+
+% =================================================================================
+% Hier NIICHTS ändern!
+% =================================================================================
+\ifTUDdesign
+	\documentclass[11pt, twoside, colorback, accentcolor=tud2c, nopartpage, bigchapter, fleqn, ngerman, longdoc]{tudreport}
+\else
+	\documentclass[11pt, a4paper, twoside, fleqn, ngerman]{scrreprt}
+  % Für Entwurf auf Rechnern ohne installierte TUDdesign-Pakete	
+	\usepackage{exscale}	% Korrektur math-Zeichen
+	\usepackage{eurosym}
+\fi
+%To Do Package
+\usepackage{todonotes}
+%eps-plot von Matlab in pdf umwandeln, um diese einbinden zu können
+\usepackage{epstopdf}
+%Paket listings für das Einbinden von Quelltext
+\usepackage{listings}
+%Stil Matlab_colored definieren
+\lstdefinestyle{Matlab_colored}
+{
+	language = Matlab,
+	tabsize = 4,
+	framesep = 3mm,
+	frame = tb,
+	classoffset = 0,
+	basicstyle = \ttfamily,
+	keywordstyle = \bfseries\color[rgb]{0,0,1},
+	commentstyle = \itshape\color[rgb]{0.133,0.545,0.133},
+	stringstyle = \color[rgb]{0.672,0.126,0.941},
+	extendedchars = true,
+	breaklines = true,
+	prebreak = \textrightarrow,
+	postbreak = \textleftarrow,
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber = 5
+}
+
+
+\input{common/includes.tex}				% verwendete Pakete einbinden
+\input{common/setup.tex}					% LaTeX-Einstellungen
+\input{common/commonmacros.tex}		% oft verwendete Befehle
+% =================================================================================
+
+
+% =================================================================================
+% Hier beginnt das eigentliche Dokument
+% =================================================================================
+
+\begin{document}
+%\input{common/preface.tex} % Titelseite, Aufgabenstellung, Erklärung, Abstract, Inhaltsverzeichnis, etc.
+\maketitle
+
+\setcounter{chapter}{4}
+
+\section{GUI - Entwurf}
+
+Unter Ausnutzung der schon erstellten Funktionen soll in diesem Versuch das Modell durch eine grafische Benutzeroberfläche und einen Lünberger-Beobachter erweitert werden. Zur Protokollierung des Versuchs werden im Folgenden die Ergebnisse als Listings und Screenshots vorgestellt.
+
+\todo[inline]{Codes besser kommentieren}
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der relevanten Callback-Funktionen}, label={callback}]{Codes/simGUI.m}
+
+Zur Berechnung der Beobachter-Matrix \verb|L| soll die Funktion \verb|berechneBeobachter(A, C, poleBeobachter)| implementiert werden.     
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion berechneBeobachter}, label={berechneBeobachter}]{Codes/berechneBeobachter.m}
+
+Für die Erweiterung soll zudem die Funktion \verb|runPendel(stPendel, AP, K, x0, M_AP, stObs )| erweitert werden:
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion runPendel}, label={runPendel}]{Codes/runPendel.m}
+
+\todo[inline]{Die Codes/Ergebnisse jeweils in eigene Abschnitte}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width = \textwidth]{Bilder/simulink_V4.JPG}
+	\caption{Simulink-Modell mit Lünberger-Beobachter}
+	\label{fig:simObs}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width = \textwidth]{Bilder/GUI.JPG}
+	\caption{Finale grafische Benutzeroberfläche}
+	\label{fig:gui}
+\end{figure}
+
+\todo[inline]{Aufgabe 1.4 - auch Verläufe/Screenshots einfügen!?}
+\end{document}
