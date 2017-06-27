@@ -59,6 +59,8 @@
 	\usepackage{exscale}	% Korrektur math-Zeichen
 	\usepackage{eurosym}
 \fi
+%To Do Package
+\usepackage{todonotes}
 %eps-plot von Matlab in pdf umwandeln, um diese einbinden zu können
 \usepackage{epstopdf}
 %Paket listings für das Einbinden von Quelltext
@@ -139,11 +141,11 @@ Der Code der Funktion sieht wie folgt aus:
 \lstinputlisting[style=Matlab_colored,caption={Funktion animierePendel}, label={animierePendel}]{Codes/animierePendel.m}
 
 \newpage
-
+\todo{Screenshot der Animation einfügen}
 
 
 \section{Simulation verschiedener LQ Regler}
-Im folgenden Abschnitt werden unterschiedlich ausgelegte LQ Regler an verschiedenen Arbeitspunkten unter verschiedenen Startbedingungen getestet. Die Arbeitspunkte und Anfangsbedingungen sind:
+Im folgenden Abschnitt werden unterschiedlich ausgelegte LQ Regler an unterschiedlichen Arbeitspunkten unter verschiedenen Startbedingungen getestet. Die Arbeitspunkte und Anfangsbedingungen sind:
 \begin{align*}
 	\mathbf{x}_{\mathrm{AP}1} &= \begin{bmatrix}\pi/3 & 0 & 0 & 0\end{bmatrix} &\mathbf{x}_{01} &= \begin{bmatrix}-\pi/3 & 0&0&0\end{bmatrix}\\
 	\mathbf{x}_{\mathrm{AP}2} &= \begin{bmatrix}\pi/3 & 0 & \pi & 0\end{bmatrix} &\mathbf{x}_{02} &= \begin{bmatrix}-\pi/3 & 0&\pi&0\end{bmatrix}
@@ -154,7 +156,7 @@ Die Gewichtungsmatrizen für die unterschiedlichen Regler sind:
 \mathbf{Q}_2 &= \begin{bmatrix}1 & 0& 0& 0\\0&1&0&0\\0&0&10&0\\0&0&0&1\end{bmatrix} & \mathbf{R}_2 &= 1\\
 \mathbf{Q}_3 &= \begin{bmatrix}1 & 0& 0& 0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{bmatrix} & \mathbf{R}_3 &= 10
 \end{align*}
- In den nachfolgenden Grafiken kennzeichnet die gestrichtelte Linie den Wert des Arbeitspunktes für die entsprechende Größe. In \autoref{fig:mod1_opt1} ist gut zu erkennen, dass die Gewichtungsmatrix $\mathbf{Q}_1$ Winkelabweichungen in $\varphi_1$ stark bestraft. Aus diesem Grund wird dieser Winkel schnell ausgeregelt. Die Stellgröße $M$ hat hier allerdings anfänglich einen sehr hohen Wert, da dies in der Gewichtungsmatrix $\mathbf{R}$ nicht stark bestraft wird.
+ In den nachfolgenden Grafiken kennzeichnet die gestrichelte Linie den Wert des Arbeitspunktes für die entsprechende Größe. In \autoref{fig:mod1_opt1} ist gut zu erkennen, dass die Gewichtungsmatrix $\mathbf{Q}_1$ Winkelabweichungen in $\varphi_1$ stark bestraft. Aus diesem Grund wird dieser Winkel schnell ausgeregelt. Die Stellgröße $M$ hat hier allerdings anfänglich einen sehr hohen Wert, da diese in der Gewichtungsmatrix $\mathbf{R}$ nicht stark bestraft wird.
 
 \begin{figure}[htbp]
 	\centering
@@ -172,7 +174,7 @@ In \autoref{fig:mod1_opt2} ist zu erkennen, dass der Winkel $\varphi_2$ sehr sch
 	\label{fig:mod1_opt2}
 \end{figure}
 
-Verglichen mit den Vorangegangenen Simulationenen ist in \autoref{fig:mod1_opt3} der maximale Betrag der Stellgröße $M$ deutlich geringer. Dies ist auf die hohe bestrafung der Stellgröße in der Gewichtungsmatrix $\mathbf{R}_3$ zurückzuführen. Die Winkel $\varphi_1$ und $\varphi_2$ verhalten sich ähnlich wie in \autoref{fig:mod1_opt1}, sie werden allerdings langsamer ausgeregelt.
+Verglichen mit den vorangegangenen Simulationen ist in \autoref{fig:mod1_opt3} der maximale Betrag der Stellgröße $M$ deutlich geringer. Dies ist auf die hohe Bestrafung der Stellgröße in der Gewichtungsmatrix $\mathbf{R}_3$ zurückzuführen. Die Winkel $\varphi_1$ und $\varphi_2$ verhalten sich ähnlich wie in \autoref{fig:mod1_opt1}, sie werden allerdings langsamer ausgeregelt.
 
 
 \begin{figure}[htbp]
@@ -182,7 +184,7 @@ Verglichen mit den Vorangegangenen Simulationenen ist in \autoref{fig:mod1_opt3}
 	\label{fig:mod1_opt3}
 \end{figure}
 
-Das qualitative Verhalten bezüglich ausregelzeit und betragsmaxima ist am Arbeitpunkt $\mathbf{x}_{\mathrm{AP}2}$ mit den Startwerten $\mathbf{x}_{02}$ ist analog zu den mit den entsprechenden Gewichtungsmatrizen ausgelegten Reglern am Arbeitspunkt $\mathbf{x}_{\mathrm{AP}1}$ mit den Startwerten $\mathbf{x}_{01}$. Die Simulationsergebnisse zum zweiten Arbeitspunkt sind in \autoref{fig:mod2_opt1} bis \ref{fig:mod2_opt3} abgebildet. Generell werden am ersten Arbeitspunkt alle Größen schneller ausgeregelt. Dies ist plausibel, da es leichter ist ein hängendes Pendel zu stabilisieren, als ein inverses Pendel auszuregeln.
+Das qualitative Verhalten bezüglich Ausregelzeit und Betragsmaxima ist am Arbeitpunkt $\mathbf{x}_{\mathrm{AP}2}$ mit den Startwerten $\mathbf{x}_{02}$ analog zu den mit den entsprechenden Gewichtungsmatrizen ausgelegten Reglern am Arbeitspunkt $\mathbf{x}_{\mathrm{AP}1}$ mit den Startwerten $\mathbf{x}_{01}$. Die Simulationsergebnisse zum zweiten Arbeitspunkt sind in \autoref{fig:mod2_opt1} bis \ref{fig:mod2_opt3} abgebildet. Generell werden am ersten Arbeitspunkt alle Größen schneller ausgeregelt. Dies ist plausibel, da es leichter ist, ein hängendes Pendel zu stabilisieren als ein inverses Pendel auszuregeln.
 
 \begin{figure}[htbp]
 	\centering
@@ -207,5 +209,7 @@ Das qualitative Verhalten bezüglich ausregelzeit und betragsmaxima ist am Arbeit
 \newpage
 
 \section{Numerische Probleme}
-Werden zu große Werte für die Gewichtungsmatritzen gewählt, verlassen die Zustände des linearen Modells das Einzugsgebiet. Eine das nichtlineare Modell wird somit instabil. Die Simulationswerte divergieren ins Unendliche.
+Werden zu große Werte für die Gewichtungsmatrizen gewählt, verlassen die Zustände des linearen Modells das Einzugsgebiet. Das nichtlineare Modell wird somit instabil. Die Simulationswerte divergieren ins Unendliche.
+
+\todo[inline]{evtl. ergänzen: Stichwort "Steife Systeme", "Konvergenzbereich der Simulationsverfahren" --> Runge-Kutta ungeeignet}
 \end{document}
