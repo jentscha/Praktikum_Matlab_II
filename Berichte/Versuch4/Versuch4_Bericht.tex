@@ -103,17 +103,27 @@
 
 \setcounter{chapter}{4}
 
+
 \section{GUI - Entwurf}
 
-Unter Ausnutzung der schon erstellten Funktionen soll in diesem Versuch das Modell durch eine grafische Benutzeroberfläche und einen Lünberger-Beobachter erweitert werden. Zur Protokollierung des Versuchs werden im Folgenden die Ergebnisse als Listings und Screenshots vorgestellt.
+Unter Ausnutzung der schon erstellten Funktionen soll in diesem Versuch das Modell durch eine grafische Benutzeroberfläche und einen Luenberger-Beobachter erweitert werden. Zur Protokollierung des Versuchs werden im Folgenden die Ergebnisse als Listings und Screenshots vorgestellt.
 
-\todo[inline]{Codes besser kommentieren}
-\lstinputlisting[style=Matlab_colored,caption={Quellcode der relevanten Callback-Funktionen}, label={callback}]{Codes/simGUI.m}
+%\todo[inline]{Codes besser kommentieren}
+%\lstinputlisting[style=Matlab_colored,caption={Quellcode der relevanten Callback-Funktionen}, label={callback}]{Codes/simGUI.m}
 
-Zur Berechnung der Beobachter-Matrix \verb|L| soll die Funktion \verb|berechneBeobachter(A, C, poleBeobachter)| implementiert werden.     
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Callback-Funktion zur Reglerberechnung}, label={berechneK_Callback}]{Codes/berechneK_Callback.m}
+
+\lstinputlisting[style=Matlab_colored,caption={Quellcode Callback-Funktion zum Start der Simulation}, label={startSim_Callback}]{Codes/startSim_Callback.m}
+
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Callback-Funktion zum Stoppen der Animation}, label={stopAnimation_Callback}]{Codes/stopAnimation_Callback.m}
+
+
+\section{Beobachterentwurf}
+
+Zur Berechnung der Beobachter-Matrix \verb|L| soll die Funktion \verb|berechneBeobachter| implementiert werden.     
 \lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion berechneBeobachter}, label={berechneBeobachter}]{Codes/berechneBeobachter.m}
 
-Für die Erweiterung soll zudem die Funktion \verb|runPendel(stPendel, AP, K, x0, M_AP, stObs )| erweitert werden:
+Für die Erweiterung soll zudem die Funktion \verb|runPendel| erweitert werden:
 \lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion runPendel}, label={runPendel}]{Codes/runPendel.m}
 
 \todo[inline]{Die Codes/Ergebnisse jeweils in eigene Abschnitte}
@@ -121,7 +131,7 @@ Für die Erweiterung soll zudem die Funktion \verb|runPendel(stPendel, AP, K, x0,
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width = \textwidth]{Bilder/simulink_V4.JPG}
-	\caption{Simulink-Modell mit Lünberger-Beobachter}
+	\caption{Simulink-Modell mit Luenberger-Beobachter}
 	\label{fig:simObs}
 \end{figure}
 
@@ -133,4 +143,32 @@ Für die Erweiterung soll zudem die Funktion \verb|runPendel(stPendel, AP, K, x0,
 \end{figure}
 
 \todo[inline]{Aufgabe 1.4 - auch Verläufe/Screenshots einfügen!?}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_1_1_5_5.eps}
+	\caption{Systemverhalten mit Beobachtereigendwerten bei: [-1 -1 -5 -5]}
+	\label{fig:beob1}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_5_5_10_10.eps}
+	\caption{Systemverhalten mit Beobachtereigendwerten bei: [-5 -5 -10 -10]}
+	\label{fig:beob2}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_10_10_20_20.eps}
+	\caption{Systemverhalten mit Beobachtereigendwerten bei: [-10 -10 -20 -20]}
+	\label{fig:beob3}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_20_20_40_40.eps}
+	\caption{Systemverhalten mit Beobachtereigendwerten bei: [-20 -20 -40 -40]}
+	\label{fig:beob4}
+\end{figure}
 \end{document}
