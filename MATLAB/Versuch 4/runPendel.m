@@ -1,8 +1,9 @@
-function [ vT, mX, mXobs ] = runPendel( stPendel, AP, K, x0, M_AP, stObs )
+function [ vT, mX, mXobs, u ] = runPendel( stPendel, AP, K, x0, M_AP, stObs )
 
 vT = 'error';
 mX = 'error';
 mXobs = [];
+u = [];
 
 if ~isempty(stObs)
     stObs.switch = true;
@@ -22,7 +23,7 @@ sim('Modell_V4', Tend, stOptions);
 vT = mZustand.Time;
 mX = mZustand.Data;
 mXobs = mBeobacht.Data;
-% u.Data = vInput.Data;
-% u.Time = vInput.Time;
+u = vInput.Data;
+
 end
 

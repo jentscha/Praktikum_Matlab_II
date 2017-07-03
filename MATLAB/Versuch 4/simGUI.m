@@ -168,9 +168,13 @@ function berechneK_Callback(hObject, eventdata, handles)
     
 	[A, B, C, D, M_AP] = linearisierung(f_m, h_m, AP);
     
+    stObs = getappdata(h.figure1,'stObs');
+    stObs.A = A;
+    stObs.B = B;
+    stObs.C = C;
+    setappdata(h.figure1,'stObs',stObs);
     
-	[K poleRK] = berechneLQR(A, B, Q, R);
-	
+	[K, poleRK] = berechneLQR(A, B, Q, R);
 	% Anzeigen des Vektors 'K' im Textfeld 'reglerK'
 
  	set(h.reglerK, 'String', num2str(K));
@@ -326,16 +330,6 @@ function reglerK_CreateFcn(hObject, eventdata, handles)
 % handles    empty - handles not created until after all CreateFcns called
 
 
-
-
-
-% --- Executes during object creation, after setting all properties.
-function record_sim_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to record_sim (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    empty - handles not created until after all CreateFcns called
-
-
 % --- Executes on slider movement.
 function slider_AP_Callback(hObject, eventdata, handles)
 % hObject    handle to slider_AP (see GCBO)
@@ -390,10 +384,50 @@ end
 K = str2num(get(h.reglerK,'String'));
 stPendel = ladePendel();
 M_AP = str2num(get(h.M_AP,'String'));
+
+
+
+stObs = getappdata(h.figure1,'stObs');
+stObs.pole(1) = str2num(get(h.lam_b_1,'String'));
+stObs.pole(2) = str2num(get(h.lam_b_2,'String'));
+stObs.pole(3) = str2num(get(h.lam_b_3,'String'));
+stObs.pole(4) = str2num(get(h.lam_b_4,'String'));
+
+stObs.x0(1) = str2num(get(h.x01b,'String'));
+stObs.x0(2) = str2num(get(h.x02b,'String'));
+stObs.x0(3) = str2num(get(h.x03b,'String'));
+stObs.x0(4) = str2num(get(h.x04b,'String'));
+
+logic = get(h.popupmenu2,'Value');
+if logic == 1
+    stObs.switch  = true;
+else
+    stObs.switch = false;
+end
+
+% Beobachter berechnen
+stObs.L = berechneBeobachter(stObs.A,stObs.C,stObs.pole);
+setappdata(h.figure1,'stObs',stObs);
+
 %Simulation des Modells
-[vT, mX, u] = runPendel(stPendel, AP, K, x0, M_AP, stObs);
+[vT, mX, mXobs, u] = runPendel(stPendel, AP, K, x0, M_AP, stObs);
+
+% Variablen zum plotten in den Base Workspace schreiben
+assignin('base','vT',vT);
+assignin('base','mX',mX);
+assignin('base','mXobs',mXobs);
+assignin('base','u',u);
+assignin('base','M_AP',M_AP);
+assignin('base','x0',x0);
+
+if get(h.aufnahme,'Value') == 1
+    record = true;
+else
+    record = false;
+end
+
 %Animation des Pendels ohne avi-Video (Viertes Argument)
-animierePendel(vT,mX,stPendel,h.axes1);
+animierePendel(vT,mX,stPendel,h.axes1,record);
 
 
 
@@ -463,7 +497,7 @@ function x03_CreateFcn(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
-set(hObject, 'String', 0);
+set(hObject, 'String', 'pi');
 
 % Hint: edit controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
@@ -495,6 +529,7 @@ function M_AP_CreateFcn(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
+set(hObject, 'String', 0);
 
 % Hint: edit controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
@@ -529,6 +564,8 @@ function lam_b_1_CreateFcn(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
+set(hObject, 'String', '-10');
+
 % Hint: edit controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
@@ -551,6 +588,8 @@ function lam_b_2_CreateFcn(hObject, eventdata, handles)
 % hObject    handle to lam_b_2 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
+
+set(hObject, 'String', '-15');
 
 % Hint: edit controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
@@ -575,6 +614,8 @@ function lam_b_3_CreateFcn(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
+set(hObject, 'String', '-20');
+
 % Hint: edit controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
@@ -597,6 +638,8 @@ function lam_b_4_CreateFcn(hObject, eventdata, handles)
 % hObject    handle to lam_b_4 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
+
+set(hObject, 'String', '-21'); 
 
 % Hint: edit controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
@@ -621,6 +664,8 @@ function popupmenu2_CreateFcn(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
+set(hObject, 'String',{'Beobachter','Zustandsrückführung'});
+
 % Hint: popupmenu controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
@@ -643,6 +688,8 @@ function x01b_CreateFcn(hObject, eventdata, handles)
 % hObject    handle to x01b (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
+
+set(hObject, 'String', 0);
 
 % Hint: edit controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
@@ -667,6 +714,8 @@ function x02b_CreateFcn(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
+set(hObject, 'String', 0);
+
 % Hint: edit controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
@@ -689,6 +738,8 @@ function x03b_CreateFcn(hObject, eventdata, handles)
 % hObject    handle to x03b (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
+
+set(hObject, 'String', 'pi');
 
 % Hint: edit controls usually have a white background on Windows.
 %       See ISPC and COMPUTER.
@@ -713,7 +764,9 @@ function x04b_CreateFcn(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
-% Hint: edit controls usually have a white background on Windows.
+set(hObject, 'String', 0);
+
+% Hint: edit controls usually have a white background on Windows
 %       See ISPC and COMPUTER.
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
