@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.15)  3 JUL 2017 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.15)  3 JUL 2017 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1989,7 +1989,100 @@ ex.map} <c:/texlive/texmf-local/tex/latex/tuddesign/logo/tud_logo.pdf> <./commo
 n/rtm_mit_schrift.pdf>] [0
 
 ]
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 114.
+Package epstopdf Info: Source file: <Bilder/Aufgabe4_8_beob_1_1_5_5.eps>
+(epstopdf)                    date: 2017-07-03 15:32:15
+(epstopdf)                    size: 236512 bytes
+(epstopdf)             Output file: <Bilder/Aufgabe4_8_beob_1_1_5_5-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2017-07-03 15:42:21
+(epstopdf)                    size: 20483 bytes
+(epstopdf)             Command: <repstopdf --outfile=Bilder/Aufgabe4_8_beob_1_1
+_5_5-eps-converted-to.pdf Bilder/Aufgabe4_8_beob_1_1_5_5.eps>
+(epstopdf)             \includegraphics on input line 112.
+Package epstopdf Info: Output file is already uptodate.
+<Bilder/Aufgabe4_8_beob_1_1_5_5-eps-converted-to.pdf, id=31, pagebox=cropbox, 4
+89.83pt x 381.425pt>
+File: Bilder/Aufgabe4_8_beob_1_1_5_5-eps-converted-to.pdf Graphic file (type pd
+f)
+<use Bilder/Aufgabe4_8_beob_1_1_5_5-eps-converted-to.pdf>
+Package pdftex.def Info: Bilder/Aufgabe4_8_beob_1_1_5_5-eps-converted-to.pdf  u
+sed on input line 112. on input line 112.
+Package pdftex.def Info: Requested size: 455.24411pt x 354.50041pt on input lin
+e 112.
+Package epstopdf Info: Source file: <Bilder/Aufgabe4_8_beob_5_5_10_10.eps>
+(epstopdf)                    date: 2017-07-03 15:31:20
+(epstopdf)                    size: 236525 bytes
+(epstopdf)             Output file: <Bilder/Aufgabe4_8_beob_5_5_10_10-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2017-07-03 15:47:28
+(epstopdf)                    size: 19296 bytes
+(epstopdf)             Command: <repstopdf --outfile=Bilder/Aufgabe4_8_beob_5_5
+_10_10-eps-converted-to.pdf Bilder/Aufgabe4_8_beob_5_5_10_10.eps>
+(epstopdf)             \includegraphics on input line 119.
+Package epstopdf Info: Output file is already uptodate.
+<Bilder/Aufgabe4_8_beob_5_5_10_10-eps-converted-to.pdf, id=32, pagebox=cropbox,
+ 489.83pt x 381.425pt>
+File: Bilder/Aufgabe4_8_beob_5_5_10_10-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use Bilder/Aufgabe4_8_beob_5_5_10_10-eps-converted-to.pdf>
+Package pdftex.def Info: Bilder/Aufgabe4_8_beob_5_5_10_10-eps-converted-to.pdf 
+ used on input line 119. on input line 119.
+Package pdftex.def Info: Requested size: 455.24411pt x 354.50041pt on input lin
+e 119.
+Package epstopdf Info: Source file: <Bilder/Aufgabe4_8_beob_10_10_20_20.eps>
+(epstopdf)                    date: 2017-07-03 15:29:36
+(epstopdf)                    size: 236075 bytes
+(epstopdf)             Output file: <Bilder/Aufgabe4_8_beob_10_10_20_20-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2017-07-03 15:47:30
+(epstopdf)                    size: 18595 bytes
+(epstopdf)             Command: <repstopdf --outfile=Bilder/Aufgabe4_8_beob_10_
+10_20_20-eps-converted-to.pdf Bilder/Aufgabe4_8_beob_10_10_20_20.eps>
+(epstopdf)             \includegraphics on input line 126.
+Package epstopdf Info: Output file is already uptodate.
+<Bilder/Aufgabe4_8_beob_10_10_20_20-eps-converted-to.pdf, id=33, pagebox=cropbo
+x, 489.83pt x 381.425pt>
+File: Bilder/Aufgabe4_8_beob_10_10_20_20-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use Bilder/Aufgabe4_8_beob_10_10_20_20-eps-converted-to.pdf>
+Package pdftex.def Info: Bilder/Aufgabe4_8_beob_10_10_20_20-eps-converted-to.pd
+f  used on input line 126. on input line 126.
+Package pdftex.def Info: Requested size: 455.24411pt x 354.50041pt on input lin
+e 126.
+Package epstopdf Info: Source file: <Bilder/Aufgabe4_8_beob_20_20_40_40.eps>
+(epstopdf)                    date: 2017-07-03 15:30:19
+(epstopdf)                    size: 236443 bytes
+(epstopdf)             Output file: <Bilder/Aufgabe4_8_beob_20_20_40_40-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2017-07-03 15:47:33
+(epstopdf)                    size: 18225 bytes
+(epstopdf)             Command: <repstopdf --outfile=Bilder/Aufgabe4_8_beob_20_
+20_40_40-eps-converted-to.pdf Bilder/Aufgabe4_8_beob_20_20_40_40.eps>
+(epstopdf)             \includegraphics on input line 133.
+Package epstopdf Info: Output file is already uptodate.
+<Bilder/Aufgabe4_8_beob_20_20_40_40-eps-converted-to.pdf, id=34, pagebox=cropbo
+x, 489.83pt x 381.425pt>
+File: Bilder/Aufgabe4_8_beob_20_20_40_40-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use Bilder/Aufgabe4_8_beob_20_20_40_40-eps-converted-to.pdf>
+Package pdftex.def Info: Bilder/Aufgabe4_8_beob_20_20_40_40-eps-converted-to.pd
+f  used on input line 133. on input line 133.
+Package pdftex.def Info: Requested size: 455.24411pt x 354.50041pt on input lin
+e 133.
+ [1
+
+ <./Bilder/Aufgabe4_8_beob_1_1_5_5-eps-converted-to.pdf>] [2 <./Bilder/Aufgabe4
+_8_beob_5_5_10_10-eps-converted-to.pdf>] [3 <./Bilder/Aufgabe4_8_beob_10_10_20_
+20-eps-converted-to.pdf>] [4 <./Bilder/Aufgabe4_8_beob_20_20_40_40-eps-converte
+d-to.pdf>]
+<Bilder/GUI.JPG, id=107, 880.79062pt x 519.44063pt>
+File: Bilder/GUI.JPG Graphic file (type jpg)
+<use Bilder/GUI.JPG>
+Package pdftex.def Info: Bilder/GUI.JPG  used on input line 147. on input line 
+147.
+Package pdftex.def Info: Requested size: 455.24411pt x 268.47792pt on input lin
+e 147.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 155.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/txfonts/t1txtt.fd
@@ -2009,137 +2102,39 @@ LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <11> not available
 (Font)              Font shape `T1/txtt/bx/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `TS1/txtt/b/n' in size <11> not available
 (Font)              Font shape `TS1/txtt/bx/n' tried instead on input line 2.
- [1
-
-])
-(./Codes/startSim_Callback.m [2]
+ [5 <./Bilder/GUI.JPG>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3])
-(./Codes/stopAnimation_Callback.m)
-Underfull \vbox (badness 2213) has occurred while \output is active []
+ [6])
+(./Codes/startSim_Callback.m [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
-(./Codes/berechneBeobachter.m) (./Codes/runPendel.m [5])
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 129.
-<Bilder/simulink_V4.JPG, id=240, 541.27219pt x 524.71031pt>
+ [8])
+(./Codes/stopAnimation_Callback.m) (./Codes/berechneBeobachter.m)
+(./Codes/runPendel.m [9])
+<Bilder/simulink_V4.JPG, id=303, 541.27219pt x 524.71031pt>
 File: Bilder/simulink_V4.JPG Graphic file (type jpg)
 <use Bilder/simulink_V4.JPG>
-Package pdftex.def Info: Bilder/simulink_V4.JPG  used on input line 133. on inp
-ut line 133.
+Package pdftex.def Info: Bilder/simulink_V4.JPG  used on input line 173. on inp
+ut line 173.
 Package pdftex.def Info: Requested size: 455.24411pt x 441.33011pt on input lin
-e 133.
-<Bilder/GUI.JPG, id=241, 880.79062pt x 519.44063pt>
-File: Bilder/GUI.JPG Graphic file (type jpg)
-<use Bilder/GUI.JPG>
-Package pdftex.def Info: Bilder/GUI.JPG  used on input line 140. on input line 
-140.
-Package pdftex.def Info: Requested size: 455.24411pt x 268.47792pt on input lin
-e 140.
-Package epstopdf Info: Source file: <Bilder/Aufgabe4_8_beob_1_1_5_5.eps>
-(epstopdf)                    date: 2017-07-03 15:32:15
-(epstopdf)                    size: 236512 bytes
-(epstopdf)             Output file: <Bilder/Aufgabe4_8_beob_1_1_5_5-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2017-07-03 15:42:21
-(epstopdf)                    size: 20483 bytes
-(epstopdf)             Command: <repstopdf --outfile=Bilder/Aufgabe4_8_beob_1_1
-_5_5-eps-converted-to.pdf Bilder/Aufgabe4_8_beob_1_1_5_5.eps>
-(epstopdf)             \includegraphics on input line 149.
-Package epstopdf Info: Output file is already uptodate.
-<Bilder/Aufgabe4_8_beob_1_1_5_5-eps-converted-to.pdf, id=242, pagebox=cropbox, 
-489.83pt x 381.425pt>
-File: Bilder/Aufgabe4_8_beob_1_1_5_5-eps-converted-to.pdf Graphic file (type pd
-f)
-<use Bilder/Aufgabe4_8_beob_1_1_5_5-eps-converted-to.pdf>
-Package pdftex.def Info: Bilder/Aufgabe4_8_beob_1_1_5_5-eps-converted-to.pdf  u
-sed on input line 149. on input line 149.
-Package pdftex.def Info: Requested size: 455.24411pt x 354.50041pt on input lin
-e 149.
-
-Underfull \vbox (badness 2134) has occurred while \output is active []
-
- [6 <./Bilder/simulink_V4.JPG>]
-Package epstopdf Info: Source file: <Bilder/Aufgabe4_8_beob_5_5_10_10.eps>
-(epstopdf)                    date: 2017-07-03 15:31:20
-(epstopdf)                    size: 236525 bytes
-(epstopdf)             Output file: <Bilder/Aufgabe4_8_beob_5_5_10_10-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2017-07-03 15:47:28
-(epstopdf)                    size: 19296 bytes
-(epstopdf)             Command: <repstopdf --outfile=Bilder/Aufgabe4_8_beob_5_5
-_10_10-eps-converted-to.pdf Bilder/Aufgabe4_8_beob_5_5_10_10.eps>
-(epstopdf)             \includegraphics on input line 156.
-Package epstopdf Info: Output file is already uptodate.
-<Bilder/Aufgabe4_8_beob_5_5_10_10-eps-converted-to.pdf, id=259, pagebox=cropbox
-, 489.83pt x 381.425pt>
-File: Bilder/Aufgabe4_8_beob_5_5_10_10-eps-converted-to.pdf Graphic file (type 
-pdf)
-<use Bilder/Aufgabe4_8_beob_5_5_10_10-eps-converted-to.pdf>
-Package pdftex.def Info: Bilder/Aufgabe4_8_beob_5_5_10_10-eps-converted-to.pdf 
- used on input line 156. on input line 156.
-Package pdftex.def Info: Requested size: 455.24411pt x 354.50041pt on input lin
-e 156.
-Package epstopdf Info: Source file: <Bilder/Aufgabe4_8_beob_10_10_20_20.eps>
-(epstopdf)                    date: 2017-07-03 15:29:36
-(epstopdf)                    size: 236075 bytes
-(epstopdf)             Output file: <Bilder/Aufgabe4_8_beob_10_10_20_20-eps-con
-verted-to.pdf>
-(epstopdf)                    date: 2017-07-03 15:47:30
-(epstopdf)                    size: 18595 bytes
-(epstopdf)             Command: <repstopdf --outfile=Bilder/Aufgabe4_8_beob_10_
-10_20_20-eps-converted-to.pdf Bilder/Aufgabe4_8_beob_10_10_20_20.eps>
-(epstopdf)             \includegraphics on input line 163.
-Package epstopdf Info: Output file is already uptodate.
-<Bilder/Aufgabe4_8_beob_10_10_20_20-eps-converted-to.pdf, id=260, pagebox=cropb
-ox, 489.83pt x 381.425pt>
-File: Bilder/Aufgabe4_8_beob_10_10_20_20-eps-converted-to.pdf Graphic file (typ
-e pdf)
-<use Bilder/Aufgabe4_8_beob_10_10_20_20-eps-converted-to.pdf>
-Package pdftex.def Info: Bilder/Aufgabe4_8_beob_10_10_20_20-eps-converted-to.pd
-f  used on input line 163. on input line 163.
-Package pdftex.def Info: Requested size: 455.24411pt x 354.50041pt on input lin
-e 163.
-Package epstopdf Info: Source file: <Bilder/Aufgabe4_8_beob_20_20_40_40.eps>
-(epstopdf)                    date: 2017-07-03 15:30:19
-(epstopdf)                    size: 236443 bytes
-(epstopdf)             Output file: <Bilder/Aufgabe4_8_beob_20_20_40_40-eps-con
-verted-to.pdf>
-(epstopdf)                    date: 2017-07-03 15:47:33
-(epstopdf)                    size: 18225 bytes
-(epstopdf)             Command: <repstopdf --outfile=Bilder/Aufgabe4_8_beob_20_
-20_40_40-eps-converted-to.pdf Bilder/Aufgabe4_8_beob_20_20_40_40.eps>
-(epstopdf)             \includegraphics on input line 170.
-Package epstopdf Info: Output file is already uptodate.
-<Bilder/Aufgabe4_8_beob_20_20_40_40-eps-converted-to.pdf, id=261, pagebox=cropb
-ox, 489.83pt x 381.425pt>
-File: Bilder/Aufgabe4_8_beob_20_20_40_40-eps-converted-to.pdf Graphic file (typ
-e pdf)
-<use Bilder/Aufgabe4_8_beob_20_20_40_40-eps-converted-to.pdf>
-Package pdftex.def Info: Bilder/Aufgabe4_8_beob_20_20_40_40-eps-converted-to.pd
-f  used on input line 170. on input line 170.
-Package pdftex.def Info: Requested size: 455.24411pt x 354.50041pt on input lin
-e 170.
- [7 <./Bilder/GUI.JPG>] [8 <./Bilder/Aufgabe4_8_beob_1_1_5_5-eps-converted-to.p
-df>] [9 <./Bilder/Aufgabe4_8_beob_5_5_10_10-eps-converted-to.pdf>] [10 <./Bilde
-r/Aufgabe4_8_beob_10_10_20_20-eps-converted-to.pdf>]
-[11 <./Bilder/Aufgabe4_8_beob_20_20_40_40-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
+e 173.
+ [10] [11 <./Bilder/simulink_V4.JPG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
 
 (./Versuch4_Bericht.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 174.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 36252 strings out of 492995
- 667787 string characters out of 6136402
- 946022 words of memory out of 5000000
- 38909 multiletter control sequences out of 15000+600000
+ 36204 strings out of 492995
+ 666499 string characters out of 6136402
+ 942404 words of memory out of 5000000
+ 38862 multiletter control sequences out of 15000+600000
  610303 words of font info for 82 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 73i,13n,108p,10538b,2648s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,13n,108p,10538b,2647s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/texmf-loc
 al/fonts/type1/softmake/charter/5chr8a.pfb><c:/texlive/texmf-local/fonts/type1/
 softmake/frontpage/5fpm8a.pfb><c:/texlive/texmf-local/fonts/type1/softmake/fron
@@ -2148,10 +2143,10 @@ fb><c:/texlive/2017/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texliv
 e/2017/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2017/texmf-d
 ist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2017/texmf-dist/fonts/type
 1/public/txfonts/tcxtt.pfb>
-Output written on Versuch4_Bericht.pdf (13 pages, 297673 bytes).
+Output written on Versuch4_Bericht.pdf (13 pages, 297808 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
- 365 compressed objects within 4 object streams
- 211 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 421 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 210 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

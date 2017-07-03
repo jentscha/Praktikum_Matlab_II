@@ -102,47 +102,10 @@
 \maketitle
 
 \setcounter{chapter}{4}
+\setcounter{section}{7}
+\section{Verhalten des Regelkreises mit Beobachter}
+%\todo[inline]{Aufgabe 1.4 - auch Verläufe/Screenshots einfügen!?} ja
 
-
-\section{GUI - Entwurf}
-
-Unter Ausnutzung der schon erstellten Funktionen soll in diesem Versuch das Modell durch eine grafische Benutzeroberfläche und einen Luenberger-Beobachter erweitert werden. Zur Protokollierung des Versuchs werden im Folgenden die Ergebnisse als Listings und Screenshots vorgestellt.
-
-%\todo[inline]{Codes besser kommentieren}
-%\lstinputlisting[style=Matlab_colored,caption={Quellcode der relevanten Callback-Funktionen}, label={callback}]{Codes/simGUI.m}
-
-\lstinputlisting[style=Matlab_colored,caption={Quellcode der Callback-Funktion zur Reglerberechnung}, label={berechneK_Callback}]{Codes/berechneK_Callback.m}
-
-\lstinputlisting[style=Matlab_colored,caption={Quellcode Callback-Funktion zum Start der Simulation}, label={startSim_Callback}]{Codes/startSim_Callback.m}
-
-\lstinputlisting[style=Matlab_colored,caption={Quellcode der Callback-Funktion zum Stoppen der Animation}, label={stopAnimation_Callback}]{Codes/stopAnimation_Callback.m}
-
-
-\section{Beobachterentwurf}
-
-Zur Berechnung der Beobachter-Matrix \verb|L| soll die Funktion \verb|berechneBeobachter| implementiert werden.     
-\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion berechneBeobachter}, label={berechneBeobachter}]{Codes/berechneBeobachter.m}
-
-Für die Erweiterung soll zudem die Funktion \verb|runPendel| erweitert werden:
-\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion runPendel}, label={runPendel}]{Codes/runPendel.m}
-
-\todo[inline]{Die Codes/Ergebnisse jeweils in eigene Abschnitte}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width = \textwidth]{Bilder/simulink_V4.JPG}
-	\caption{Simulink-Modell mit Luenberger-Beobachter}
-	\label{fig:simObs}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width = \textwidth]{Bilder/GUI.JPG}
-	\caption{Finale grafische Benutzeroberfläche}
-	\label{fig:gui}
-\end{figure}
-
-\todo[inline]{Aufgabe 1.4 - auch Verläufe/Screenshots einfügen!?}
 
 \begin{figure}[htbp]
 	\centering
@@ -171,4 +134,45 @@ Für die Erweiterung soll zudem die Funktion \verb|runPendel| erweitert werden:
 	\caption{Systemverhalten mit Beobachtereigendwerten bei: [-20 -20 -40 -40]}
 	\label{fig:beob4}
 \end{figure}
+\newpage
+
+\section{GUI Entwurf}
+
+Unter Ausnutzung der schon erstellten Funktionen soll in diesem Versuch das Modell durch eine grafische Benutzeroberfläche (\autoref{fig:gui})und einen Luenberger-Beobachter erweitert werden. Die wichtigsten Callback-Funktionen sind in \autoref{berechneK_Callback} bis \ref{stopAnimation_Callback} aufgeführt.
+
+% Zur Protokollierung des Versuchs werden im Folgenden die Ergebnisse als Listings und Screenshots vorgestellt.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width = \textwidth]{Bilder/GUI.JPG}
+	\caption{Finale grafische Benutzeroberfläche}
+	\label{fig:gui}
+\end{figure}
+
+%\todo[inline]{Codes besser kommentieren}
+%\lstinputlisting[style=Matlab_colored,caption={Quellcode der relevanten Callback-Funktionen}, label={callback}]{Codes/simGUI.m}
+
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Callback-Funktion zur Reglerberechnung}, label={berechneK_Callback}]{Codes/berechneK_Callback.m}
+
+\lstinputlisting[style=Matlab_colored,caption={Quellcode Callback-Funktion zum Start der Simulation}, label={startSim_Callback}]{Codes/startSim_Callback.m}
+
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Callback-Funktion zum Stoppen der Animation}, label={stopAnimation_Callback}]{Codes/stopAnimation_Callback.m}
+
+
+\section{Beobachterentwurf}
+Zur Berechnung der Beobachter-Matrix \verb|L| soll die Funktion \verb|berechneBeobachter| implementiert werden.     
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion berechneBeobachter}, label={berechneBeobachter}]{Codes/berechneBeobachter.m}
+
+Für die Erweiterung soll zudem die Funktion \verb|runPendel| erweitert werden:
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion runPendel}, label={runPendel}]{Codes/runPendel.m}
+
+Das Zugrundeliegende Simulink Modell mit Beobachter ist in \autoref{fig:simObs} zu sehen.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width = \textwidth]{Bilder/simulink_V4.JPG}
+	\caption{Simulink-Modell mit Luenberger-Beobachter}
+	\label{fig:simObs}
+\end{figure}
+
 \end{document}
