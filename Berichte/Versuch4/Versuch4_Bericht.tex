@@ -108,12 +108,22 @@
 
 Nachfolgend sind Verläufe der theoretisch Messbaren Zustandsgrößen, sowie der Stellgröße abgebildet, um den Einfluss von verschiedenen Beobachtereigenwerten darzustellen. Dabei sind die vom Beobachter geschätzten Zuständen zusammen mit den realwerten abgebildet.
 
-Die Eigenwerte des Geschlossenen Regelkreises liegen bei
+Die Eigenwerte des Geschlossenen Regelkreises liegen bei,
 \begin{align*}
-\lambda &=
+\lambda &= \begin{bmatrix}
+-1,3152& -5,6606-3,0304i& -5,6606+3,0304i&-258,5879 
+\end{bmatrix}
+\end{align*}
+Der Arbeitspunkt, sowie die Startwerte des Systems und des Beobachters liegen bei
+\begin{align*}
+\mathbf{x}_{\mathrm{AP}} &=\begin{bmatrix}\pi&0&\pi&0\end{bmatrix}\\
+\mathbf{x}_0^{\mathrm{T}} &=\begin{bmatrix}3&0&\pi&0\end{bmatrix}\\
+\mathbf{x}_{\mathrm{obs},0}^{\mathrm{T}} &=\begin{bmatrix}\pi&0&\pi&0\end{bmatrix}
 \end{align*}
 
-In \autoref{fig:beob1} bis \ref{fig:beob4} werden zunehmend schneller ausgelegte Beobachter verwendet. Beim langsamsten Beobachter in \autoref{fig:beob1} ist neben der langsamen ausregelung des Beobachtungsfehlers eine Niedrige maximale Stellgröße festzustellen, das system regelt den Winkel $\varphi_1$ infolgedessen sehr langsam aus. Hier liegen die dominanten Eigenwerte des Beobachters noch Rechts des dominanten Systemeigenwertes. Die übrigen Abbildungen zeigen den folgenden Trend: Je weiter links der Systemeigenwerte die  Beobachtereigenwerte liegen, desto schneller wird der Beobachtungsfehler ausgeregelt. Damit steigt auch die Maximale Stellgröße und das System wird schneller in den Arbeitspunkt überführt.
+In \autoref{fig:beob1} bis \ref{fig:beob4} werden zunehmend schneller ausgelegte Beobachter verwendet. Beim langsamsten Beobachter in \autoref{fig:beob1} ist neben der langsamen Ausregelung des Schätzfehlers eine niedrige maximale Stellgröße festzustellen, das System regelt den Winkel $\varphi_1$ infolgedessen sehr langsam aus. Hier liegen die dominanten Eigenwerte des Beobachters noch Rechts des dominanten Systemeigenwertes. Die übrigen Abbildungen zeigen den folgenden Trend: Je weiter links der Systemeigenwerte die  Beobachtereigenwerte liegen, desto schneller wird der Beobachtungsfehler ausgeregelt. Damit steigt auch die Maximale Stellgröße und das System wird schneller in den Arbeitspunkt überführt.
+
+Bei den Werten für die gemessenen Zustände $x_1$ und $x_3$, welche den Winkeln $\varphi_1$ beziehungsweise $\varphi_2$ entsprechen fällt auf, dass kein Schätzfehler entsteht, wenn die Anfangswerte von Beobachter und System übereinstimmen. Dies ist bei allen Verläufen für $\varphi_2$ zu sehen. Um den anfänglichen Schätzfehler bei $\varphi_1$ zu minimieren, könnten die Anfagswerte des Beobachters an die des Systems angepasst werden, $\mathbf{x}_{\mathrm{obs},0} = \mathbf{x}_{0}$.
 
 
 \begin{figure}[htbp]
