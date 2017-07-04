@@ -106,7 +106,16 @@
 \section{Verhalten des Regelkreises mit Beobachter}
 %\todo[inline]{Aufgabe 1.4 - auch Verläufe/Screenshots einfügen!?} ja
 
-Nachfolgend sind Verläufe abgebildet, um den Einfluss von verschiedenen Beobachtereigenwerten darzustellen. Dabei sind die Verläufe der geschätzten Zuständen in jedem Plot zusammen mit den realen dargestellt.
+Nachfolgend sind Verläufe der theoretisch Messbaren Zustandsgrößen, sowie der Stellgröße abgebildet, um den Einfluss von verschiedenen Beobachtereigenwerten darzustellen. Dabei sind die vom Beobachter geschätzten Zuständen zusammen mit den realwerten abgebildet.
+
+Die Eigenwerte des Geschlossenen Regelkreises liegen bei
+\begin{align*}
+\lambda &=
+\end{align*}
+
+In \autoref{fig:beob1} bis \ref{fig:beob4} werden zunehmend schneller ausgelegte Beobachter verwendet. Beim langsamsten Beobachter in \autoref{fig:beob1} ist neben der langsamen ausregelung des Beobachtungsfehlers eine Niedrige maximale Stellgröße festzustellen, das system regelt den Winkel $\varphi_1$ infolgedessen sehr langsam aus. Hier liegen die dominanten Eigenwerte des Beobachters noch Rechts des dominanten Systemeigenwertes. Die übrigen Abbildungen zeigen den folgenden Trend: Je weiter links der Systemeigenwerte die  Beobachtereigenwerte liegen, desto schneller wird der Beobachtungsfehler ausgeregelt. Damit steigt auch die Maximale Stellgröße und das System wird schneller in den Arbeitspunkt überführt.
+
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_1_1_5_5.eps}
