@@ -17,6 +17,7 @@ for ii = 1:length(Tplots)
     T = Tplots(ii);
     stTraj = berechneTrajektorie( stPendel, Q, R, T);
     hFig = figure;
+    %title('Übergangszeit T=',num2str(ii));
     set(hFig, 'Position', [0, 0, 1400, 1000]);
 
     ax(1) = subplot(511);

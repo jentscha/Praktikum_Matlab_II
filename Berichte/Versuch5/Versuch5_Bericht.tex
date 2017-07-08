@@ -1,0 +1,299 @@
+% =================================================================================
+% Hier auswählen, ob TUD-Design oder nicht
+% =================================================================================
+\newif\ifTUDdesign
+\TUDdesigntrue					% TUD-Design
+%\TUDdesignfalse				% Für Rechner ohne installierte TUDdesign-Pakete
+% =================================================================================
+
+
+% =================================================================================
+% Hier Daten für studentische Arbeit eingeben
+% =================================================================================
+\newcommand{\SADATyp}{Praktikumsbericht}
+\newcommand{\SADATitel}{Versuch V: Aufschwungsteuerung des Doppelpendels}
+\newcommand{\SADAStadt}{Darmstadt}
+\newcommand{\SADAAutor}{Andreas Jentsch, Ali Kerem Sacakli}
+\newcommand{\SADABetreuer}{}
+\newcommand{\SADABetreuerII}{}
+\newcommand{\SADABetreuerIII}{}
+\newcommand{\SADABegin}{}
+\newcommand{\SADAAbgabe}{Praktikum Matlab/Simulink II \newline 04. Juli 2017}
+\newcommand{\SADASeminar}{}
+% =================================================================================
+
+
+% =================================================================================
+% Auswahl des IAT-Fachgebiets (rtm / rtp)
+% =================================================================================
+\newif\ifrtm
+\rtmtrue	% rtm
+%\rtmfalse	% rtp
+% =================================================================================
+
+
+% =================================================================================
+% Erklärung, dass die Arbeit ohne Hilfe Dritter etc. erstellt wurde
+% =================================================================================
+\def\SADAVarianteErklaerung{ETIT}		% FB 18, Elektrotechnik
+%\def\SADAVarianteErklaerung{MBDA}		% FB 16, Maschinenbau, Diplomarbeit
+%\def\SADAVarianteErklaerung{MBSA}		% FB 16, Maschinenbau, Studienarbeit
+% =================================================================================
+
+
+% =================================================================================
+% Ausnahmen von der automatischen Silbentrennung
+% =================================================================================
+\hyphenation{Aktu-ali-sie-rung Screen-shots Pa-rallel-ro-bo-ter Zu-stands-raum-mo-del-le nach-voll-zieh-bar Pro-jekt-se-mi-nar}
+% =================================================================================
+
+
+% =================================================================================
+% Hier NIICHTS ändern!
+% =================================================================================
+\ifTUDdesign
+	\documentclass[11pt, twoside, colorback, accentcolor=tud2c, nopartpage, bigchapter, fleqn, ngerman, longdoc]{tudreport}
+\else
+	\documentclass[11pt, a4paper, twoside, fleqn, ngerman]{scrreprt}
+  % Für Entwurf auf Rechnern ohne installierte TUDdesign-Pakete	
+	\usepackage{exscale}	% Korrektur math-Zeichen
+	\usepackage{eurosym}
+\fi
+%To Do Package
+\usepackage{todonotes}
+%eps-plot von Matlab in pdf umwandeln, um diese einbinden zu können
+\usepackage{epstopdf}
+%Paket listings für das Einbinden von Quelltext
+\usepackage{listings}
+%Stil Matlab_colored definieren
+\lstdefinestyle{Matlab_colored}
+{
+	language = Matlab,
+	tabsize = 4,
+	framesep = 3mm,
+	frame = tb,
+	classoffset = 0,
+	basicstyle = \ttfamily,
+	keywordstyle = \bfseries\color[rgb]{0,0,1},
+	commentstyle = \itshape\color[rgb]{0.133,0.545,0.133},
+	stringstyle = \color[rgb]{0.672,0.126,0.941},
+	extendedchars = true,
+	breaklines = true,
+	prebreak = \textrightarrow,
+	postbreak = \textleftarrow,
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber = 5
+}
+
+
+\input{common/includes.tex}				% verwendete Pakete einbinden
+\input{common/setup.tex}					% LaTeX-Einstellungen
+\input{common/commonmacros.tex}		% oft verwendete Befehle
+% =================================================================================
+
+
+% =================================================================================
+% Hier beginnt das eigentliche Dokument
+% =================================================================================
+
+\begin{document}
+%\input{common/preface.tex} % Titelseite, Aufgabenstellung, Erklärung, Abstract, Inhaltsverzeichnis, etc.
+\maketitle
+
+\setcounter{chapter}{4}
+\setcounter{section}{7}
+\section{Berechnung der Trajektorien}
+
+In diesem Versuch geht es um den Entwurf und der Simulation einer Aufschwungsteuerung für den Doppelpendel. Hierzu werden zunächst Codes generiert, um die Trajektorien zu generieren. Im nächsten Kapitel folgen die Simulationsergebnisse.
+
+Die relevanten Codes sind wie folgt:
+
+
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion \textbf{RandwertproblemDGL}}, label={RandwertproblemDGL}]{Codes/RandwertproblemDGL.m}
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion \textbf{RandwertproblemRB}}, label={RandwertproblemRB}]{Codes/RandwertproblemRB.m}
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion \textbf{berechneTrajektorie}}, label={berechneTrajektorie}]{Codes/berechneTrajektorie.m}
+
+
+Lösungen können für den Wertebereich von $\mathbf{T = 0,65s}$ bis $\mathbf{T = 1,9s}$ gefunden werden. Die Unterschreitung von $\mathbf{T = 0,65s}$ führt zu numerischen Problemen. Eine Überschreitung von $\mathbf{T = 1,9s}$ ist physikalisch unmöglich, da der zweite Pendel eine Mindestgeschwindigkeit braucht um in die aufrechte Lage aufgeschwungen werden zu können. nicht aufrecht erhalten werden kann und somit in die hängende Lage übergeht.\todo{reicht die Begründung aus?}
+
+Die kleinste $T$, bei der die Beschränkung $|M|_max = 1,5\,Nm$ noch eingehalten wird ist $\mathbf{T = 1,1185s}$.\todo{Plot dazu?}
+
+Nachfolgend werden Plots der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für verschiedene Übergangszeiten gezeigt.
+
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_T_0_65sec.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 0,65\,s}$}
+			\label{fig:sim065}
+		\end{figure}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_T_0_8sec.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 0,8\,s}$}
+			\label{fig:sim08}
+		\end{figure}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_T_1sec.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$}
+			\label{fig:sim1}
+		\end{figure}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_2sec.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1,2\,s}$}
+			\label{fig:sim12}
+		\end{figure}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_4sec.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1,4\,s}$}
+			\label{fig:sim14}
+		\end{figure}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_6sec.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1,6\,s}$}
+			\label{fig:sim16}
+		\end{figure}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_9sec.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1,9\,s}$}
+			\label{fig:sim19}
+		\end{figure}
+		\newpage
+		\todo[inline]{Erklären Sie die Auswirkung der Übergangszeiten T auf das Ergebnis}
+		
+		\begin{itemize}
+			\item T größer -> Mmax kleiner
+			\item ...
+		\end{itemize}
+		
+\section{Simulation}
+		
+		Das Simulinkmodell der Aufschwungsteuerung sieht wie folgt aus:
+		\\
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Simulink_Modell_V5.JPG}
+			\caption{Simulink-Modell der Aufschwungsteuerung}
+			\label{fig:simulinkAufschwung}
+		\end{figure}
+		
+Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorgegebenen Trajektorien bei gegebenen Pendeldaten. Für die darauffolgende Abbildung wurden ein paar Pendeldaten verändert ($l_1 = 0,3\,m$, $l_2 = 0,3\,m$, $R_p1 = 10^{-3}$, $R_p2 = 10^{-4}$).
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_1.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_sim = 2\,s}$ mit gegebenen Pendeldaten}
+			\label{fig:simulink1}
+		\end{figure}
+		
+
+		\todo[inline]{Sollen wir noch alles animieren und Screenshots einfügen? Siehe Aufgabenstellung}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_2.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_sim = 2\,s}$ mit veränderten Pendeldaten}
+			\label{fig:simulink2}
+		\end{figure}
+
+Der Zeitplot \ref{fig:simulink1} zeigt eine Kongruenz zwischen den simulierten Verläufen und den berechneten Trajektorien. Der Zeitplot, der die Simulation des Doppelpendels mit veränderten Pendeldaten zeigt, lässt jedoch eindeutig erkennen, dass die berechneten Trajektorien mit den oben angegebenen veränderten Pendeldaten für eine Aufschwungsteuerung nicht geeignet. Dies lässt auch vermuten, dass die berechneten Trajektorien empfindliche gegenüber einer Änderung der Pendeldaten sind. Schließlich ist eine Aufschwungsteuerung nur für die dafür berechneten Pendeldaten gültig.\todo{check please!}
+		%
+		%Nachfolgend sind Verläufe der theoretisch Messbaren Zustandsgrößen, sowie der Stellgröße abgebildet, um den Einfluss von verschiedenen Beobachtereigenwerten darzustellen. Dabei sind die vom Beobachter geschätzten Zuständen zusammen mit den realwerten abgebildet.
+		%
+		%Die Eigenwerte des Geschlossenen Regelkreises liegen bei,
+		%\begin{align*}
+		%\lambda &= \begin{bmatrix}
+		%-1,3152& -5,6606-3,0304i& -5,6606+3,0304i&-258,5879 
+		%\end{bmatrix}
+		%\end{align*}
+		%Der Arbeitspunkt, sowie die Startwerte des Systems und des Beobachters liegen bei
+		%\begin{align*}
+		%\mathbf{x}_{\mathrm{AP}} &=\begin{bmatrix}\pi&0&\pi&0\end{bmatrix}\\
+		%\mathbf{x}_0^{\mathrm{T}} &=\begin{bmatrix}3&0&\pi&0\end{bmatrix}\\
+		%\mathbf{x}_{\mathrm{obs},0}^{\mathrm{T}} &=\begin{bmatrix}\pi&0&\pi&0\end{bmatrix}
+		%\end{align*}
+		%
+		%In \autoref{fig:beob1} bis \ref{fig:beob4} werden zunehmend schneller ausgelegte Beobachter verwendet. Beim langsamsten Beobachter in \autoref{fig:beob1} ist neben der langsamen Ausregelung des Schätzfehlers eine niedrige maximale Stellgröße festzustellen, das System regelt den Winkel $\varphi_1$ infolgedessen sehr langsam aus. Hier liegen die dominanten Eigenwerte des Beobachters noch Rechts des dominanten Systemeigenwertes. Die übrigen Abbildungen zeigen den folgenden Trend: Je weiter links der Systemeigenwerte die  Beobachtereigenwerte liegen, desto schneller wird der Beobachtungsfehler ausgeregelt. Damit steigt auch die Maximale Stellgröße und das System wird schneller in den Arbeitspunkt überführt.
+		%
+		%Bei den Werten für die gemessenen Zustände $x_1$ und $x_3$, welche den Winkeln $\varphi_1$ beziehungsweise $\varphi_2$ entsprechen fällt auf, dass kein Schätzfehler entsteht, wenn die Anfangswerte von Beobachter und System übereinstimmen. Dies ist bei allen Verläufen für $\varphi_2$ zu sehen. Um den anfänglichen Schätzfehler bei $\varphi_1$ zu minimieren, könnten die Anfagswerte des Beobachters an die des Systems angepasst werden, $\mathbf{x}_{\mathrm{obs},0} = \mathbf{x}_{0}$.
+		%
+		%
+		%\begin{figure}[htbp]
+		%	\centering
+		%	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_1_1_5_5.eps}
+		%	\caption{Systemverhalten mit Beobachtereigenwerten bei: [-1 -1 -5 -5]}
+		%	\label{fig:beob1}
+		%\end{figure}
+		%
+		%\begin{figure}[htbp]
+		%	\centering
+		%	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_5_5_10_10.eps}
+		%	\caption{Systemverhalten mit Beobachtereigenwerten bei: [-5 -5 -10 -10]}
+		%	\label{fig:beob2}
+		%\end{figure}
+		%
+		%\begin{figure}[htbp]
+		%	\centering
+		%	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_10_10_20_20.eps}
+		%	\caption{Systemverhalten mit Beobachtereigenwerten bei: [-10 -10 -20 -20]}
+		%	\label{fig:beob3}
+		%\end{figure}
+		%
+		%\begin{figure}[htbp]
+		%	\centering
+		%	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_20_20_40_40.eps}
+		%	\caption{Systemverhalten mit Beobachtereigenwerten bei: [-20 -20 -40 -40]}
+		%	\label{fig:beob4}
+		%\end{figure}
+		%\newpage
+		%
+		%\section{GUI Entwurf}
+		%
+		%Unter Ausnutzung der schon erstellten Funktionen soll in diesem Versuch das Modell durch eine grafische Benutzeroberfläche (\autoref{fig:gui})und einen Luenberger-Beobachter erweitert werden. Die wichtigsten Callback-Funktionen sind in \autoref{berechneK_Callback} bis \ref{stopAnimation_Callback} aufgeführt.
+		%
+		%% Zur Protokollierung des Versuchs werden im Folgenden die Ergebnisse als Listings und Screenshots vorgestellt.
+		%
+		%\begin{figure}[htbp]
+		%	\centering
+		%	\includegraphics[width = \textwidth]{Bilder/GUI.JPG}
+		%	\caption{Finale grafische Benutzeroberfläche}
+		%	\label{fig:gui}
+		%\end{figure}
+		%
+		%%\todo[inline]{Codes besser kommentieren}
+		%%\lstinputlisting[style=Matlab_colored,caption={Quellcode der relevanten Callback-Funktionen}, label={callback}]{Codes/simGUI.m}
+		%
+		%\lstinputlisting[style=Matlab_colored,caption={Quellcode der Callback-Funktion zur Reglerberechnung}, label={berechneK_Callback}]{Codes/berechneK_Callback.m}
+		%
+		%\lstinputlisting[style=Matlab_colored,caption={Quellcode Callback-Funktion zum Start der Simulation}, label={startSim_Callback}]{Codes/startSim_Callback.m}
+		%
+		%\lstinputlisting[style=Matlab_colored,caption={Quellcode der Callback-Funktion zum Stoppen der Animation}, label={stopAnimation_Callback}]{Codes/stopAnimation_Callback.m}
+		%
+		%
+		%\section{Beobachterentwurf}
+		%Zur Berechnung der Beobachter-Matrix \verb|L| soll die Funktion \verb|berechneBeobachter| implementiert werden.     
+		%\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion berechneBeobachter}, label={berechneBeobachter}]{Codes/berechneBeobachter.m}
+		%
+		%Für die Erweiterung soll zudem die Funktion \verb|runPendel| erweitert werden:
+		%\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion runPendel}, label={runPendel}]{Codes/runPendel.m}
+		%
+		%Das Zugrundeliegende Simulink Modell mit Beobachter ist in \autoref{fig:simObs} zu sehen.
+		%
+		%\begin{figure}[htbp]
+		%	\centering
+		%	\includegraphics[width = \textwidth]{Bilder/simulink_V4.JPG}
+		%	\caption{Simulink-Modell mit Luenberger-Beobachter}
+		%	\label{fig:simObs}
+		%\end{figure}
+
+\end{document}
