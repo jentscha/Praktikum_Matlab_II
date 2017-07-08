@@ -66,8 +66,14 @@ stPendelvec(2).l1 = 0.3;
 stPendelvec(2).l2 = 0.3;
 stPendelvec(2).Rp1 = 10e-4;
 stPendelvec(2).Rp2 = 10e-5;
+stPendelvec(3) = stPendel;
+stPendelvec(3).m1 = 0.4;
+stPendelvec(3).m2 = 0.4;
+stPendelvec(4) = stPendel;
+stPendelvec(4).g = 11;
 
-for jj = 1:2
+
+for jj = 1:4
     simOut = runPendel(stPendelvec(jj), AP, x0, M_AP, stTraj, T + 1);
     simOut.mX = simOut.mX';
     

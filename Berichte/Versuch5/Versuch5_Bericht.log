@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  8 JUL 2017 19:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  8 JUL 2017 19:48
 entering extended mode
 **Versuch5_Bericht.tex
 
@@ -2119,7 +2119,7 @@ df>
 (epstopdf)                    size: 49629 bytes
 (epstopdf)             Command: <epstopdf --outfile=Bilder/Sim_PendelData_1-eps
 -converted-to.pdf Bilder/Sim_PendelData_1.eps>
-(epstopdf)             \includegraphics on input line 195.
+(epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
 
 <Bilder/Sim_PendelData_1-eps-converted-to.pdf, id=250, 854.19125pt x 529.98pt>
@@ -2127,7 +2127,7 @@ File: Bilder/Sim_PendelData_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Bilder/Sim_PendelData_1-eps-converted-to.pdf>
 Package pdftex.def Info: Bilder/Sim_PendelData_1-eps-converted-to.pdf used on i
-nput line 195.
+nput line 196.
 (pdftex.def)             Requested size: 455.24411pt x 282.4488pt.
 
 Underfull \vbox (badness 1715) has occurred while \output is active []
@@ -2145,7 +2145,7 @@ df>
 (epstopdf)                    size: 49674 bytes
 (epstopdf)             Command: <epstopdf --outfile=Bilder/Sim_PendelData_2-eps
 -converted-to.pdf Bilder/Sim_PendelData_2.eps>
-(epstopdf)             \includegraphics on input line 204.
+(epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 
 <Bilder/Sim_PendelData_2-eps-converted-to.pdf, id=263, 854.19125pt x 529.98pt>
@@ -2153,76 +2153,118 @@ File: Bilder/Sim_PendelData_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Bilder/Sim_PendelData_2-eps-converted-to.pdf>
 Package pdftex.def Info: Bilder/Sim_PendelData_2-eps-converted-to.pdf used on i
-nput line 204.
+nput line 205.
+(pdftex.def)             Requested size: 455.24411pt x 282.4488pt.
+Package epstopdf Info: Source file: <Bilder/Sim_PendelData_3.eps>
+(epstopdf)                    date: 2017-07-08 19:36:23
+(epstopdf)                    size: 138151 bytes
+(epstopdf)             Output file: <Bilder/Sim_PendelData_3-eps-converted-to.p
+df>
+(epstopdf)                    date: 2017-07-08 19:44:55
+(epstopdf)                    size: 50987 bytes
+(epstopdf)             Command: <epstopdf --outfile=Bilder/Sim_PendelData_3-eps
+-converted-to.pdf Bilder/Sim_PendelData_3.eps>
+(epstopdf)             \includegraphics on input line 212.
+Package epstopdf Info: Output file is already uptodate.
+
+<Bilder/Sim_PendelData_3-eps-converted-to.pdf, id=264, 854.19125pt x 529.98pt>
+File: Bilder/Sim_PendelData_3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Bilder/Sim_PendelData_3-eps-converted-to.pdf>
+Package pdftex.def Info: Bilder/Sim_PendelData_3-eps-converted-to.pdf used on i
+nput line 212.
+(pdftex.def)             Requested size: 455.24411pt x 282.4488pt.
+Package epstopdf Info: Source file: <Bilder/Sim_PendelData_4.eps>
+(epstopdf)                    date: 2017-07-08 19:36:26
+(epstopdf)                    size: 138327 bytes
+(epstopdf)             Output file: <Bilder/Sim_PendelData_4-eps-converted-to.p
+df>
+(epstopdf)                    date: 2017-07-08 19:44:56
+(epstopdf)                    size: 48824 bytes
+(epstopdf)             Command: <epstopdf --outfile=Bilder/Sim_PendelData_4-eps
+-converted-to.pdf Bilder/Sim_PendelData_4.eps>
+(epstopdf)             \includegraphics on input line 219.
+Package epstopdf Info: Output file is already uptodate.
+
+<Bilder/Sim_PendelData_4-eps-converted-to.pdf, id=265, 854.19125pt x 529.98pt>
+File: Bilder/Sim_PendelData_4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Bilder/Sim_PendelData_4-eps-converted-to.pdf>
+Package pdftex.def Info: Bilder/Sim_PendelData_4-eps-converted-to.pdf used on i
+nput line 219.
 (pdftex.def)             Requested size: 455.24411pt x 282.4488pt.
 
-Overfull \hbox (37.0428pt too wide) in paragraph at lines 209--209
+Overfull \hbox (37.0428pt too wide) in paragraph at lines 225--225
 [][][][]\T1/5sf/m/n/11 check 
  []
 
 
-Overfull \hbox (41.98181pt too wide) in paragraph at lines 209--209
+Overfull \hbox (41.98181pt too wide) in paragraph at lines 225--225
 \T1/5sf/m/n/11 please!  
  []
 
 
-Overfull \hbox (37.0428pt too wide) in paragraph at lines 209--209
+Overfull \hbox (37.0428pt too wide) in paragraph at lines 225--225
 [][][][]\T1/5sf/m/n/11 check 
  []
 
 
-Overfull \hbox (41.98181pt too wide) in paragraph at lines 209--209
+Overfull \hbox (41.98181pt too wide) in paragraph at lines 225--225
 \T1/5sf/m/n/11 please!  
  []
 
 
-Overfull \hbox (6.13266pt too wide) in paragraph at lines 209--209
+Overfull \hbox (6.13266pt too wide) in paragraph at lines 225--225
 [][][] 
  []
 
 
-Overfull \hbox (37.0428pt too wide) in paragraph at lines 209--209
+Overfull \hbox (37.0428pt too wide) in paragraph at lines 225--225
 [][][][]\T1/5sf/m/n/11 check 
  []
 
 
-Overfull \hbox (41.98181pt too wide) in paragraph at lines 209--209
+Overfull \hbox (41.98181pt too wide) in paragraph at lines 225--225
 \T1/5sf/m/n/11 please!  
  []
 
 
-Overfull \hbox (37.0428pt too wide) in paragraph at lines 209--209
+Overfull \hbox (37.0428pt too wide) in paragraph at lines 225--225
 [][][][]\T1/5sf/m/n/11 check 
  []
 
 
-Overfull \hbox (41.98181pt too wide) in paragraph at lines 209--209
+Overfull \hbox (41.98181pt too wide) in paragraph at lines 225--225
 \T1/5sf/m/n/11 please!  
  []
 
 
-Overfull \hbox (6.13266pt too wide) in paragraph at lines 209--209
+Overfull \hbox (6.13266pt too wide) in paragraph at lines 225--225
 [][][] 
  []
 
 [12 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_
-II/Berichte/Versuch5/Bilder/Sim_PendelData_1-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
- [13 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab
-_II/Berichte/Versuch5/Bilder/Sim_PendelData_2-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
+II/Berichte/Versuch5/Bilder/Sim_PendelData_1-eps-converted-to.pdf>] [13 <C:/Use
+rs/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_II/Berichte
+/Versuch5/Bilder/Sim_PendelData_2-eps-converted-to.pdf> <C:/Users/Ali Kerem Sac
+akli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_II/Berichte/Versuch5/Bilder
+/Sim_PendelData_3-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
+ [14 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab
+_II/Berichte/Versuch5/Bilder/Sim_PendelData_4-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
 
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
 Berichte\Versuch5\Versuch5_Bericht.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 299.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 299.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 299.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 227.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
  ) 
 Here is how much of TeX's memory you used:
- 27313 strings out of 493921
- 491843 string characters out of 3147247
- 933780 words of memory out of 3000000
- 29771 multiletter control sequences out of 15000+200000
+ 27328 strings out of 493921
+ 492344 string characters out of 3147247
+ 934112 words of memory out of 3000000
+ 29781 multiletter control sequences out of 15000+200000
  119684 words of font info for 92 fonts, out of 3000000 for 9000
  847 hyphenation exceptions out of 8191
  73i,13n,108p,868b,2633s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2238,15 +2280,16 @@ bitstrea/charter/bchb8a.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/
 m Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7t.pfb>
 <C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/m
 dbch/md-chr7y.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/
-type1/public/txfonts/t1xbtt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiK
-TeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/Ali Kerem Sacakli/AppDat
-a/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/Ali Kerem S
-acakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/tcxbtt.pfb><C:/Use
-rs/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/tcxt
-t.pfb>
-Output written on Versuch5_Bericht.pdf (15 pages, 699507 bytes).
+type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roamin
+g/MiKTeX/2.9/fonts/type1/public/txfonts/t1xbtt.pfb><C:/Users/Ali Kerem Sacakli/
+AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/Ali K
+erem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb><C
+:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts
+/tcxbtt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/
+public/txfonts/tcxtt.pfb>
+Output written on Versuch5_Bericht.pdf (16 pages, 800546 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 168 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

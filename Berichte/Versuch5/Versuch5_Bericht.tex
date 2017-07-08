@@ -189,11 +189,12 @@ Nachfolgend werden Plots der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ fü
 			\label{fig:simulinkAufschwung}
 		\end{figure}
 		
-Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorgegebenen Trajektorien bei gegebenen Pendeldaten. Für die darauffolgende Abbildung wurden ein paar Pendeldaten verändert ($l_1 = 0,3\,m$, $l_2 = 0,3\,m$, $R_p1 = 10^{-3}$, $R_p2 = 10^{-4}$).
+Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorgegebenen Trajektorien bei gegebenen Pendeldaten. Für die darauffolgenden Abbildungen wurden die Pendeldaten verändert ($l_1 = 0,3\,m$, $l_2 = 0,3\,m$, $R_p1 = 10^{-3}$, $R_p2 = 10^{-4}$).
+
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_1.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_sim = 2\,s}$ mit gegebenen Pendeldaten}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_{sim} = 2\,s}$ mit gegebenen Pendeldaten}
 			\label{fig:simulink1}
 		\end{figure}
 		
@@ -202,98 +203,25 @@ Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorge
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_2.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_sim = 2\,s}$ mit veränderten Pendeldaten}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_{sim} = 2\,s}$ ($l_1 = 0,3\,m$, $l_2 = 0,3\,m$, $R_{p1} = 10^{-3}$, $R_{p2} = 10^{-4}$)}
 			\label{fig:simulink2}
 		\end{figure}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_3.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_{sim} = 2\,s}$ ($m_1 = 0,4\,kg$, $m_2 = 0,4\,kg$)}
+			\label{fig:simulink3}
+		\end{figure}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_4.eps}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_{sim} = 2\,s}$ ($g = 11\,N/kg$)}
+			\label{fig:simulink4}
+		\end{figure}
+		
 
-Der Zeitplot \ref{fig:simulink1} zeigt eine Kongruenz zwischen den simulierten Verläufen und den berechneten Trajektorien. Der Zeitplot, der die Simulation des Doppelpendels mit veränderten Pendeldaten zeigt, lässt jedoch eindeutig erkennen, dass die berechneten Trajektorien mit den oben angegebenen veränderten Pendeldaten für eine Aufschwungsteuerung nicht geeignet. Dies lässt auch vermuten, dass die berechneten Trajektorien empfindliche gegenüber einer Änderung der Pendeldaten sind. Schließlich ist eine Aufschwungsteuerung nur für die dafür berechneten Pendeldaten gültig.\todo{check please!}
-		%
-		%Nachfolgend sind Verläufe der theoretisch Messbaren Zustandsgrößen, sowie der Stellgröße abgebildet, um den Einfluss von verschiedenen Beobachtereigenwerten darzustellen. Dabei sind die vom Beobachter geschätzten Zuständen zusammen mit den realwerten abgebildet.
-		%
-		%Die Eigenwerte des Geschlossenen Regelkreises liegen bei,
-		%\begin{align*}
-		%\lambda &= \begin{bmatrix}
-		%-1,3152& -5,6606-3,0304i& -5,6606+3,0304i&-258,5879 
-		%\end{bmatrix}
-		%\end{align*}
-		%Der Arbeitspunkt, sowie die Startwerte des Systems und des Beobachters liegen bei
-		%\begin{align*}
-		%\mathbf{x}_{\mathrm{AP}} &=\begin{bmatrix}\pi&0&\pi&0\end{bmatrix}\\
-		%\mathbf{x}_0^{\mathrm{T}} &=\begin{bmatrix}3&0&\pi&0\end{bmatrix}\\
-		%\mathbf{x}_{\mathrm{obs},0}^{\mathrm{T}} &=\begin{bmatrix}\pi&0&\pi&0\end{bmatrix}
-		%\end{align*}
-		%
-		%In \autoref{fig:beob1} bis \ref{fig:beob4} werden zunehmend schneller ausgelegte Beobachter verwendet. Beim langsamsten Beobachter in \autoref{fig:beob1} ist neben der langsamen Ausregelung des Schätzfehlers eine niedrige maximale Stellgröße festzustellen, das System regelt den Winkel $\varphi_1$ infolgedessen sehr langsam aus. Hier liegen die dominanten Eigenwerte des Beobachters noch Rechts des dominanten Systemeigenwertes. Die übrigen Abbildungen zeigen den folgenden Trend: Je weiter links der Systemeigenwerte die  Beobachtereigenwerte liegen, desto schneller wird der Beobachtungsfehler ausgeregelt. Damit steigt auch die Maximale Stellgröße und das System wird schneller in den Arbeitspunkt überführt.
-		%
-		%Bei den Werten für die gemessenen Zustände $x_1$ und $x_3$, welche den Winkeln $\varphi_1$ beziehungsweise $\varphi_2$ entsprechen fällt auf, dass kein Schätzfehler entsteht, wenn die Anfangswerte von Beobachter und System übereinstimmen. Dies ist bei allen Verläufen für $\varphi_2$ zu sehen. Um den anfänglichen Schätzfehler bei $\varphi_1$ zu minimieren, könnten die Anfagswerte des Beobachters an die des Systems angepasst werden, $\mathbf{x}_{\mathrm{obs},0} = \mathbf{x}_{0}$.
-		%
-		%
-		%\begin{figure}[htbp]
-		%	\centering
-		%	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_1_1_5_5.eps}
-		%	\caption{Systemverhalten mit Beobachtereigenwerten bei: [-1 -1 -5 -5]}
-		%	\label{fig:beob1}
-		%\end{figure}
-		%
-		%\begin{figure}[htbp]
-		%	\centering
-		%	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_5_5_10_10.eps}
-		%	\caption{Systemverhalten mit Beobachtereigenwerten bei: [-5 -5 -10 -10]}
-		%	\label{fig:beob2}
-		%\end{figure}
-		%
-		%\begin{figure}[htbp]
-		%	\centering
-		%	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_10_10_20_20.eps}
-		%	\caption{Systemverhalten mit Beobachtereigenwerten bei: [-10 -10 -20 -20]}
-		%	\label{fig:beob3}
-		%\end{figure}
-		%
-		%\begin{figure}[htbp]
-		%	\centering
-		%	\includegraphics[width = \textwidth]{Bilder/Aufgabe4_8_beob_20_20_40_40.eps}
-		%	\caption{Systemverhalten mit Beobachtereigenwerten bei: [-20 -20 -40 -40]}
-		%	\label{fig:beob4}
-		%\end{figure}
-		%\newpage
-		%
-		%\section{GUI Entwurf}
-		%
-		%Unter Ausnutzung der schon erstellten Funktionen soll in diesem Versuch das Modell durch eine grafische Benutzeroberfläche (\autoref{fig:gui})und einen Luenberger-Beobachter erweitert werden. Die wichtigsten Callback-Funktionen sind in \autoref{berechneK_Callback} bis \ref{stopAnimation_Callback} aufgeführt.
-		%
-		%% Zur Protokollierung des Versuchs werden im Folgenden die Ergebnisse als Listings und Screenshots vorgestellt.
-		%
-		%\begin{figure}[htbp]
-		%	\centering
-		%	\includegraphics[width = \textwidth]{Bilder/GUI.JPG}
-		%	\caption{Finale grafische Benutzeroberfläche}
-		%	\label{fig:gui}
-		%\end{figure}
-		%
-		%%\todo[inline]{Codes besser kommentieren}
-		%%\lstinputlisting[style=Matlab_colored,caption={Quellcode der relevanten Callback-Funktionen}, label={callback}]{Codes/simGUI.m}
-		%
-		%\lstinputlisting[style=Matlab_colored,caption={Quellcode der Callback-Funktion zur Reglerberechnung}, label={berechneK_Callback}]{Codes/berechneK_Callback.m}
-		%
-		%\lstinputlisting[style=Matlab_colored,caption={Quellcode Callback-Funktion zum Start der Simulation}, label={startSim_Callback}]{Codes/startSim_Callback.m}
-		%
-		%\lstinputlisting[style=Matlab_colored,caption={Quellcode der Callback-Funktion zum Stoppen der Animation}, label={stopAnimation_Callback}]{Codes/stopAnimation_Callback.m}
-		%
-		%
-		%\section{Beobachterentwurf}
-		%Zur Berechnung der Beobachter-Matrix \verb|L| soll die Funktion \verb|berechneBeobachter| implementiert werden.     
-		%\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion berechneBeobachter}, label={berechneBeobachter}]{Codes/berechneBeobachter.m}
-		%
-		%Für die Erweiterung soll zudem die Funktion \verb|runPendel| erweitert werden:
-		%\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion runPendel}, label={runPendel}]{Codes/runPendel.m}
-		%
-		%Das Zugrundeliegende Simulink Modell mit Beobachter ist in \autoref{fig:simObs} zu sehen.
-		%
-		%\begin{figure}[htbp]
-		%	\centering
-		%	\includegraphics[width = \textwidth]{Bilder/simulink_V4.JPG}
-		%	\caption{Simulink-Modell mit Luenberger-Beobachter}
-		%	\label{fig:simObs}
-		%\end{figure}
-
+Der Zeitplot \ref{fig:simulink1} zeigt eine Kongruenz zwischen den simulierten Verläufen und den berechneten Trajektorien. Die Zeitplots, die die Simulationen des Doppelpendels mit veränderten Pendeldaten zeigen, lassen jedoch eindeutig erkennen, dass die berechneten Trajektorien mit den oben angegebenen veränderten Pendeldaten für eine Aufschwungsteuerung nicht geeignet sind. Dies lässt auch vermuten, dass die berechneten Trajektorien empfindliche gegenüber einer Änderung der Pendeldaten sind. Schließlich ist eine Aufschwungsteuerung nur für die dafür berechneten Pendeldaten gültig.\todo{check please!}
+		
 \end{document}
