@@ -115,58 +115,61 @@ Die relevanten Codes sind wie folgt:
 \lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion \textbf{berechneTrajektorie}}, label={berechneTrajektorie}]{Codes/berechneTrajektorie.m}
 
 
-Lösungen können für den Wertebereich von $\mathbf{T = 0,65s}$ bis $\mathbf{T = 1,9s}$ gefunden werden. Die Unterschreitung von $\mathbf{T = 0,65s}$ führt zu numerischen Problemen. Eine Überschreitung von $\mathbf{T = 1,9s}$ ist physikalisch unmöglich, da der zweite Pendel eine Mindestgeschwindigkeit braucht um in die aufrechte Lage aufgeschwungen werden zu können. nicht aufrecht erhalten werden kann und somit in die hängende Lage übergeht.\todo{reicht die Begründung aus?}
+Lösungen können für den Wertebereich von $0,65\,\mathrm{s}\leq T \leq 1,9\,\mathrm{s}$ gefunden werden. Die Unterschreitung von $T = 0,65\,\mathrm{s}$ führt zu numerischen Problemen. Eine Überschreitung von $T = 1,9\,\mathrm{s}$ ist physikalisch unmöglich, da das zweite Pendel eine Mindestgeschwindigkeit braucht um in die aufrechte Lage aufgeschwungen werden zu können.
+%nicht aufrecht erhalten werden kann und somit in die hängende Lage übergeht.
+%\todo{reicht die Begründung aus?} ja.
 
-Die kleinste $T$, bei der die Beschränkung $|M|_max = 1,5\,Nm$ noch eingehalten wird ist $\mathbf{T = 1,1185s}$.\todo{Plot dazu?}
+Die kleinste $T$, bei der die Stellgrößenbeschränkung $|M|_{max} = 1,5\,Nm$ noch eingehalten wird ist $T = 1,1185\,\mathrm{s}$.
+%\todo{Plot dazu?}
 
 Nachfolgend werden Plots der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für verschiedene Übergangszeiten gezeigt.
 
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_T_0_65sec.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 0,65\,s}$}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 0,65\,\mathrm{s}$}
 			\label{fig:sim065}
 		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_T_0_8sec.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 0,8\,s}$}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 0,8\,\mathrm{s}$}
 			\label{fig:sim08}
 		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_T_1sec.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$}
 			\label{fig:sim1}
 		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_2sec.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1,2\,s}$}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,2\,\mathrm{s}$}
 			\label{fig:sim12}
 		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_4sec.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1,4\,s}$}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,4\,\mathrm{s}$}
 			\label{fig:sim14}
 		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_6sec.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1,6\,s}$}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,6\,\mathrm{s}$}
 			\label{fig:sim16}
 		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_9sec.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1,9\,s}$}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,9\,\mathrm{s}$}
 			\label{fig:sim19}
 		\end{figure}
 		\newpage
@@ -194,7 +197,7 @@ Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorge
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_1.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_{sim} = 2\,s}$ mit gegebenen Pendeldaten}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ mit gegebenen Pendeldaten}
 			\label{fig:simulink1}
 		\end{figure}
 		
@@ -203,21 +206,21 @@ Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorge
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_2.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_{sim} = 2\,s}$ ($l_1 = 0,3\,m$, $l_2 = 0,3\,m$, $R_{p1} = 10^{-3}$, $R_{p2} = 10^{-4}$)}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ ($l_1 = 0,3\,m$, $l_2 = 0,3\,m$, $R_{p1} = 10^{-3}$, $R_{p2} = 10^{-4}$)}
 			\label{fig:simulink2}
 		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_3.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_{sim} = 2\,s}$ ($m_1 = 0,4\,kg$, $m_2 = 0,4\,kg$)}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ ($m_1 = 0,4\,kg$, $m_2 = 0,4\,kg$)}
 			\label{fig:simulink3}
 		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_4.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $\mathbf{T = 1\,s}$ $\mathbf{T_{sim} = 2\,s}$ ($g = 11\,N/kg$)}
+			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ ($g = 11\,N/kg$)}
 			\label{fig:simulink4}
 		\end{figure}
 		
