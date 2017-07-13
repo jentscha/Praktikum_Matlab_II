@@ -1,0 +1,31 @@
+function [ A, B, C, D] = linearisierung_XU( x,u )
+%LINEARISIERUNG Summary of this function goes here
+%   Detailed explanation goes here
+syms phi1 phi2 dphi1 dphi2 ddphi1 ddphi2 M;
+[f,h] = nonlinear_model();
+
+z = [phi1;dphi1;phi2;dphi2];
+u = M;
+
+f_M_AP = subs(f(2),z,x);
+
+M_AP = solve(f_M_AP == 0 , M);
+
+A = jacobian(f,z);
+B = jacobian(f,u);
+C = jacobian(h,z);
+D = jacobian(h,u);
+
+A = subs(A,[z,u],[x(1),M_AP]);
+B = subs(B,[z,u],[AP,M_AP]);
+C = subs(C,[z,u],[AP,M_AP]);
+D = subs(D,[z,u],[AP,M_AP]);
+
+
+A = double(A);
+B = double(B);
+C = double(C);
+D = double(D);
+
+end
+
