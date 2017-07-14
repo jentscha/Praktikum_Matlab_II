@@ -6,17 +6,25 @@ function [ vTK, mK ] = berechneK( stTraj, Q, R )
 n = length(A);
 
 P_End = care(A, B, Q, R, zeros(size(B)), eye(n));
-P_End = P_End(:).';
+P_End = (P_End(:).')';
 
-RiccatiDGL(stTraj.vT(end), P_End, stTraj, Q, R);
+Pdot_check = RiccatiDGL(stTraj.vT(end), P_End, stTraj, Q, R);
 
 [vTK,vPt] = ode45(@RiccatiDGL,flip(stTraj.vT), P_End);
 vTK = flipud(vTK);
-vPt = flipud(vPt)';
+vPt = flipud(vPt);
 
-P = reshape(vPt,n,size(vPt,2)*(size(vPt,1)/n));
+for ii = 1:length(vTK)
+%     xh = interp1(stTraj.vT,stTraj.mX',stTraj.vT(ii))';
+%     uh = interp1(stTraj.vT,stTraj.vU,stTraj.vT(ii));
+    xh = stTraj.mX(:,ii);
+    uh = stTraj.vU(ii);
+    [~,Bh,~,~] = linearisierung_XU(xh,uh);
 
-mK = inv(R)*B'*P;
-mK = reshape(mK,n,size(mK,2)/n);
+    Ph = vPt(ii,:);
+    Ph = reshape(Ph,n,n);
+     
+    mK(1:4,ii) = inv(R)*Bh'*Ph;
+end
 end
 

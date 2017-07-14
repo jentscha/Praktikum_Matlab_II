@@ -27,7 +27,7 @@ Xpol = interp1(stTraj.vT,stTraj.mX',t)';
 n = size(A,1);
 P = reshape(vP,n,n);
 
-vPdot = (P*B*(R^-1)*B'*P)-(P*A)-(A'*P)-Q;
+vPdot = (P*B*inv(R)*B'*P)-(P*A)-(A'*P)-Q;
 
 vPdot = (vPdot(:).')';
 

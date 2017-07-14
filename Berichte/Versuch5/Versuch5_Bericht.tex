@@ -138,12 +138,12 @@ Nachfolgend werden Plots der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ fü
 			\label{fig:sim08}
 		\end{figure}
 		
-		\begin{figure}[htbp]
-			\centering
-			\includegraphics[width = \textwidth]{Bilder/Sim_T_1sec.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$}
-			\label{fig:sim1}
-		\end{figure}
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_T_1sec.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$}
+%			\label{fig:sim1}
+%		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
@@ -152,12 +152,12 @@ Nachfolgend werden Plots der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ fü
 			\label{fig:sim12}
 		\end{figure}
 		
-		\begin{figure}[htbp]
-			\centering
-			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_4sec.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,4\,\mathrm{s}$}
-			\label{fig:sim14}
-		\end{figure}
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_4sec.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,4\,\mathrm{s}$}
+%			\label{fig:sim14}
+%		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
@@ -172,27 +172,29 @@ Nachfolgend werden Plots der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ fü
 			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,9\,\mathrm{s}$}
 			\label{fig:sim19}
 		\end{figure}
-		\newpage
-		\todo[inline]{Erklären Sie die Auswirkung der Übergangszeiten T auf das Ergebnis}
 		
-		\begin{itemize}
-			\item T größer -> Mmax kleiner
-			\item ...
-		\end{itemize}
+		\newpage
+		\autoref{fig:sim065} bis \ref{fig:sim19} zeigen, dass eine größere Übergangszeit $T$ ein Geringeres Stellgrößenmaximum nach sich zieht.
+%		\newpage
+%		\todo[inline]{Erklären Sie die Auswirkung der Übergangszeiten T auf das Ergebnis}
+%		
+%		\begin{itemize}
+%			\item T größer -> Mmax kleiner
+%			\item ...
+%		\end{itemize}
 		
 \section{Simulation}
 		
-		Das Simulinkmodell der Aufschwungsteuerung sieht wie folgt aus:
-		\\
+Das Simulinkmodell der Aufschwungsteuerung ist in \autoref{fig:simulinkAufschwung} dargestellt.
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width = \textwidth]{Bilder/Simulink_Modell_V5.JPG}
+		\caption{Simulink-Modell der Aufschwungsteuerung}
+		\label{fig:simulinkAufschwung}
+	\end{figure}
 		
-		\begin{figure}[htbp]
-			\centering
-			\includegraphics[width = \textwidth]{Bilder/Simulink_Modell_V5.JPG}
-			\caption{Simulink-Modell der Aufschwungsteuerung}
-			\label{fig:simulinkAufschwung}
-		\end{figure}
-		
-Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorgegebenen Trajektorien bei gegebenen Pendeldaten. Für die darauffolgenden Abbildungen wurden die Pendeldaten verändert ($l_1 = 0,3\,m$, $l_2 = 0,3\,m$, $R_p1 = 10^{-3}$, $R_p2 = 10^{-4}$).
+Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorgegebenen Trajektorien bei gegebenen Pendeldaten. Für die darauffolgenden Abbildungen wurden die Pendeldaten verändert.
+%($l_1 = 0,3\,m$, $l_2 = 0,3\,m$, $R_p1 = 10^{-3}$, $R_p2 = 10^{-4}$).
 
 		\begin{figure}[htbp]
 			\centering
@@ -200,9 +202,8 @@ Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorge
 			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ mit gegebenen Pendeldaten}
 			\label{fig:simulink1}
 		\end{figure}
-		
-
-		\todo[inline]{Sollen wir noch alles animieren und Screenshots einfügen? Siehe Aufgabenstellung}
+	
+%		\todo[inline]{Sollen wir noch alles animieren und Screenshots einfügen? Siehe Aufgabenstellung}
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_2.eps}
@@ -210,12 +211,12 @@ Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorge
 			\label{fig:simulink2}
 		\end{figure}
 		
-		\begin{figure}[htbp]
-			\centering
-			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_3.eps}
-			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ ($m_1 = 0,4\,kg$, $m_2 = 0,4\,kg$)}
-			\label{fig:simulink3}
-		\end{figure}
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_3.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ ($m_1 = 0,4\,kg$, $m_2 = 0,4\,kg$)}
+%			\label{fig:simulink3}
+%		\end{figure}
 		
 		\begin{figure}[htbp]
 			\centering
@@ -225,6 +226,6 @@ Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorge
 		\end{figure}
 		
 
-Der Zeitplot \ref{fig:simulink1} zeigt eine Kongruenz zwischen den simulierten Verläufen und den berechneten Trajektorien. Die Zeitplots, die die Simulationen des Doppelpendels mit veränderten Pendeldaten zeigen, lassen jedoch eindeutig erkennen, dass die berechneten Trajektorien mit den oben angegebenen veränderten Pendeldaten für eine Aufschwungsteuerung nicht geeignet sind. Dies lässt auch vermuten, dass die berechneten Trajektorien empfindliche gegenüber einer Änderung der Pendeldaten sind. Schließlich ist eine Aufschwungsteuerung nur für die dafür berechneten Pendeldaten gültig.\todo{check please!}
+In \autoref{fig:simulink1} ist zu sehen, dass die berechneten Trajektorien exakt mit den simulierten Verläufen übereinstimmen. Das Pendel wird in die obere Ruhelage überführt, verweilt hier eine kurze zeit und verlässt sie dann wieder. Verändert man die Parameter des simulierten Pendels gegenüber denen anhand derer die Aufschwungsteuerung berechnet wurde, kann die Steuerung das Pendel in der Simulation nichtmehr in die obere Ruhelage überführen. Dies ist in \autoref{fig:simulink2} und \ref{fig:simulink4} zu sehen. Eine Reine Aufschwungsteuerung ohne Regelung ist nur für die ursprünglichen berechneten Pendelparameter gültig.
 		
 \end{document}

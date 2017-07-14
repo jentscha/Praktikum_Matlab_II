@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.15)  9 JUL 2017 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.15)  11 JUL 2017 14:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2070,24 +2070,6 @@ Package pdftex.def Info: Bilder/Sim_T_0_8sec-eps-converted-to.pdf  used on inpu
 t line 136. on input line 136.
 Package pdftex.def Info: Requested size: 455.24411pt x 281.13065pt on input lin
 e 136.
-Package epstopdf Info: Source file: <Bilder/Sim_T_1sec.eps>
-(epstopdf)                    date: 2017-07-09 21:34:36
-(epstopdf)                    size: 134119 bytes
-(epstopdf)             Output file: <Bilder/Sim_T_1sec-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-07-09 21:34:36
-(epstopdf)                    size: 49629 bytes
-(epstopdf)             Command: <repstopdf --outfile=Bilder/Sim_T_1sec-eps-conv
-erted-to.pdf Bilder/Sim_T_1sec.eps>
-(epstopdf)             \includegraphics on input line 143.
-Package epstopdf Info: Output file is already uptodate.
-<Bilder/Sim_T_1sec-eps-converted-to.pdf, id=172, pagebox=cropbox, 852.18375pt x
- 529.98pt>
-File: Bilder/Sim_T_1sec-eps-converted-to.pdf Graphic file (type pdf)
-<use Bilder/Sim_T_1sec-eps-converted-to.pdf>
-Package pdftex.def Info: Bilder/Sim_T_1sec-eps-converted-to.pdf  used on input 
-line 143. on input line 143.
-Package pdftex.def Info: Requested size: 455.24411pt x 283.1281pt on input line
- 143.
 Package epstopdf Info: Source file: <Bilder/Sim_T_1_2sec.eps>
 (epstopdf)                    date: 2017-07-09 21:34:36
 (epstopdf)                    size: 127292 bytes
@@ -2098,7 +2080,7 @@ Package epstopdf Info: Source file: <Bilder/Sim_T_1_2sec.eps>
 nverted-to.pdf Bilder/Sim_T_1_2sec.eps>
 (epstopdf)             \includegraphics on input line 150.
 Package epstopdf Info: Output file is already uptodate.
-<Bilder/Sim_T_1_2sec-eps-converted-to.pdf, id=173, pagebox=cropbox, 858.20625pt
+<Bilder/Sim_T_1_2sec-eps-converted-to.pdf, id=172, pagebox=cropbox, 858.20625pt
  x 529.98pt>
 File: Bilder/Sim_T_1_2sec-eps-converted-to.pdf Graphic file (type pdf)
 <use Bilder/Sim_T_1_2sec-eps-converted-to.pdf>
@@ -2106,24 +2088,6 @@ Package pdftex.def Info: Bilder/Sim_T_1_2sec-eps-converted-to.pdf  used on inpu
 t line 150. on input line 150.
 Package pdftex.def Info: Requested size: 455.24411pt x 281.13065pt on input lin
 e 150.
-Package epstopdf Info: Source file: <Bilder/Sim_T_1_4sec.eps>
-(epstopdf)                    date: 2017-07-09 21:34:36
-(epstopdf)                    size: 150005 bytes
-(epstopdf)             Output file: <Bilder/Sim_T_1_4sec-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-07-09 21:34:36
-(epstopdf)                    size: 56867 bytes
-(epstopdf)             Command: <repstopdf --outfile=Bilder/Sim_T_1_4sec-eps-co
-nverted-to.pdf Bilder/Sim_T_1_4sec.eps>
-(epstopdf)             \includegraphics on input line 157.
-Package epstopdf Info: Output file is already uptodate.
-<Bilder/Sim_T_1_4sec-eps-converted-to.pdf, id=174, pagebox=cropbox, 858.20625pt
- x 529.98pt>
-File: Bilder/Sim_T_1_4sec-eps-converted-to.pdf Graphic file (type pdf)
-<use Bilder/Sim_T_1_4sec-eps-converted-to.pdf>
-Package pdftex.def Info: Bilder/Sim_T_1_4sec-eps-converted-to.pdf  used on inpu
-t line 157. on input line 157.
-Package pdftex.def Info: Requested size: 455.24411pt x 281.13065pt on input lin
-e 157.
 Package epstopdf Info: Source file: <Bilder/Sim_T_1_6sec.eps>
 (epstopdf)                    date: 2017-07-09 21:34:36
 (epstopdf)                    size: 132281 bytes
@@ -2134,7 +2098,7 @@ Package epstopdf Info: Source file: <Bilder/Sim_T_1_6sec.eps>
 nverted-to.pdf Bilder/Sim_T_1_6sec.eps>
 (epstopdf)             \includegraphics on input line 164.
 Package epstopdf Info: Output file is already uptodate.
-<Bilder/Sim_T_1_6sec-eps-converted-to.pdf, id=175, pagebox=cropbox, 858.20625pt
+<Bilder/Sim_T_1_6sec-eps-converted-to.pdf, id=173, pagebox=cropbox, 858.20625pt
  x 529.98pt>
 File: Bilder/Sim_T_1_6sec-eps-converted-to.pdf Graphic file (type pdf)
 <use Bilder/Sim_T_1_6sec-eps-converted-to.pdf>
@@ -2152,7 +2116,7 @@ Package epstopdf Info: Source file: <Bilder/Sim_T_1_9sec.eps>
 nverted-to.pdf Bilder/Sim_T_1_9sec.eps>
 (epstopdf)             \includegraphics on input line 171.
 Package epstopdf Info: Output file is already uptodate.
-<Bilder/Sim_T_1_9sec-eps-converted-to.pdf, id=176, pagebox=cropbox, 854.19125pt
+<Bilder/Sim_T_1_9sec-eps-converted-to.pdf, id=174, pagebox=cropbox, 854.19125pt
  x 529.98pt>
 File: Bilder/Sim_T_1_9sec-eps-converted-to.pdf Graphic file (type pdf)
 <use Bilder/Sim_T_1_9sec-eps-converted-to.pdf>
@@ -2161,28 +2125,15 @@ t line 171. on input line 171.
 Package pdftex.def Info: Requested size: 455.24411pt x 282.4488pt on input line
  171.
  [7] [8 <./Bilder/Sim_T_0_65sec-eps-converted-to.pdf> <./Bilder/Sim_T_0_8sec-ep
-s-converted-to.pdf>] [9 <./Bilder/Sim_T_1sec-eps-converted-to.pdf> <./Bilder/Si
-m_T_1_2sec-eps-converted-to.pdf>] [10 <./Bilder/Sim_T_1_4sec-eps-converted-to.p
-df> <./Bilder/Sim_T_1_6sec-eps-converted-to.pdf>]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 176.
-LaTeX Font Info:    Try loading font information for TS1+5ch on input line 179.
-
-
-(c:/texlive/texmf-local/tex/latex/tex-tudfonts/softmake/charter/ts15ch.fd
-File: ts15ch.fd 2008/06/23 Fontinst v1.927 font definitions for TS1/5ch.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 185--187
-
- []
-
-<Bilder/Simulink_Modell_V5.JPG, id=249, 1014.03844pt x 328.97906pt>
+s-converted-to.pdf>] [9 <./Bilder/Sim_T_1_2sec-eps-converted-to.pdf> <./Bilder/
+Sim_T_1_6sec-eps-converted-to.pdf>]
+<Bilder/Simulink_Modell_V5.JPG, id=237, 1014.03844pt x 328.97906pt>
 File: Bilder/Simulink_Modell_V5.JPG Graphic file (type jpg)
 <use Bilder/Simulink_Modell_V5.JPG>
-Package pdftex.def Info: Bilder/Simulink_Modell_V5.JPG  used on input line 190.
- on input line 190.
+Package pdftex.def Info: Bilder/Simulink_Modell_V5.JPG  used on input line 191.
+ on input line 191.
 Package pdftex.def Info: Requested size: 455.24411pt x 147.69284pt on input lin
-e 190.
+e 191.
 Package epstopdf Info: Source file: <Bilder/Sim_PendelData_1.eps>
 (epstopdf)                    date: 2017-07-09 21:34:36
 (epstopdf)                    size: 143253 bytes
@@ -2192,21 +2143,16 @@ df>
 (epstopdf)                    size: 49629 bytes
 (epstopdf)             Command: <repstopdf --outfile=Bilder/Sim_PendelData_1-ep
 s-converted-to.pdf Bilder/Sim_PendelData_1.eps>
-(epstopdf)             \includegraphics on input line 199.
+(epstopdf)             \includegraphics on input line 201.
 Package epstopdf Info: Output file is already uptodate.
-<Bilder/Sim_PendelData_1-eps-converted-to.pdf, id=250, pagebox=cropbox, 854.191
+<Bilder/Sim_PendelData_1-eps-converted-to.pdf, id=238, pagebox=cropbox, 854.191
 25pt x 529.98pt>
 File: Bilder/Sim_PendelData_1-eps-converted-to.pdf Graphic file (type pdf)
 <use Bilder/Sim_PendelData_1-eps-converted-to.pdf>
 Package pdftex.def Info: Bilder/Sim_PendelData_1-eps-converted-to.pdf  used on 
-input line 199. on input line 199.
+input line 201. on input line 201.
 Package pdftex.def Info: Requested size: 455.24411pt x 282.4488pt on input line
- 199.
-
-Underfull \vbox (badness 1715) has occurred while \output is active []
-
- [11 <./Bilder/Sim_T_1_9sec-eps-converted-to.pdf> <./Bilder/Simulink_Modell_V5.
-JPG>]
+ 201.
 Package epstopdf Info: Source file: <Bilder/Sim_PendelData_2.eps>
 (epstopdf)                    date: 2017-07-09 21:34:36
 (epstopdf)                    size: 143026 bytes
@@ -2216,35 +2162,16 @@ df>
 (epstopdf)                    size: 49674 bytes
 (epstopdf)             Command: <repstopdf --outfile=Bilder/Sim_PendelData_2-ep
 s-converted-to.pdf Bilder/Sim_PendelData_2.eps>
-(epstopdf)             \includegraphics on input line 208.
+(epstopdf)             \includegraphics on input line 209.
 Package epstopdf Info: Output file is already uptodate.
-<Bilder/Sim_PendelData_2-eps-converted-to.pdf, id=263, pagebox=cropbox, 854.191
+<Bilder/Sim_PendelData_2-eps-converted-to.pdf, id=239, pagebox=cropbox, 854.191
 25pt x 529.98pt>
 File: Bilder/Sim_PendelData_2-eps-converted-to.pdf Graphic file (type pdf)
 <use Bilder/Sim_PendelData_2-eps-converted-to.pdf>
 Package pdftex.def Info: Bilder/Sim_PendelData_2-eps-converted-to.pdf  used on 
-input line 208. on input line 208.
+input line 209. on input line 209.
 Package pdftex.def Info: Requested size: 455.24411pt x 282.4488pt on input line
- 208.
-Package epstopdf Info: Source file: <Bilder/Sim_PendelData_3.eps>
-(epstopdf)                    date: 2017-07-09 21:34:36
-(epstopdf)                    size: 143181 bytes
-(epstopdf)             Output file: <Bilder/Sim_PendelData_3-eps-converted-to.p
-df>
-(epstopdf)                    date: 2017-07-09 21:34:36
-(epstopdf)                    size: 50987 bytes
-(epstopdf)             Command: <repstopdf --outfile=Bilder/Sim_PendelData_3-ep
-s-converted-to.pdf Bilder/Sim_PendelData_3.eps>
-(epstopdf)             \includegraphics on input line 215.
-Package epstopdf Info: Output file is already uptodate.
-<Bilder/Sim_PendelData_3-eps-converted-to.pdf, id=264, pagebox=cropbox, 854.191
-25pt x 529.98pt>
-File: Bilder/Sim_PendelData_3-eps-converted-to.pdf Graphic file (type pdf)
-<use Bilder/Sim_PendelData_3-eps-converted-to.pdf>
-Package pdftex.def Info: Bilder/Sim_PendelData_3-eps-converted-to.pdf  used on 
-input line 215. on input line 215.
-Package pdftex.def Info: Requested size: 455.24411pt x 282.4488pt on input line
- 215.
+ 209.
 Package epstopdf Info: Source file: <Bilder/Sim_PendelData_4.eps>
 (epstopdf)                    date: 2017-07-09 21:34:36
 (epstopdf)                    size: 143367 bytes
@@ -2254,107 +2181,52 @@ df>
 (epstopdf)                    size: 48824 bytes
 (epstopdf)             Command: <repstopdf --outfile=Bilder/Sim_PendelData_4-ep
 s-converted-to.pdf Bilder/Sim_PendelData_4.eps>
-(epstopdf)             \includegraphics on input line 222.
+(epstopdf)             \includegraphics on input line 223.
 Package epstopdf Info: Output file is already uptodate.
-<Bilder/Sim_PendelData_4-eps-converted-to.pdf, id=265, pagebox=cropbox, 854.191
+<Bilder/Sim_PendelData_4-eps-converted-to.pdf, id=240, pagebox=cropbox, 854.191
 25pt x 529.98pt>
 File: Bilder/Sim_PendelData_4-eps-converted-to.pdf Graphic file (type pdf)
 <use Bilder/Sim_PendelData_4-eps-converted-to.pdf>
 Package pdftex.def Info: Bilder/Sim_PendelData_4-eps-converted-to.pdf  used on 
-input line 222. on input line 222.
+input line 223. on input line 223.
 Package pdftex.def Info: Requested size: 455.24411pt x 282.4488pt on input line
- 222.
-LaTeX Font Info:    Try loading font information for T1+5sf on input line 228.
-
-(c:/texlive/texmf-local/tex/latex/tex-tudfonts/softmake/stafford/t15sf.fd
-File: t15sf.fd 2008/06/23 Fontinst v1.927 font definitions for T1/5sf.
-)
-Overfull \hbox (37.0428pt too wide) in paragraph at lines 228--228
-[][][][]\T1/5sf/m/n/11 check 
- []
-
-
-Overfull \hbox (41.98181pt too wide) in paragraph at lines 228--228
-\T1/5sf/m/n/11 please!  
- []
-
-
-Overfull \hbox (37.0428pt too wide) in paragraph at lines 228--228
-[][][][]\T1/5sf/m/n/11 check 
- []
-
-
-Overfull \hbox (41.98181pt too wide) in paragraph at lines 228--228
-\T1/5sf/m/n/11 please!  
- []
-
-
-Overfull \hbox (6.13266pt too wide) in paragraph at lines 228--228
-[][][] 
- []
-
-
-Overfull \hbox (37.0428pt too wide) in paragraph at lines 228--228
-[][][][]\T1/5sf/m/n/11 check 
- []
-
-
-Overfull \hbox (41.98181pt too wide) in paragraph at lines 228--228
-\T1/5sf/m/n/11 please!  
- []
-
-
-Overfull \hbox (37.0428pt too wide) in paragraph at lines 228--228
-[][][][]\T1/5sf/m/n/11 check 
- []
-
-
-Overfull \hbox (41.98181pt too wide) in paragraph at lines 228--228
-\T1/5sf/m/n/11 please!  
- []
-
-
-Overfull \hbox (6.13266pt too wide) in paragraph at lines 228--228
-[][][] 
- []
-
-[12 <./Bilder/Sim_PendelData_1-eps-converted-to.pdf>] [13 <./Bilder/Sim_PendelD
-ata_2-eps-converted-to.pdf> <./Bilder/Sim_PendelData_3-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
-
-[14 <./Bilder/Sim_PendelData_4-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
+ 223.
+ [10 <./Bilder/Sim_T_1_9sec-eps-converted-to.pdf> <./Bilder/Simulink_Modell_V5.
+JPG>] [11 <./Bilder/Sim_PendelData_1-eps-converted-to.pdf> <./Bilder/Sim_Pendel
+Data_2-eps-converted-to.pdf>] [12 <./Bilder/Sim_PendelData_4-eps-converted-to.p
+df>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
  (./Versuch5_Bericht.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 230.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 36310 strings out of 492995
- 669566 string characters out of 6136402
- 1133082 words of memory out of 5000000
- 38991 multiletter control sequences out of 15000+600000
- 645955 words of font info for 99 fonts, out of 8000000 for 9000
+ 36151 strings out of 492995
+ 665898 string characters out of 6136402
+ 1132491 words of memory out of 5000000
+ 38853 multiletter control sequences out of 15000+600000
+ 618682 words of font info for 95 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  73i,13n,108p,10538b,2648s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2017/texm
-f-dist/fonts/enc/dvips/ly1/texnansi.enc}<c:/texlive/texmf-local/fonts/type1/sof
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}{c:/texlive/2017
+/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/texmf-local/fonts/type1/sof
 tmake/charter/5chr8a.pfb><c:/texlive/texmf-local/fonts/type1/softmake/frontpage
 /5fpm8a.pfb><c:/texlive/texmf-local/fonts/type1/softmake/frontpage/5fpr8a.pfb><
-c:/texlive/texmf-local/fonts/type1/softmake/stafford/5sfr8a.pfb><c:/texlive/201
-7/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><c:/texlive/2017/texmf-dis
-t/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf-dist/fonts/typ
-e1/bitstrea/charter/bchri8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/
-mathdesign/mdbch/md-chr7t.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ma
-thdesign/mdbch/md-chr7y.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/math
-design/mdbch/md-chri7m.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/txfon
-ts/t1xbtt.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-<c:/texlive/2017/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/20
-17/texmf-dist/fonts/type1/public/txfonts/tcxbtt.pfb><c:/texlive/2017/texmf-dist
-/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on Versuch5_Bericht.pdf (16 pages, 757201 bytes).
+c:/texlive/2017/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><c:/texlive/
+2017/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/texlive/2017/texmf-
+dist/fonts/type1/bitstrea/charter/bchri8a.pfb><c:/texlive/2017/texmf-dist/fonts
+/type1/public/mathdesign/mdbch/md-chr7t.pfb><c:/texlive/2017/texmf-dist/fonts/t
+ype1/public/mathdesign/mdbch/md-chr7y.pfb><c:/texlive/2017/texmf-dist/fonts/typ
+e1/public/mathdesign/mdbch/md-chri7m.pfb><c:/texlive/2017/texmf-dist/fonts/type
+1/public/txfonts/t1xbtt.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/txfo
+nts/t1xtt.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
+<c:/texlive/2017/texmf-dist/fonts/type1/public/txfonts/tcxbtt.pfb><c:/texlive/2
+017/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
+Output written on Versuch5_Bericht.pdf (14 pages, 593853 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 166 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 366 PDF objects out of 1000 (max. 8388607)
+ 317 compressed objects within 4 object streams
+ 158 named destinations out of 1000 (max. 500000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

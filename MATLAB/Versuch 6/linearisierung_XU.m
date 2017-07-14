@@ -6,10 +6,6 @@ syms phi1 phi2 dphi1 dphi2 ddphi1 ddphi2 M;
 
 z = [phi1;dphi1;phi2;dphi2];
 u_z = M;
-% 
-% % f_M_AP = subs(f(2),z,x);
-% % 
-% % M_AP = solve(f_M_AP == 0 , M);
 
 A = jacobian(f,z);
 B = jacobian(f,u_z);
