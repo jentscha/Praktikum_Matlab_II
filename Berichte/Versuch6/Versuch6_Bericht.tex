@@ -1,0 +1,225 @@
+% =================================================================================
+% Hier auswählen, ob TUD-Design oder nicht
+% =================================================================================
+\newif\ifTUDdesign
+\TUDdesigntrue					% TUD-Design
+%\TUDdesignfalse				% Für Rechner ohne installierte TUDdesign-Pakete
+% =================================================================================
+
+
+% =================================================================================
+% Hier Daten für studentische Arbeit eingeben
+% =================================================================================
+\newcommand{\SADATyp}{Praktikumsbericht}
+\newcommand{\SADATitel}{Versuch VI: Trajektorienfolgeregelung}
+\newcommand{\SADAStadt}{Darmstadt}
+\newcommand{\SADAAutor}{Andreas Jentsch, Ali Kerem Sacakli}
+\newcommand{\SADABetreuer}{}
+\newcommand{\SADABetreuerII}{}
+\newcommand{\SADABetreuerIII}{}
+\newcommand{\SADABegin}{}
+\newcommand{\SADAAbgabe}{Praktikum Matlab/Simulink II \newline 11. Juli 2017}
+\newcommand{\SADASeminar}{}
+% =================================================================================
+
+
+% =================================================================================
+% Auswahl des IAT-Fachgebiets (rtm / rtp)
+% =================================================================================
+\newif\ifrtm
+\rtmtrue	% rtm
+%\rtmfalse	% rtp
+% =================================================================================
+
+
+% =================================================================================
+% Erklärung, dass die Arbeit ohne Hilfe Dritter etc. erstellt wurde
+% =================================================================================
+\def\SADAVarianteErklaerung{ETIT}		% FB 18, Elektrotechnik
+%\def\SADAVarianteErklaerung{MBDA}		% FB 16, Maschinenbau, Diplomarbeit
+%\def\SADAVarianteErklaerung{MBSA}		% FB 16, Maschinenbau, Studienarbeit
+% =================================================================================
+
+
+% =================================================================================
+% Ausnahmen von der automatischen Silbentrennung
+% =================================================================================
+\hyphenation{Aktu-ali-sie-rung Screen-shots Pa-rallel-ro-bo-ter Zu-stands-raum-mo-del-le nach-voll-zieh-bar Pro-jekt-se-mi-nar}
+% =================================================================================
+
+
+% =================================================================================
+% Hier NIICHTS ändern!
+% =================================================================================
+\ifTUDdesign
+	\documentclass[11pt, twoside, colorback, accentcolor=tud2c, nopartpage, bigchapter, fleqn, ngerman, longdoc]{tudreport}
+\else
+	\documentclass[11pt, a4paper, twoside, fleqn, ngerman]{scrreprt}
+  % Für Entwurf auf Rechnern ohne installierte TUDdesign-Pakete	
+	\usepackage{exscale}	% Korrektur math-Zeichen
+	\usepackage{eurosym}
+\fi
+%To Do Package
+\usepackage{todonotes}
+%eps-plot von Matlab in pdf umwandeln, um diese einbinden zu können
+\usepackage{epstopdf}
+%Paket listings für das Einbinden von Quelltext
+\usepackage{listings}
+%Stil Matlab_colored definieren
+\lstdefinestyle{Matlab_colored}
+{
+	language = Matlab,
+	tabsize = 4,
+	framesep = 3mm,
+	frame = tb,
+	classoffset = 0,
+	basicstyle = \ttfamily,
+	keywordstyle = \bfseries\color[rgb]{0,0,1},
+	commentstyle = \itshape\color[rgb]{0.133,0.545,0.133},
+	stringstyle = \color[rgb]{0.672,0.126,0.941},
+	extendedchars = true,
+	breaklines = true,
+	prebreak = \textrightarrow,
+	postbreak = \textleftarrow,
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber = 5
+}
+
+
+\input{common/includes.tex}				% verwendete Pakete einbinden
+\input{common/setup.tex}					% LaTeX-Einstellungen
+\input{common/commonmacros.tex}		% oft verwendete Befehle
+% =================================================================================
+
+
+% =================================================================================
+% Hier beginnt das eigentliche Dokument
+% =================================================================================
+
+\begin{document}
+%\input{common/preface.tex} % Titelseite, Aufgabenstellung, Erklärung, Abstract, Inhaltsverzeichnis, etc.
+\maketitle
+
+\setcounter{chapter}{6}
+%\setcounter{section}{7}
+\section{Linearisierung}
+
+Ergänzend zum letzten Versuch, soll in diesem Versuch eine Trajektorienfolgeregelung entworfen werden. Hierbei soll nach Linearisierung der Trajektorie und Berechnung des Reglerparameters die Regelung in Simulink modelliert und anschließend simuliert werden. 
+
+Folgendes Listing zeigt die Funktion zur Linearisierung der Trajektorie:
+
+\lstinputlisting[style=Matlab_colored,caption={Quellcode der Funktion \textbf{linearisierung}}, label={linearisierung_XU}]{Codes/linearisierung_XU.m}
+
+
+\section{Berechnen von K(t)}
+
+
+
+%Nachfolgend werden Plots der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für verschiedene Übergangszeiten gezeigt.
+%
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_T_0_65sec.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 0,65\,\mathrm{s}$}
+%			\label{fig:sim065}
+%		\end{figure}
+%		
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_T_0_8sec.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 0,8\,\mathrm{s}$}
+%			\label{fig:sim08}
+%		\end{figure}
+%		
+%%		\begin{figure}[htbp]
+%%			\centering
+%%			\includegraphics[width = \textwidth]{Bilder/Sim_T_1sec.eps}
+%%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$}
+%%			\label{fig:sim1}
+%%		\end{figure}
+%		
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_2sec.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,2\,\mathrm{s}$}
+%			\label{fig:sim12}
+%		\end{figure}
+%		
+%%		\begin{figure}[htbp]
+%%			\centering
+%%			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_4sec.eps}
+%%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,4\,\mathrm{s}$}
+%%			\label{fig:sim14}
+%%		\end{figure}
+%		
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_6sec.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,6\,\mathrm{s}$}
+%			\label{fig:sim16}
+%		\end{figure}
+%		
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_T_1_9sec.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1,9\,\mathrm{s}$}
+%			\label{fig:sim19}
+%		\end{figure}
+%		
+%		\newpage
+%		\autoref{fig:sim065} bis \ref{fig:sim19} zeigen, dass eine größere Übergangszeit $T$ ein Geringeres Stellgrößenmaximum nach sich zieht.
+%%		\newpage
+%%		\todo[inline]{Erklären Sie die Auswirkung der Übergangszeiten T auf das Ergebnis}
+%%		
+%%		\begin{itemize}
+%%			\item T größer -> Mmax kleiner
+%%			\item ...
+%%		\end{itemize}
+%		
+%\section{Simulation}
+%		
+%Das Simulinkmodell der Aufschwungsteuerung ist in \autoref{fig:simulinkAufschwung} dargestellt.
+%	\begin{figure}[htbp]
+%		\centering
+%		\includegraphics[width = \textwidth]{Bilder/Simulink_Modell_V5.JPG}
+%		\caption{Simulink-Modell der Aufschwungsteuerung}
+%		\label{fig:simulinkAufschwung}
+%	\end{figure}
+%		
+%Die folgende Abbildung veranschaulicht die Simulation und zusammen mit den vorgegebenen Trajektorien bei gegebenen Pendeldaten. Für die darauffolgenden Abbildungen wurden die Pendeldaten verändert.
+%%($l_1 = 0,3\,m$, $l_2 = 0,3\,m$, $R_p1 = 10^{-3}$, $R_p2 = 10^{-4}$).
+%
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_1.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ mit gegebenen Pendeldaten}
+%			\label{fig:simulink1}
+%		\end{figure}
+%	
+%%		\todo[inline]{Sollen wir noch alles animieren und Screenshots einfügen? Siehe Aufgabenstellung}
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_2.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ ($l_1 = 0,3\,m$, $l_2 = 0,3\,m$, $R_{p1} = 10^{-3}$, $R_{p2} = 10^{-4}$)}
+%			\label{fig:simulink2}
+%		\end{figure}
+%		
+%%		\begin{figure}[htbp]
+%%			\centering
+%%			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_3.eps}
+%%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ ($m_1 = 0,4\,kg$, $m_2 = 0,4\,kg$)}
+%%			\label{fig:simulink3}
+%%		\end{figure}
+%		
+%		\begin{figure}[htbp]
+%			\centering
+%			\includegraphics[width = \textwidth]{Bilder/Sim_PendelData_4.eps}
+%			\caption{Plot der Zustände $\mathbf{x^*(t)}$ und $\mathbf{M^*(t)}$ für $T = 1\,\mathrm{s}$, $T_{sim} = 2\,\mathrm{s}$ ($g = 11\,N/kg$)}
+%			\label{fig:simulink4}
+%		\end{figure}
+%		
+%
+%In \autoref{fig:simulink1} ist zu sehen, dass die berechneten Trajektorien exakt mit den simulierten Verläufen übereinstimmen. Das Pendel wird in die obere Ruhelage überführt, verweilt hier eine kurze zeit und verlässt sie dann wieder. Verändert man die Parameter des simulierten Pendels gegenüber denen anhand derer die Aufschwungsteuerung berechnet wurde, kann die Steuerung das Pendel in der Simulation nichtmehr in die obere Ruhelage überführen. Dies ist in \autoref{fig:simulink2} und \ref{fig:simulink4} zu sehen. Eine Reine Aufschwungsteuerung ohne Regelung ist nur für die ursprünglichen berechneten Pendelparameter gültig.
+%		
+\end{document}
