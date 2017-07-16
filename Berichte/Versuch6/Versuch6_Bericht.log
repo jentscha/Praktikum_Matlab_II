@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  15 JUL 2017 19:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  16 JUL 2017 10:18
 entering extended mode
 **Versuch6_Bericht.tex
 
@@ -1746,33 +1746,50 @@ LaTeX Font Info:    Font shape `TS1/txtt/m/it' in size <11> not available
 ) [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch6\Codes/RiccatiDGL.m")
+("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
+Berichte\Versuch6\Codes/berechneK.m" [2]) [3]
+<Bilder/Simulink.JPG, id=143, 666.99188pt x 897.3525pt>
+File: Bilder/Simulink.JPG Graphic file (type jpg)
+
+<use Bilder/Simulink.JPG>
+Package pdftex.def Info: Bilder/Simulink.JPG used on input line 131.
+(pdftex.def)             Requested size: 386.96027pt x 520.61542pt.
+ [4 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_
+II/Berichte/Versuch6/Bilder/Simulink.JPG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
 
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
 Berichte\Versuch6\Versuch6_Bericht.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 225.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 225.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 139.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
- 26887 strings out of 493921
- 483055 string characters out of 3147247
- 675159 words of memory out of 3000000
- 29521 multiletter control sequences out of 15000+200000
- 81076 words of font info for 71 fonts, out of 3000000 for 9000
+ 27019 strings out of 493921
+ 485282 string characters out of 3147247
+ 693121 words of memory out of 3000000
+ 29570 multiletter control sequences out of 15000+200000
+ 82596 words of font info for 76 fonts, out of 3000000 for 9000
  847 hyphenation exceptions out of 8191
- 73i,12n,108p,656b,1992s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/tuddesign/fonts/type1/softmake/charter/5chr8a.pfb><C:/Program Files/tuddesign
-/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Program Files/tuddesign/fonts/ty
-pe1/softmake/frontpage/5fpr8a.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/M
-iKTeX/2.9/fonts/type1/public/txfonts/t1xbtt.pfb><C:/Users/Ali Kerem Sacakli/App
-Data/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/Ali Kere
-m Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on Versuch6_Bericht.pdf (3 pages, 86627 bytes).
+ 73i,13n,108p,448b,1992s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}{C:/Progra
+m Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/tuddesign/
+fonts/type1/softmake/charter/5chr8a.pfb><C:/Program Files/tuddesign/fonts/type1
+/softmake/frontpage/5fpm8a.pfb><C:/Program Files/tuddesign/fonts/type1/softmake
+/frontpage/5fpr8a.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fo
+nts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roami
+ng/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Users/Ali Kerem Saca
+kli/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7t.pfb><C:/Us
+ers/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1x
+btt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/publ
+ic/txfonts/t1xtt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fon
+ts/type1/public/txfonts/t1xtt.pfb>
+Output written on Versuch6_Bericht.pdf (6 pages, 233757 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
