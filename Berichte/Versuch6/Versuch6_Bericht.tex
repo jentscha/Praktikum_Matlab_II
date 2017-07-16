@@ -126,6 +126,7 @@ Folgender Code dient zur Berechnung des Reglerparameters $\mathrm{K}(t)$.
 \newpage
 \section{Folgeregelung unter Simulink}
 
+Die Trajektorienfolgeregelung wird unter Ausnutzung der getätigten Berechnungen in Simulink implementiert. Das folgende Bild zeigt das gesamte Simulink-Modell.
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[width = 0.85\textwidth]{Bilder/Simulink.JPG}
@@ -133,7 +134,43 @@ Folgender Code dient zur Berechnung des Reglerparameters $\mathrm{K}(t)$.
 			\label{fig:simulink}
 		\end{figure}
 
+\newpage
+Um den Unterschied zwischen der reinen Steuerung und der Trajektorienfolgeregelung aufzuzeigen, werden im Nachfolgenden Plots gezeigt, wobei im zweiten und dritten Plot Parameteränderungen durchgenommen worden sind.
 
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_ohneParameteraenderung.eps}
+			\caption{Plot der Zustände ohne Parameteränderung}
+			\label{fig:sim1}
+		\end{figure}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_kuerzeresZweitesPendel.eps}
+			\caption{Plot der Zustände mit 5\% kürzerem zweiten Pendel}
+			\label{fig:sim2}
+		\end{figure}
+						
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width = \textwidth]{Bilder/Sim_schwereresErstesPendel.eps}
+			\caption{Plot der Zustände mit schwererem ersten Pendel}
+			\label{fig:sim3}
+		\end{figure}
+
+\newpage
+		
+\todo[inline]{Welche Unterschiede stellen Sie beim Vergleich de reinen Steuerung und der Steuerung mit Folgeregelung fest?}
+
+\begin{itemize}
+	\item Ohne Parameteränderung: bis Ende der Übergangszeit stimmen Steuerung und Regelung übereinander. Danach ist Steuerung instabil, jedoch Regelung stabil (stationär genau)
+	\item mit Parametänderungen: Unterschiede sind schon während der Übergangszeit (besonders gegen Ende der Übergangszeit) zu sehen. Nach der Übergangszeit so wie ohne Parameteränderung (Steuerung instabil, Regelung stabil, stationär genau)
+\end{itemize}
+
+\section{Einfluss des Antriebs}
+
+\todo[inline]{Motor modellieren}
+\todo[inline]{Vergleichen mit System vorher, verschiedene Tm ausprobieren--> Wertebereich von Tm bestimmen}
 
 
 \end{document}

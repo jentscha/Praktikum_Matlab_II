@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  16 JUL 2017 10:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.9)  16 JUL 2017 18:13
 entering extended mode
 **Versuch6_Bericht.tex
 
@@ -1754,25 +1754,99 @@ Berichte\Versuch6\Codes/berechneK.m" [2]) [3]
 File: Bilder/Simulink.JPG Graphic file (type jpg)
 
 <use Bilder/Simulink.JPG>
-Package pdftex.def Info: Bilder/Simulink.JPG used on input line 131.
+Package pdftex.def Info: Bilder/Simulink.JPG used on input line 132.
 (pdftex.def)             Requested size: 386.96027pt x 520.61542pt.
  [4 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_
 II/Berichte/Versuch6/Bilder/Simulink.JPG>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
+Package epstopdf Info: Source file: <Bilder/Sim_ohneParameteraenderung.eps>
+(epstopdf)                    date: 2017-07-16 17:53:44
+(epstopdf)                    size: 74978 bytes
+(epstopdf)             Output file: <Bilder/Sim_ohneParameteraenderung-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2017-07-16 17:55:09
+(epstopdf)                    size: 29956 bytes
+(epstopdf)             Command: <epstopdf --outfile=Bilder/Sim_ohneParameteraen
+derung-eps-converted-to.pdf Bilder/Sim_ohneParameteraenderung.eps>
+(epstopdf)             \includegraphics on input line 142.
+Package epstopdf Info: Output file is already uptodate.
+
+<Bilder/Sim_ohneParameteraenderung-eps-converted-to.pdf, id=150, 858.20625pt x 
+529.98pt>
+File: Bilder/Sim_ohneParameteraenderung-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use Bilder/Sim_ohneParameteraenderung-eps-converted-to.pdf>
+Package pdftex.def Info: Bilder/Sim_ohneParameteraenderung-eps-converted-to.pdf
+ used on input line 142.
+(pdftex.def)             Requested size: 455.24411pt x 281.13065pt.
+Package epstopdf Info: Source file: <Bilder/Sim_kuerzeresZweitesPendel.eps>
+(epstopdf)                    date: 2017-07-16 17:58:45
+(epstopdf)                    size: 75592 bytes
+(epstopdf)             Output file: <Bilder/Sim_kuerzeresZweitesPendel-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2017-07-16 17:59:58
+(epstopdf)                    size: 30891 bytes
+(epstopdf)             Command: <epstopdf --outfile=Bilder/Sim_kuerzeresZweites
+Pendel-eps-converted-to.pdf Bilder/Sim_kuerzeresZweitesPendel.eps>
+(epstopdf)             \includegraphics on input line 149.
+Package epstopdf Info: Output file is already uptodate.
+
+<Bilder/Sim_kuerzeresZweitesPendel-eps-converted-to.pdf, id=151, 858.20625pt x 
+529.98pt>
+File: Bilder/Sim_kuerzeresZweitesPendel-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use Bilder/Sim_kuerzeresZweitesPendel-eps-converted-to.pdf>
+Package pdftex.def Info: Bilder/Sim_kuerzeresZweitesPendel-eps-converted-to.pdf
+ used on input line 149.
+(pdftex.def)             Requested size: 455.24411pt x 281.13065pt.
+Package epstopdf Info: Source file: <Bilder/Sim_schwereresErstesPendel.eps>
+(epstopdf)                    date: 2017-07-16 17:59:17
+(epstopdf)                    size: 74197 bytes
+(epstopdf)             Output file: <Bilder/Sim_schwereresErstesPendel-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2017-07-16 17:59:58
+(epstopdf)                    size: 30225 bytes
+(epstopdf)             Command: <epstopdf --outfile=Bilder/Sim_schwereresErstes
+Pendel-eps-converted-to.pdf Bilder/Sim_schwereresErstesPendel.eps>
+(epstopdf)             \includegraphics on input line 156.
+Package epstopdf Info: Output file is already uptodate.
+
+<Bilder/Sim_schwereresErstesPendel-eps-converted-to.pdf, id=152, 858.20625pt x 
+529.98pt>
+File: Bilder/Sim_schwereresErstesPendel-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use Bilder/Sim_schwereresErstesPendel-eps-converted-to.pdf>
+Package pdftex.def Info: Bilder/Sim_schwereresErstesPendel-eps-converted-to.pdf
+ used on input line 156.
+(pdftex.def)             Requested size: 455.24411pt x 281.13065pt.
+ [5 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_
+II/Berichte/Versuch6/Bilder/Sim_ohneParameteraenderung-eps-converted-to.pdf>] [
+6 <C:/Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_II
+/Berichte/Versuch6/Bilder/Sim_kuerzeresZweitesPendel-eps-converted-to.pdf> <C:/
+Users/Ali Kerem Sacakli/Desktop/TU Darmstadt/Matlab 2/Praktikum_Matlab_II/Beric
+hte/Versuch6/Bilder/Sim_schwereresErstesPendel-eps-converted-to.pdf>]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 163.
+LaTeX Font Info:    Try loading font information for TS1+5ch on input line 166.
+
+
+("C:\Program Files\tuddesign\tex\latex\tex-tudfonts\softmake\charter\ts15ch.fd"
+File: ts15ch.fd 2008/06/23 Fontinst v1.927 font definitions for TS1/5ch.
+) [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
 
 ("C:\Users\Ali Kerem Sacakli\Desktop\TU Darmstadt\Matlab 2\Praktikum_Matlab_II\
 Berichte\Versuch6\Versuch6_Bericht.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 139.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 176.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
  ) 
 Here is how much of TeX's memory you used:
- 27019 strings out of 493921
- 485282 string characters out of 3147247
- 693121 words of memory out of 3000000
- 29570 multiletter control sequences out of 15000+200000
- 82596 words of font info for 76 fonts, out of 3000000 for 9000
+ 27124 strings out of 493921
+ 487965 string characters out of 3147247
+ 693501 words of memory out of 3000000
+ 29657 multiletter control sequences out of 15000+200000
+ 82913 words of font info for 77 fonts, out of 3000000 for 9000
  847 hyphenation exceptions out of 8191
  73i,13n,108p,448b,1992s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}{C:/Progra
@@ -1787,9 +1861,9 @@ ers/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1x
 btt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fonts/type1/publ
 ic/txfonts/t1xtt.pfb><C:/Users/Ali Kerem Sacakli/AppData/Roaming/MiKTeX/2.9/fon
 ts/type1/public/txfonts/t1xtt.pfb>
-Output written on Versuch6_Bericht.pdf (6 pages, 233757 bytes).
+Output written on Versuch6_Bericht.pdf (9 pages, 330245 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 103 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

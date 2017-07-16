@@ -46,52 +46,131 @@ simOutS3 = runSimulation_V6(stPendel, stTraj, vTK, mK, x0, Tend+1);
 
 %% Plots der Ergebnisse
 
-%% Erstellung der Plots für 5.8
-% Vektor der verschiedenen überführungszeiten 
-Tplots = [0.65, 0.8, 1, 1.2, 1.4, 1.6, 1.9 ];
-
-for ii = 1:length(Tplots)
-    T = Tplots(ii);
-    stTraj = berechneTrajektorie( stPendel, Q, R, T);
+% ohne Parameteränderung
     hFig = figure;
-    %title('Übergangszeit T=',num2str(ii));
     set(hFig, 'Position', [0, 0, 1400, 1000]);
 
     ax(1) = subplot(511);
-    plot(stTraj.vT,stTraj.vU);
+    plot(simOutR1.vT, simOutR1.vU, '-.r', simOutS1.vT, simOutS1.vU, '--k');
     ylabel('$M$/Nm','interpreter','latex');
     xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
     grid on;
 
     ax(2) = subplot(512);
-    plot(stTraj.vT,stTraj.mX(1,:));
+    plot(simOutR1.vT,simOutR1.mX(:,1), '-.r', simOutS1.vT,simOutS1.mX(:,1), '--k');
     ylabel('$\varphi_1$/rad','interpreter','latex');
     xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
     grid on;
 
     ax(3) = subplot(513);
-    plot(stTraj.vT,stTraj.mX(2,:));
+    plot(simOutR1.vT,simOutR1.mX(:,2), '-.r', simOutS1.vT,simOutS1.mX(:,2), '--k');
     ylabel('$\dot{\varphi}_1$/rad','interpreter','latex');
     xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
     grid on;
 
     ax(4) = subplot(514);
-    plot(stTraj.vT,stTraj.mX(3,:));
+    plot(simOutR1.vT,simOutR1.mX(:,3), '-.r', simOutS1.vT,simOutS1.mX(:,3), '--k');
     ylabel('$\varphi_2$/rad','interpreter','latex');
     xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
     grid on;
 
     ax(5) = subplot(515);
-    plot(stTraj.vT,stTraj.mX(4,:));
+    plot(simOutR1.vT,simOutR1.mX(:,4), '-.r', simOutS1.vT,simOutS1.mX(:,4), '--k');
     ylabel('$\dot{\varphi}_2$/rad','interpreter','latex');
     xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
     grid on;
     
-    disp(['maximum M = ',num2str(max(abs(stTraj.vU)))]);
+    %disp(['maximum M = ',num2str(max(abs(stTraj.vU)))]);
+    print('-depsc', ['Sim_ohneParameteränderung.eps']);
+ 
+%% kürzeres zweites Pendel
+    hFig = figure;
+    set(hFig, 'Position', [0, 0, 1400, 1000]);
+
+    ax(1) = subplot(511);
+    plot(simOutR2.vT,simOutR2.vU, '-.r', simOutS2.vT,simOutS2.vU, '--k');
+    ylabel('$M$/Nm','interpreter','latex');
+    xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
+    grid on;
+
+    ax(2) = subplot(512);
+    plot(simOutR2.vT,simOutR2.mX(:,1), '-.r', simOutS2.vT,simOutS2.mX(:,1), '--k');
+    ylabel('$\varphi_1$/rad','interpreter','latex');
+    xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
+    grid on;
+
+    ax(3) = subplot(513);
+    plot(simOutR2.vT,simOutR2.mX(:,2), '-.r', simOutS2.vT,simOutS2.mX(:,2), '--k');
+    ylabel('$\dot{\varphi}_1$/rad','interpreter','latex');
+    xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
+    grid on;
+
+    ax(4) = subplot(514);
+    plot(simOutR2.vT,simOutR2.mX(:,3), '-.r', simOutS2.vT,simOutS2.mX(:,3), '--k');
+    ylabel('$\varphi_2$/rad','interpreter','latex');
+    xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
+    grid on;
+
+    ax(5) = subplot(515);
+    plot(simOutR2.vT,simOutR2.mX(:,4), '-.r', simOutS2.vT,simOutS2.mX(:,4), '--k');
+    ylabel('$\dot{\varphi}_2$/rad','interpreter','latex');
+    xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
+    grid on;
     
-    linkaxes(ax,'x')
-    print('-depsc', ['Sim_T_', strrep(num2str(T),'.','_'),'sec','.eps']);
-    
-end
+    %disp(['maximum M = ',num2str(max(abs(stTraj.vU)))]);
+    print('-depsc', ['Sim_kuerzeresZweitesPendel.eps']);
 
 
+
+%% schwereres erstes Pendel
+    
+    hFig = figure;
+    set(hFig, 'Position', [0, 0, 1400, 1000]);
+
+    ax(1) = subplot(511);
+    plot(simOutR3.vT,simOutR3.vU, '-.r', simOutS3.vT,simOutS3.vU, '--k');
+    ylabel('$M$/Nm','interpreter','latex');
+    xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
+    grid on;
+
+    ax(2) = subplot(512);
+    plot(simOutR3.vT,simOutR3.mX(:,1), '-.r', simOutS3.vT,simOutS3.mX(:,1), '--k');
+    ylabel('$\varphi_1$/rad','interpreter','latex');
+    xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
+    grid on;
+
+    ax(3) = subplot(513);
+    plot(simOutR3.vT,simOutR3.mX(:,2), '-.r', simOutS3.vT,simOutS3.mX(:,2), '--k');
+    ylabel('$\dot{\varphi}_1$/rad','interpreter','latex');
+    xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
+    grid on;
+
+    ax(4) = subplot(514);
+    plot(simOutR3.vT,simOutR3.mX(:,3), '-.r', simOutS3.vT,simOutS3.mX(:,3), '--k');
+    ylabel('$\varphi_2$/rad','interpreter','latex');
+    xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
+    grid on;
+
+    ax(5) = subplot(515);
+    plot(simOutR3.vT,simOutR3.mX(:,4), '-.r', simOutS3.vT,simOutS3.mX(:,4), '--k');
+    ylabel('$\dot{\varphi}_2$/rad','interpreter','latex');
+    xlabel('t/s','interpreter','latex');
+    legend('Trajektorienfolgeregelung','Reine Steuerung');
+    grid on;
+    
+    %disp(['maximum M = ',num2str(max(abs(stTraj.vU)))]);
+    print('-depsc', ['Sim_schwereresErstesPendel.eps']);
